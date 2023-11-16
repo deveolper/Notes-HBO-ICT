@@ -1,0 +1,233 @@
+Computer Networks - Les 5
+
+Volgende les: IPv6
+Deze les: IPv4
+
+Verdieping Netwerklaag (IP)
+	Inleiding
+	IP-adresssen
+
+Inleiding
+	Network Layer (L3)
+	Zorgt voor de routing van packets
+
+	We focussen ons op IPv4
+	IPv6 is de opvolger
+
+	Taak L3:
+	Koppeling verschillende netweren en
+	routing van packets.
+
+	Routing is het zoeken van het juiste pad
+	van begin naar einde.
+
+	IP levert als dienst: onbevestigde,
+	verbindingsloze pakketaflevering.
+
+	Geen ingebouwde error-correctie.
+	Weinig overhead.
+
+	Detecteerd wel fouten dankzij een
+	16 bit checksum in de header.
+	Controle som omvangt ook de overige header-
+	bytes.
+
+	Fout gedetecteerd => pakket weggooien.
+
+	"Send and Pray"
+
+	IP detecteerd ook route loops.
+	TTL = Time To Live
+		Maximaal aantal hops voordat het
+		pakket wordt weggegooid.
+
+	TTL start met een vaste waarde.
+	Elke hop verlaagd de waarde met 1.
+	Als TTL = 0, pakket weggegooid.
+	Typisch: 255, 128 of 64 als startwaarde.
+	TTL = 1 byte, dus max 255 hops.
+
+ICMP = Internet control management protocol
+	Hulp-protocol met foutdetectie voor
+	de netwerklaag.
+
+	Voorbeelden:
+	Host/Netwerk unreachable
+	TTL expired
+	Echo request/reply (ping)
+
+Header van IP-pakket v4:
+	Version, IHL, ToS, Total length,
+	Identification, flags, fragment offset,
+	Time to live, protocol, header checksum,
+	Source address, Destination address,
+	Options, Padding
+
+IP-adressen
+	Identificeert eindbestemming.
+	Verandert dus niet onderweg.
+	32 bit waarde.
+	Bestaat uit een netwerkdeel (links)
+	En een hostdeel (rechts)
+
+	Hostdeel is gebruikt om de juiste computer
+	aan te wijzen.
+
+	Het netwerkdeel is gebruikt om het juiste
+	netwerk aan te wijzen.
+
+	Subnet mask wordt gebruikt om het
+	netwerkdeel van het hostdeel te
+	onderscheiden.
+
+	Mask is even groot als het ip-adress (32 bit)
+
+	1 => netwerkdeel
+	0 => hostdeel
+
+	In praktijk zijn alle enen links en de
+	nullen rechts.
+
+	Dotted decimal notatie:
+		255.255.255.0
+	Prefix notation:
+		/24
+
+	Byte = 8 bit
+		0 x 128
+		0 x 64
+		1 x 32
+		0 x 16
+		1 x 8
+		1 x 4
+		0 x 2
+		1 x 1
+		= 45
+
+	Binary AND is een handige operation voor
+	masks.
+
+	AND is bitwise. Dus alleen 1 bit van het ene
+	item en 1 bit van het andere item worden
+	gebruikt.
+
+	00001111
+	10101010 &
+	----------
+	00001010
+
+	Host-deel is wat weg gaat als je het
+	IP-adres AND met het subnet mask.
+
+	MAX mask = 255.255.255.252
+
+	Voorbeelden:
+		145.52.123.5 met mask 255.255.255.0
+		145.52.123.0 is netwerk
+			  .5 is host
+		Prefix: /24
+
+		10.123.12.117 met mask 255.0.0.0
+		10.0.0.0 is netwerk
+		.123.12.117 is host
+		Prefix: /8
+
+		180.23.15.12 / 16
+		180.23.0.0 is netwerk
+		.15.12 is host.
+
+	Hoogste adres is broadcast
+	Netwerkadres is IP & mask
+	Broadcast is IP & mask | ~mask
+
+Subnetting:
+	Het aantal hosts in een LAN moet beperkt worden
+	wegens:
+		Perfomance
+		Veiligheid
+
+	Een groot netwerk geeft elke groep of afdeling
+	een eigen subnet.
+	Nooit meer dan paar honder devices per subnet.
+	Meer devices => netwerk splisen
+
+	Hoeveel /24 subnets passen in /16 netwerk?
+	8 bits om subnetten te nummeren (24 - 16 = 8)
+	Dus 2 ^ 8 = 256 mogelijkheden (0..255)
+
+	Hoeveel hosts passen er in een /24 subnet?
+	32 - 24 = 8. 2 ^ 8 = 256
+	MAAR: Hoogste adres is broadcast
+	Laagste adres is subnet.
+	256 - 2 = 254 computers.
+	Er zal een router aangesloten zijn.
+	Dus 253 computers blijven over.
+
+	Netwerkadres: laagste adres in subnet
+		Om het netwerk te vinden.
+	Broadcastadres: hoogste adres in subnet
+		Om alle apparaten hetzelfde pakket te
+		leveren.
+	Default gateway adres: adres van router
+
+	Intern netwerk: 11.0.0.0 /8
+		Netwerk wordt opgedeeld in /24 subnets
+	1. Hoeveel bruikbare IP-adressen per subnet?
+		256 - 3 = 253
+		(broadcast, netwerk en default eraf)
+	2. Hoeveel subnetten ontstaan er?
+		2 bytes = 2 ^ 16 = 65536 subnets
+	3. Netwerkadressen van subnets
+		11.x.y.0 waarbij x en y waardes van
+		0 tot en 255 zijn.
+
+	In principe 1 IP-adres per computer.
+	Soms extra adres nodig voor bvb een virual machine.
+	Routers hebben 1 IP-adres per poort.
+
+	L2 switch gebruikt 0 of 1 IP-adres want het werkt op L2.
+	Alleen als de switch remote wordt gemanaged.
+
+	Opdracht 1: 10.3.15.7 /8 
+	Opdracht 2: 112.112.10.7 /16
+	Opdracht 3: 23.23.23.22 /24
+	Opdracht 4: 11.12.13.130 255.255.255.128
+	Opdracht 5: 192.168.197.12 /12 (geen tentamestof)
+
+	Subnet mask:
+		1) 255.0.0.0
+		2) 255.255.0.0
+		3) 255.255.255.0
+		4) 255.255.255.128
+		5) 255.255.252.0
+	Netwerkadres:
+		1) 10.0.0.0
+		2) 112.112.0.0
+		3) 23.23.23.0
+		4) 11.12.13.1
+		5) 192.168.196.0
+	Hostdeel:
+		1) 0.3.15.7
+		2) 0.0.10.7
+		3) 0.0.0.22
+		4) 0.0.0.2
+		5) 0.0.1.12
+	Broadcast:
+		1) 10.255.255.255
+		2) 112.112.255.255
+		3) 23.23.23.255
+		4) 11.12.13.255
+		5) 192.168.199.255
+
+Onnodige info:
+	L5 = sessielaag
+	L6 = Presentatielaag
+
+Q & A:
+Q: Kan het masker ook een waarde hebben waarbij niet
+alle 1-en aan de linker kant staan? Ex. 128.128.128.128?
+A: Theoretisch wel, maar er is afgesproken dat alle "1"
+links en "0" rechts
+Q: 192.168.199.255 waar komt de 199 vandaan
+A: Werkt op bitniveau.
+Mask is 11111111.11111111.11111100.0000000 in binair

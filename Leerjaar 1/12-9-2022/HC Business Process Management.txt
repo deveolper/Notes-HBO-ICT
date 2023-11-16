@@ -1,0 +1,237 @@
+Business Model Canvas
+	Methode om een bedrijf te beschrijven.
+
+De Meso-factoren en Macro-factoren zitten in een BMC.
+
+Het beschrijft:
+	Hoe de organisatie:
+		Waarde creeërt
+		Waarde levert
+		Waarde vangt
+
+Vaak inbegrepen in een BMC:
+	Kernactiviteiten
+	Klantrelaties
+	Klantsegmenten
+	Key resources
+	Kanalen
+	Kostenstructuur
+	Waardeproposities
+		Kern van het bedrijf.
+		Wat gaan wij verkopen?
+		Wat gaan wij leveren?
+		Wat gaan wij bijdragen?
+		Kan veranderen.
+	Inkomenstromen
+
+Rechterkant: Richting de klant
+	Klantrelaties
+	Klantsegmenten
+	Kanalen
+	Inkomenstromen
+	Waardeproposities
+
+Linkerkant: Komt ten goede voor de klant, maar is
+verborgen.
+
+	Alles wat in het BMC zit maar niet bij de
+	rechterkant hoort.
+
+Je kunt het onderverdelen in dingen die geld opleveren
+en dingen die geld kosten.
+
+Waardepropositie
+	Gaat niet om het concrete product.
+	Gaat over welke oplossing je hebt voor de klant.
+	Gaan over welke behoefte je vervult.
+
+	Wat heb je te bieden wat andere niet bieden?
+
+	Dit kan bijvoorbeeld ook goede klantenservice
+	zijn.
+
+	Dit is NIET:
+		We verkopen tafels, stoelen en bannken.
+
+	Dat doen namelijk meerdere bedrijven.
+
+	Voorbeelden:
+		Betaalbaar design voor iedereen.
+
+		Winkelen als totale belevenis.
+
+		Wij streven ernaar meer mensen de kans
+		te geven thuis een beter leven te leiden.
+
+		Samen besparen we geld.
+
+		Makkelijk vervoerbare en leverbare
+		producten.
+
+		Duurzaam geproduceerd.
+
+
+	Vaak aan te denken:
+		Dit is nieuw, niemand anders doet dit.
+		Onze service is beter.
+		Aan te passen aan uw wensen.
+		Wij regelen het voor u.
+
+		Uniek design
+		Beste prijs
+		Geld besparen
+		Gebruiksvriendelijk
+		Toegankelijk
+		Status (Apple bvb.)
+		etc.
+
+Market & Customer segments
+	Customer segments, welke klanten richten we ons
+	op? Wie willen we bereiken?
+
+	Waardepropositie <-> klantsegmenten
+		Wat ze bieden bepaald welke klanten ze
+		bereiken. En de klanten die ze bereiken
+		bepaald wat ze bieden.
+
+Channels
+	Hoe zorgen we dat de klant weet dat we bestaan?
+	Hoe bereiken we de klant?
+	Hoe kan de klant ons vergelijken?
+	Hoe kan de klant het betalen?
+	Hoe zorgen we dat de oplossing wordt geleverd?
+	Etc.
+
+	1. Awareness:
+		Hoe wordt je bekend?
+		Etc.
+	2. Evaluations:
+		Wat vindt de klant van ons?
+	3. Purchase:
+		Hoe kan de klant van ons kopen?
+	4. Delivery:
+		Hoe wordt onze value-proposition aan de
+		klant geleverd?
+	5. After sales:
+		Hoe leveren we diensten ná de aankoop?
+			Garanties
+			Reparatieservice
+			Q&A
+			Inruilen / bedenktijd
+
+Welke kanalen gebruikt de IKEA:
+	Awareness: Socials, reclame, etc.
+	Evaluations: Socials, klantenaantal, etc.
+	Purchase: Gewoon in de winkel kopen
+	Delivery: Klant neemt fysiek iets mee
+	After sales: Bezorg en instalatieservice.
+
+
+Customer Relations
+	Hoe krijgen we meer klanten?
+		Acquisition -> get
+
+		Middelen:
+			Reclame
+
+	Hoe behouden we klanten?
+		Retention -> keep
+
+		Middelen:
+			Bonuskaart
+			Kortingkaart
+			Klantenkaart
+			Restaurant
+			Softijs
+			Ballenbak
+
+	Hoe zorgen we dat de klanten meer kopen?
+		Up- and cross-selling -> grow
+
+		Up-selling
+			IPV een goedkoop product, een
+			duur product verkopen.
+		Cross-selling
+			Naast het product ook wat extra's
+			verkopen die erbij horen.
+
+		Middelen:
+			Bij de kassa de meest
+			verleidelijke producten verkopen.
+
+Revenue Streams & Pricing Model
+	Facebook:
+		Gegevensverkoop
+	NH-Hotels:
+		Gebruikers-fee
+	New York Pizza:
+		Goederen, gebruikers-fee
+	Ziggo:
+		Abonnement
+	Sixt:
+		Huren/Leasen
+
+Key Activities
+	Wat doen we om onze oplossing te leveren?
+
+	Te produceren van product of dienst
+	Te vermarkten (aan de klant te brengen)
+	Te leveren van de dienst of oplossing
+
+Key Resources
+	Wat hebben we allemaal nodig?
+
+	Fysiek:
+		Machines
+		Gebouwen
+		Auto's
+		Raw matterials
+		ICT
+	Mensen:
+		Ervaring
+		Skills
+		Kennis
+	Financieel:
+		Cash
+		Beleggingen
+		Verzekering
+	Intellectueel:
+		Patenten
+		Copyright
+		Merknamen
+	Data is ook een key-resource.
+
+Key partners
+	Wie heb je nodig?
+	Met wie werk je samen?
+
+	Anderen mensen en bedrijven waarmee je
+	samenwerkt.
+
+	Allianties:
+		Senseo = Philips + Douwe Egberts
+		Beertender = Heineken + Krups
+
+		Allianties maken samen een product.
+
+Cost structure
+	Salaris, productie, transport, adverteren etc.
+	Omzet - kosten = winst
+	Kosten dus laag houden
+	Misschien toch iets zelf doen ipv laten doen.
+
+	Cost driven:
+		Kosten zo laag mogelijk houden.
+	Value driven:
+		Mag wat kosten, doorberekend aan de klant.
+
+Kosten van IKEA:
+	Huur, inkoop, salaris, etc.
+
+Revenue Streams & Pricing model
+Q: Valt gegevensverkoop onder goederen verkoop?
+A: Ja
+
+Opdracht:
+Maak voor Albert Hein een Business Model Canvas
+Lever in voor prakticum van week 3 op brightspace.

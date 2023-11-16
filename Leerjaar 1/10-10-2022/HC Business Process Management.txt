@@ -1,0 +1,54 @@
+Nu: week 7
+Toets: week 9
+
+Swimlanes: Pool/Lane
+Message flow
+
+Week 8:
+Data object
+Data store
+Association
+
+Een pool is een collectie lanes
+Lanes worden parallel uitgevoerd
+
+Aan de linker kant vertikaal aangegeven wat de
+naam van de pool is.
+Dit is de naam van het bedrijfsproces wat je
+modeleerd. In de box er naast schrijf je alle
+activiteiten die erbij horen.
+
+Pool kan zijn:
+White-box: proces is volledige bekend
+Black-box: proces is onbekend
+
+Een BPMN kan je in een pool-notatie tonen door
+gewoon er een rechthoek omheen te zetten en een
+rechthoek er naast met de naam van het proces.
+
+Elke lane wordt door een andere afdeling uitgevoerd.
+Een BPMN kan meerdere lanes gebruiken.
+
+De naam van de lane is NOOIT de naam van een persoon.
+Wel de naam van een functie of afdeling.
+
+Elk proces heeft een eigen pool.
+
+Message-flow:
+	O----  ----  ----  -----|>
+
+	Lijn met lange steepjes.
+
+	Gebruikt om communicatie tussen verschillende
+	pools mogelijk te maken.
+
+	Punt gesloten maar niet gevuld.
+
+	Pijl is eigenlijk vertikaal.
+
+MAAK BRIGHTSPACE OPDRACHTEN week 7, zie week 6
+voor deeluitwerking.
+
+Q & A:
+Q: 
+A:

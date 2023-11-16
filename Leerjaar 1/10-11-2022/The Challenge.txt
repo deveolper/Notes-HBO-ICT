@@ -1,0 +1,126 @@
+We hebben een voorlopige 7,4
+
+We moeten een overtuigende presentatie geven. De klas vult observatieformulieren in.
+We krijgen een V of een O. Het observatieformulier van de docent is wat geldt.
+
+De cijferstructuur en hoe het wordt gecompenseerd is ingewikkeld en wordt nog wel een keer uitgelegd.
+
+Sinds 2020:
+	60 studiepunten -> propeduise (sorry voor spelling)
+	50 studiepunten -> herkansing
+	49 of minder    -> Doei
+
+	Alle 60 punten moeten van **propeduisevakken** komen.
+
+	Eind jaar 2 wordt de student pas op de hoogte gesteld van het studiepunten-tekort.
+
+Lesweek 12: herkansingen Bus1 en Tech1
+Lesweek 13: Toetsweek Bus2 en Tech2
+
+IKS = Inleiding, Kern, Slot
+
+INLEIDING:
+	Wat is het onderwerp?
+	Aandacht trekken
+	Waarom is dit onderwerp?
+	Wat is het doel?
+	Voorstellen
+	Achtergrondinformatie over het onderwerp / context
+	Hoe lang gaat het ongeveer duren? "Deze presentatie gaat ongeveer 12 minuten duren"
+	Inhoudsopgave / Structuuraanduiding ###########################################################################################
+	Geef de vragenprocedure aan (hand opsteken midden in de presentatie en gelijk de vraag stellen? Of ff wachten en aan het einde stellen?)
+	Overgang naar de kern
+
+KERN:
+	Standpunt
+	ALLES
+	Argumenten
+	Subjectief
+	Bewaak het doel
+
+SLOT:
+	Conclusie.
+	Extra informatie KIJK UIT DAT JE GEEN NIEUWE ONDERWERPEN WORDEN AANGESTIPT. ###################################################
+	Samenvatting van je punten.
+	Oproepen tot actie (niet cruciaal voor overtuigend).
+	Herhaling van mening / standpunt.
+	Vragenmoment.
+	Afsluiten. ####################################################################################################################
+
+Overgang tussen slides moet hoorbaar zijn in de gesproken tekst.
+
+De presentatie moet OVERTUIGEND zijn, niet informerend.	###############################################################################
+	Overtuigend is om iemand van je mening te overtuigen.
+		Kan een discussie tot gevolg hebben.
+		Subjectief.
+	Informerend is objectieve informatie die niet te betwisten is.
+
+Presentatietechniek:
+	Nog een deels individuele opdracht
+		Opslitsen in duo's
+		Per duo moet bekend zijn wanneer de presentatie gehouden wordt
+		Gaat over een zelfgekozen onderwerp
+		Er moet een storyboard gemaakt worden
+			Een verhaal over je onderwerp
+			Het storyboard is ter voorbereiding van de presentatie
+				Het is documentatie van de presentatie zeg maar
+				Storyboard moet vóór de presentatie worden ingeleverd in BrightSpace
+
+In het StoryBoard staat al wat er waar moet staan / worden verteld.
+
+Inspiratie nodig:
+	Tabel met inleiding, kern en slot.
+	En een indeling, toon en duur per stuk.
+
+NON-VERBALE communicatie is ook HEEL BELANGRIJK!!!! ###################################################################################
+Ook de documentatie is belangrijk.
+
+Richttijd: 12 minuten   ###############################################################################################################
+De kern is het belangrijkste, daar moet de meeste tijd in zitten.
+3-7-2, 2-7-3, of 3-6-3 verdeling tussen inleiding, kern en slot aan te raden. De 12 minuten hoeven niet vol gepraat te worden.
+
+Het story-board moet genoeg zijn zodat iemand anders met dezelfde voorkennig de presentatie kan overnemen. ############################
+
+GEEN FILMPJE IN DE PRESENTATIE ########################################################################################################
+Tenzij in overleg met Jelle.
+
+IN DE SAMENVATTING ZIT **GEEN** NIEUWE INHOUDELIJKE INFORMATIE. Wel nieuwe doorverwijsinformatie. #####################################
+
+De afsluiting koppelt de deelconclusies aan elkaar.
+
+De beoordeling die de klas geeft wordt door de docent gecontroleerd. En daar krijg je van Jelle vragen over als ze niet volledig, correct of serieus zijn. ########################
+De observatieformulieren die je invult hebben invloed op je *EIGEN* cijfer ########################################################################################################
+Het is een presentatie, geen spreekbeurt ##########################################################################################################################################
+Een spreekbeurt lees je op. Een presentatie is uit je hoofd. ######################################################################################################################
+Zorg dat je iedereen bereikt. En bepaal de voorkennis op basis daarvan. ###########################################################################################################
+Begin niet met een grap. ##########################################################################################################################################################
+Zorg dat je een échte opening hebt. #################################################################
+Wees eerlijk als je het antwoord op een vraag niet weet. ############################################
+Plaatje is altijd niet een illustratie. #######################################################
+Taalfouten, onnatuurlijke houding, onleesbaarheid. ##############################################################
+Benoemen en aantonenen is niet hetzelfde. ####################################
+
+De weken na volgende week, mogelijk tijdens de tentamens.
+
+De bouwfase is begonnen. LETS GOOOOOOO!!!!
+
+Deliverables:
+	Klassendiagram (met databasestructuur)	DEADLINE: Over 2 weken
+
+Kalenderweek 3 is het assessment
+Kalenderweek 4 is de expo
+Kalanderweek 5 is de herkansing
+
+Challenge deel 1 is 3 studiepunten (+1 voor taaltoets)
+          deel 2 is 6 studiepunten (fasen 3 t/m 5 en individuele- en groepstaken)
+
+Wat is er te plannen:
+	Bouwen schermen (GUI)
+	Ontwerpen database
+	Bouwen database
+	Groepsreflectie
+
+	Presenteer in lesweek 12 GEEN DOCUMENTEN IN TE LEVEREN.
+	Presenteer met de hele groep.
+
+	Aan het einde ook een reflectieverslag (individuele opdracht).

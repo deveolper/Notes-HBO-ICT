@@ -1,0 +1,14 @@
+Risicoanalyse van andere challengegroep met interviewvragen.
+Presentatie met advies maken.
+Advies in tabel-vorm.
+Presentatie geven.
+
+Wat voor product hebben jullie bedacht?
+Wat zijn de grootste risico's met betrekking op de i/d/a laag en de infrastructuur laag?
+Van welke hardware maken jullie gebruik?
+Wat voor bedreigingen kan je bedenken?
+Wat voor kwetsbaarheden?
+Welke oplossing hebben jullie voor deze risicos?
+
+Voor de toets:
+H3 H10.1 H10.2 H10.3
