@@ -1,0 +1,28 @@
+Als eerste een herhaling hoe je een C# project maakt met de cmd, dat kan je allemaal overslaan als je visual studio gebruikt en niet visual studio code.
+
+Vervolgens een voorbeeld van unit-testen met C#
+
+Eerst een arrange, daarin bereid je de test voor.
+Dan een act, daarin voer je de test uit.
+Tot slot een assert, daarin check je of het gedrag is wat je verwacht.
+Daarna kan je ook nog een cleanup toevoegen, daarin maak je side-effects ongedaan. Deze hebben we (nog) niet behandeld bij het HC.
+
+En toen gingen we de stream weer debuggen.
+
+Om een test te verbeteren kunnen we de testtechnieken gebruiken die we vorig jaar hebben geleerd.
+
+Bij het unit-testen is het een goed idee om de test te isoleren. Je mockt dus alle classes en methodes die niet de methode zijn die je aan het testen bent. Zo kan je de functionaliteit
+van elke unit individueel testen. Moq is de mock-lib van C#.
+
+Om moq te installeren:
+```bash
+dotnet add package moq
+```
+
+First-class citizen:
+- Hogere orde functies:
+ - Geef een functie als parameter mee
+ - Return een functie
+- Opslaan in een variable
+- Optellen
+- Anonieme functies

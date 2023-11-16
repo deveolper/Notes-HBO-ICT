@@ -1,0 +1,114 @@
+**LOG NIET MET JE EIGEN ACCOUNT IN BIJ DE TOETS**
+Je krijgt inloggegevens.
+
+Als je ingelogd bent en SSMS hebt gestart en verbonden bent met de toetsdatabase.
+**Alle queries moeten in hetzelfde SQL-bestand.**
+
+Bij voorkeur als volgt:
+```sql
+--opdracht 1
+SELECT *
+FROM medewerker;
+
+--opdracht 2
+SELECT *
+FROM functie;
+```
+
+Als je maar 1 query wil uitvoeren, dan selecteer je wat je uit wil voeren en druk je op uitvoeren.
+Sla het SQL-bestand tussentijds op.
+
+Ook de locatie waar het SQL-bestand moet worden opgeslagen is aangegeven.
+
+Op het toetsblad krijg je de gewenste uitvoer te zien.
+Volgens Jelle krijgen we ook een blaadje met de tabellen.
+
+`UNION` voegt de tabellen, rijgewijs samen. Dus eigenlijk worden de tabellen onder elkaar geplakt. `JOIN` plakt het er naast.
+```sql
+SELECT ...
+UNION
+SELECT ...
+```
+**UNION HAALT DUBBELE WEG, ER ZIT EEN IMPLICIETE DISTINCT IN**
+De eerste `SELECT` bepaalt de kolomnaam. UNION haalt alleen **exact** identieke rijen weg.
+
+Bij het gebruik van `UNION`:
+- Het aantal kolommen van beide queries moet gelijk zijn. Anders krijg je een error.
+- Het datatype van de kolommen moet gelijk zijn.
+- Er is maar 1 resultaattabel.
+- De eerste select bepaalt de kolomnaam, dus geen alias bij de 2e select.
+- Order by sorteert de output.
+
+De bovenste select is allesbepalend voor de naam van de kolommen.
+
+Doe alleen ORDER BY helemaal aan het einde van de query.
+
+**OP DE TOETS WORDT STRENG GELET OP DE KOLOMNAMEN VAN DE UITVOER**
+
+Voorbeeld van `UNION` uit de les.
+```sql
+SELECT l_code, 'trainer' AS vrijwilliger, roepnaam
+FROM Lid JOIN team ON l_code = trainer
+WHERE team.trainer = l_code
+UNION
+SELECT l_code, 'aanvoerder', roepnaam
+FROM Lid JOIN team ON l_code = aanvoerder
+WHERE team.aanvoerder = l_code
+ORDER BY l_code
+```
+
+`UNION ALL` haalt de dubbele rijen **niet** weg.
+
+`COALESCE`
+Als de eerste expressie NULL is, dan zoekt die verder naar niet null waarden.
+
+```sql
+SELECT naam, COALESCE(doorkiesnummer, centrale, privé) AS contact
+FROM docent
+```
+
+Die geeft voor elke docent een telefoonnummer. In eerste instantie doorkiesnummer, als die NULL is, dan probeert die centrale, en als die ook NULL is, dan probeert die privé.
+Dit werkt hetzelfde als de NULL-COALESCE die we al kennen, maar dan met andere syntaxis.
+Als alle waardes null zijn, dan krijg je een error.
+
+```sql
+SELECT w_code, COALESCE(controleur, 'geen controle') AS controle
+FROM uit
+```
+
+```sql
+SELECT achternaam, COALESCE(CAST(shirtnr AS VARCHAR), 'geen') AS shirtnummer
+FROM lid
+```
+
+Dit geeft aan dat je een AS hebt voor in een cast om het datatype aan te geven, en eentje die de naam van een kolom aangeeft.
+
+`DATEDIFF` gebruik je om een verschil in verschillende data (meervoud van datum) wil berekenen. Het eerste argument is de eenheid, de andere 2 zijn de data die je vergelijkt.
+YEAR, MONTH, DAY, HOUR zijn een paar van de opties die je kan gebruiken als eenheden (zonder quotes). DATEDIFF geeft het absolute verschil en geeft een integer terug, naar beneden
+afgerond.
+
+```sql
+SELECT achternaam, DATEDIFF(YEAR, geb_dd, GETDATE()) AS leeftijd
+FROM Lid
+ORDER BY achternaam
+```
+
+`GETDATE` haalt de huidige datum op.
+
+`IIF(condition, value_if_true, value_if_false)` is eigenlijk hetzelfde als `condition ? value_if_true : value_if_false` in andere talen.
+
+`CASE` Als er uit **strikt meer** dan 2 items gekozen moet worden, dan kan je `CASE` gebruiken in plaats van `IF` of `IIF`
+```sql
+SELECT kolom1, kolom2 CASE
+  WHEN kolom1 < kolom2 THEN 'kolom1 is kleiner'
+  WHEN kolom2 < kolom1 THEN 'kolom2 is kleiner'
+  ELSE 'kolommen zijn gelijk'
+END
+AS kleinste
+FROM tabel
+```
+
+Als de vraag geen sortering wordt gevraagt door de toets, **mag je geen sortering gebruiken**.
+
+OLTP database = Online Transactional Processing. Registratiesnelheid staat centraal.
+OLAP database = Online Analytical Processing. Analysesnelheid staat centraal.

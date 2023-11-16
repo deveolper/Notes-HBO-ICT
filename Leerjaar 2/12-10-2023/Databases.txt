@@ -1,0 +1,38 @@
+# Let op, deze aantekeningen zijn incompleet omdat ik een deel van de les heb gemist.
+
+# Op de toets
+Je krijgt een groot verhaal.
+Lees dit verhaal en bepaal wat je moet opslaan.
+Doe de punten onder "vastgelegd moet worden" en kijk of er een tekst nog iets staat wat je nog niet hebt.
+Je moet ook unaire associaties, specialisaties, etc. kunnen maken.
+Je tekent een lege klasse op de toets in principe niet.
+Unaire associatie: associatie op zichzelf.
+Zet de constraints er wel bij op de toets, want daar krijg je punten voor. Deze waren na mijn vaccinatie behandeld, mogelijk mis ik nog wat dingen die je ook op de toets moet doen.
+Specialisatie kan in 1 tabel worden uitgewerkt, met meerdere tabellen die afstammen van 1 tabel, of met meerdere losse tabellen.
+
+We hebben nullable behandeld en een lijst constraints opgesteld (de beperkingen die door de database afgedwongen moeten worden).
+
+Als een contraint aangeeft dat er meerdere soorten zijn, dan vertaalt dat zich naar meerdere tabellen (voor zover ik even snel begrijp, na vaccinatie even middenin joinen).
+
+Vreemde sleutel altijd aan de veel kant van de relatie.
+
+# Nog een voorbeeld: NS database
+Specialisatie moet van de opdracht in 2 tabellen uitgewerkt worden. De specialisatie van personeel in 1 tabel.
+
+Locomotief(__lcode__, aanschafprijs, aanschafdatum, aantalpk, soort)
+Wagon(__wcode__, aanschafprijs, aanschafdatum, aantal_zitplaatsen)
+Wagon_Rit(__wcode__, __ritnummer__)
+  wcode is vreemde sleutel naar wagon(wcode), not null
+  ritnummer is vreemde sleutel naar rit(ritnummer), not null
+Personeel(__pcode__, naam, adres, type, datum_laatste_keuring, *koppel_met*)
+  koppel_met is vreemde sleutel naar Personeel(pcode)
+
+  Constraint type in {Machinist, Conducteur}
+
+  Als type = Machinist, datum_laatste_keuring is not null, koppel_met is null
+  Als type = Conducteur, datum_laatste_keuring is null, koppel_met is not null
+Rit(__ritnummer__, datum, vertrektijd, aankomsttijd, *machinst*, *locomotief*)
+  locomotief is vreemde sleutel naar locomotief(lcode), not null
+  machinist is vreemde sleutel naar personeel(pcode), not null
+
+  Constraint pcode = machinist(mnr)

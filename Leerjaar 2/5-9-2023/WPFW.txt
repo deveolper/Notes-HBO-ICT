@@ -1,0 +1,43 @@
+Testing shows the presence, not the absence of bugs
+
+We hebben het over:
+- Unit Testen
+- Dependency Inversion Principle
+- Dependency Injection
+- Mocking
+
+Unit Testen:
+- Kleine test, moet begrijpelijk zijn
+- Een functionaliteit
+- Onafhankelijk van andere tests
+- Naam moet self-explanatory zijn
+- Snel uitvoerbaar (er zijn vaak honderden tests of zelfs duizenden)
+
+Best practices:
+- Gebruik frameworks
+- Duidelijke namen zoals "methodenaam_scenario_verwachtgedrag"
+- Arrange, Act, Assert
+- Bij voorkeur 1 assert per test
+- Vermijd ingewikkelde logica
+- Geisoleerd van externe afhankelijkheden
+
+Annotaties bij xUnit (xUnit voor de .NET programmeertaal)
+
+Data annotatie:
+- [Fact]
+- [Inlinedata]
+
+Meestgebruikte assert methoden:
+- Assert.True
+- Assert.Equals
+- Assert.Throws
+
+[Fact] zegt dat een methode een test is die altijd hetzelfde gedrag moet vertonen en geen variërende testdata heeft.
+[Theory] zegt dat een test meerdere keren moet worden uitgevoerd met verschillende [InlineData(args)]
+
+Dependency Inversion Principle
+- Onderscheidt hoge-niveau classes en lage-niveau classes
+- Mogen niet afhankelijk van elkaar
+- Beide moeten afhankelijk zijn van abstracties (interfaces en abstract classes), niet van concrete implementaties
+
+Mocking = Neppen

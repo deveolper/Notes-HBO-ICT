@@ -1,0 +1,29 @@
+We zoeken een antwoord op een bepaalde kwestie en daarna houden we een debat.
+
+**Vijand wordt uitgeschakeld, maar er zijn ook onschuldige slachtoffers. Goed of slecht?**
+Niet genoteerd.
+
+**Privacy schenden om terroristen op te sporen. Goed of slecht?**
+Er is naar mijn mening een balans nodig. Criminelen zullen niet zeggen "laat een bom ontploffen morgen om 12:12", maar zeggen zoiets als "morgen om 12 over 12 wordt er een baby geboren
+in het ziekenhuis daar en daar. Kom jij ook?".
+
+**Deontologie: Handeling is goed als intentie goed is.**
+1. De intentie is goed (want je krijgt meer korting op dingen die je vaker koopt en in de buurt van de supermarkt bent).
+2. De intentie is goed (wel gebaseerd op het stereotype dat mannen vaker bier drinken en vrouwen vaker wijn).
+3. De intentie is goed (want ze voorkomen dat je iets dubbel koopt).
+Van deontologie is in principe altijd sprake. Een requirement is immers gebaseerd op de wensen van een klant en de bedoeling is dat die wordt vervuld, op die manier is de intentie altijd
+goed, ongeacht of de actie zelf kwaad of goedaardig is en ten koste gaat van iets of iemand.
+**Consequentialisme: Handeling is goed als het resultaat goed is.**
+1. Het resultaat is goed, want de klant wordt minder snel een alcoholist, en het bedrijf krijgt een goede naam.
+2. Het resultaat is goed, want de klant maakt kans op prijzen, en het bedrijf krijgt meer klanten.
+3. Het resultaat is goed, want het veminderd diefstal, en dus blijft de prijs laag.
+1. Het resultaat is slecht, de klant vindt het hoogstwaarschijnlijk minder fijn dat zij in de gaten worden gehouden op die manier. Het betreft persoonlijke informatie, namelijk indicatie
+van een alcoholisme probleem, wat ook confronterend kan zijn. Dit is iets waar ze zelf keuze in zouden willen hebben.
+2. Het resultaat is slecht, het resultaat is verminderde privacy.
+3. Het resultaat is slecht, mensen met bepaalde achtergronden worden sws al vaker gecontrolleerd en dus vaker gedetecteerd, dus door AI vaker geflagt en dus nog vaker gecontrolleerd.
+**Zorgethiek: Handeling is goed als er voor iedereen gezorgd wordt.**
+1. Slecht, wie geen paspoort heeft, krijgt geen korting.
+2. Slecht, het recht ligt hier bij de app, niet bij de klant.
+3. Slecht, je hebt niet de keuze om dit niet bij te houden, dus privacy-bewuste klanten willen dit waarschijnlijk niet.
+4. Slecht, korting betekent vrijwel altijd minder winst, dus moet dat ergens worden gecompenseert (salarisverlaging of andere klanten moeten meer betalen).
+4. Goed, trekt meer senioren aan, verhoogt de winst, dus verlaagd de prijzen voor iedereen!

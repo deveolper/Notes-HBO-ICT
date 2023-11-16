@@ -1,0 +1,350 @@
+# Ziek
+Ik ben nog steeds ziek, dus ik heb wat hoorcolleges van vorig jaar teruggekeken. De stof is dus mogelijk niet 100 % in lijn met de stof van dit jaar. Alvast mijn excuses voor het ongemak.
+
+Gelukkig is er volgens mij een algemene consensus dat de hoorcolleges van Pascal van hogere kwaliteit waren dan de hoorcolleges die dit jaar gegeven worden, en om heel eerlijk te zijn, snap ik waarom.
+
+# Datum mogelijk onjuist
+Ik heb twee hoorcolleges in éen document geyeet, de aantekeningen van éen van de colleges (of beide) is dus op de verkeerde datum opgeslagen. Alvast mijn excuses voor het ongemak.
+
+# HC WPFW 21 (BrightSpace)
+Meer React.
+## State management
+- Meest complexe deel van interface-onwikkeling.
+- Er zijn veel packages voor.
+- De packages lijken op elkaar.
+- In frontend development:
+    - state: de huidige toestand van de frontend.
+        - Winkelmandje bijvoorbeeld.
+        - Client-side. Een deel van de state kan ook op de server staan, maar dat is niet handig voor grote applicaties.
+        - Vaak in JavaScript opgeslagen.
+        - State kan veranderen. (updatable). Single-state is eigenlijk stateless.
+        - State beïnvloedt wat we zien.
+
+## `useReducer`
+`Array.prototype.Reduce`
+- Reducer = Verloopstuk (vertaling).
+- Functioneel programmeren.
+- `MapReduce`
+- `reduce` op een array:
+
+```js
+[1, 2, 3, 4].reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+```
+
+Wat doet dit? Voor wie een beetje Python kan is dit een goede uitleg:
+
+```py
+class List(list):
+    def reduce(self, function, start):
+        accumulator = start
+
+        for value in self:
+            accumulator = function(accumulator, value)
+
+        return accumulator
+```
+
+Hetzelfde als `itertools.reduce`. Het pakt de startwaarde en noemt het de accumulator. Daarna stopt het elke waarde van de lijst om de beurt in de functie samen met de accumulator en stopt het resultaat terug in de accumulator. Glashelder.
+
+- `useReducer`
+
+Alternatief voor `useState`, voor complext state-logica.
+
+`reducer`: `(state, action) => newState`
+
+```js
+function reducer(state, action) {
+    switch (action.type) {
+        case 'increment': return {count: state.count + 1};
+        case 'decrement': return {count: state.count - 1};
+        default: throw new Error();
+    }
+}
+
+function Counter() {
+    const [state, dispatch] = useReducer(reducer, {count: 0});
+    return (
+        <>
+            Count: {state.count}
+            <button onClick={() => dispatch({type: 'decrement'})}>-</button>
+            <button onClick={() => dispatch({type: 'increment'})}>+</button>
+        </>
+    );
+}
+```
+
+De `dispatch`-methode is om de frontend te renderen als dat nodig is bij het uitvoeren van een actie. Als je deze niet aanroept, dan past de frontend niet aan bij een wijziging.
+
+Voorbeeldje (notitieapp)
+```js
+import { useReducer } from 'React'
+
+function App()
+{
+    const reducer = (state, action) => {
+        if (action == "pasInhoudAan") {
+            // state.inhoud = action.payload;
+            // Het bovenstaande mag niet, dan krijg je een error, eerst had Pascal uitgelegd dat dit niet mag, daarna was hij vergeten dat hij dat ging illustreren en moest dat dus debuggen.
+            return { inhoud: action.payload, grootte: 16 };
+        } else if (action == "voeg toe") {
+            return [... state, action.payload]; // Veel voorkomende notatie, voegd action.payload aan de state toe.
+        } else {
+            throw Error("Oops");
+        }
+    } 
+    const [state, dispatch] = useReducer(reducer, [{ inhoud: "Geen tekst", grootte: 15 }]);   // Gebruik blokhaken om state en dispatch, niet accolades, want dan verwacht die een object met 2 attributen. Blokhaken verwacht meerdere outputs. Het 2e argument van useReducer moet een lijst zijn met items om te reduceren.
+
+    // Eerste voorbeeld
+    return (
+        <>
+            { state.map(item => <div style={{`font-size`: item.grootte + "px"}}>{item.inhoud}</div>) }
+            <input id="input"></input>
+            <button onClick={(e) => {
+                dispatch({ "type": "pasInhoudAan", "payload": document.getElementById("input").value });
+            }}>
+                Aanpassen!
+            </button>
+        </>
+    );
+
+    // Tweede voorbeeld
+    return (
+        <>
+            { state.map((item, index) => <div key={index} style={{`fontSize`: item.grootte + "px"}}>{item.inhoud}</div>) }
+            <input id="input"></input>
+            <button onClick={(e) => {
+                dispatch({ "type": "voeg toe", "payload": { inhoud: document.getElementById("input").value, grootte: 14 }});
+            }}>
+                Toevoegen!
+            </button>
+        </>
+    );
+}
+
+export default App;
+```
+
+**NOOIT de state aanpassen in een reducer. Altijd een copy teruggeven.**
+
+> Liever heb jij controle over je kinderen dan dat je kinderen controle hebben over jou.
+
+\- Pascal (out of context)
+
+### Immutability
+- Spread operator helpt bij het maken van een nieuw object
+- Goed voor performance
+- Duidelijk, eenvoudig, mutaties verbergen de aanpassingen
+- Trend met origine in functioneel programmeren.
+
+*Immer*
+- Hulpmiddel om niet na te hoeven denken over immutability bij diep-geneste objecten.
+- Werkt een beetje anders in React.
+
+```js
+dispatch({
+    type: 'update-email',
+    payload: { userID: 'john', email: 'john@doe.com' }
+})
+```
+
+*Curried producers*
+
+Bron (complete copy-pasta): [immerjs.github.io](https://immerjs.github.io/immer/curried-produce/)
+
+Passing a function as the first argument to produce creates a function that doesn't apply produce yet to a specific state, but rather creates a function that will apply produce to any state that is passed to it in the future. This generally is called currying. Take for example the following example:
+
+```js
+import {produce} from "immer"
+
+function toggleTodo(state, id) {
+    return produce(state, draft => {
+        const todo = draft.find(todo => todo.id === id)
+        todo.done = !todo.done
+    })
+}
+
+const baseState = [
+    {
+        id: "JavaScript",
+        title: "Learn TypeScript",
+        done: true
+    },
+    {
+        id: "Immer",
+        title: "Try Immer",
+        done: false
+    }
+]
+
+const nextState = toggleTodo(baseState, "Immer")
+```
+
+## Redux
+- Vaak niet nodig
+- Overkill
+- Overdreven
+- Controversieel
+- Oefenen met `npx create-react-app my-app --template redux`
+- redux is onafhankelijk van react
+    - react-redux is **niet** onafhankelijk van react.
+- Slices organiseren de reducers en acties per feature. Deze zijn optioneel.
+
+```js
+import {createSlice} from '@reduxjs/toolkit'
+export const counterSlice = createSlice({
+    name: 'counter',
+    initialState: {value: 0},
+    reducers: {
+        increment: state => state.value += 1,
+        decrement: state => state.value -= ,
+        incrementByAmount: (state, action) => {
+            state.value += action.payload
+        }
+    }
+})
+```
+
+Slide 12 illustreert redux op een prachtige manier.
+
+Bij `store` wordt de `state` en de `action` door de `reducer` heen gehaald. Dat levert een nieuwe `state` op. Deze `state` gaat naar het `UI` die het bij de event-handler `dispatcht` die het weer naar de `store`-actie brengt. Het is een cirkel. Die event-handler wordt bijvoorbeeld aangeroepen als je op een knop drukt.
+
+## Gebruikte termen en betekenis
+### Action
+Typisch een object met een type en een payload.
+```js
+const addTodoAction = {
+    type: 'todos/todoAdded',
+    payload: 'Buy milk'
+}
+```
+
+### Action creator
+Een functie om een actie toe te voegen.
+
+```js
+const addTodo = text => {
+    return {
+        type: 'todos/todoAdded',
+        payload: text
+    }
+}
+```
+
+Dat is handig om typos te voorkomen.
+
+### Reducer
+Een functie die 2 waardes als input neemt, er iets mee doet en de uitvoer gebruikt als eerste argument voor de volgende aanroep (en het volgende element van de lijst met items als andere argument). Zo reduceert het de lijst tot een enkel element.
+
+```js
+const initialState = {value: 0}
+
+function counterReducer(state = initialState, action)
+{
+    if (action.type === 'counter/increment')
+    {
+        return {...state, value: state.value + 1}
+    }
+    return state
+}
+```
+
+### Store
+Bevat de huidige state.
+
+```js
+import {configureStore} from '@reduxjs/toolkit'
+const store = configureStore({reducer: counterReducer})
+console.log(store.getState())
+```
+
+### Dispatch
+De enige manier om de state aan te passen.
+
+```js
+store.dispatch({ type: 'counter/increment' })
+```
+
+### Selector
+Om stukjes informatie uit een store te halen.
+
+```js
+const selectCounterValue = state => state.value
+
+const currentValue = selectCounterValue(store.getState())
+```
+
+Waarom hier een nieuwe functie voor maken? Omdat het handig kan zijn bij complexere applicaties.
+
+## Async logica / Data ophalen
+- Middleware voor redux
+- Side-effects tussen dispatch en aanroepen van reducer
+- Package `redux-thunk`
+- [Mooi voorbeeld](https://codesandbox.io/s/gnypx?file=/src/reducers/index.js)
+
+Deze slide hebben we overgeslagen, komt niet op de toets.
+
+## React + Redux
+- Gebruik de `react-redux` package.
+- In redux toolkit zit `creatSlice` en `Immer`.
+- Gebruik een Provder
+
+```js
+root.render(
+    <Provider store={
+        configureStore({
+            reducer: {
+                counter: counterSlice.reducer
+            }
+        })
+    }>
+        <App />
+    </Provider>
+)
+```
+
+```js
+export function Counter() {
+    const count = useSelector((state) => state.counter.value)
+    const dispatch = useDispatch()
+    return (
+        <div>
+            <div>
+                <button aria-label="increment value"
+                        onClick={() => dispatch(increment())}>
+                    Increment
+                </button>
+                <span>{count}</span>
+                <button aria-label="decrement value"
+                        onClick={() -> dispatch(decrement())}>
+                    Decrement
+                </button>
+            </div>
+        </div>
+    )
+}
+```
+
+## Uitleg toets WPFW deel 1 (na de demo)
+### Wat zou een reden kunnen zijn om in C# auto-implemented properties te gebruiken in plaats van een instance variabele?
+Dan kan je de `getter` of `setter` later aanpassen in een subclasse. Je kan het ook naar de database wegschrijven.
+### Geschrapte vraag over afgeleide classes door een fout.
+Uitgebreide stap-voor-stap uitwerking van de opdracht. Met method-hiding en overriding etc.
+
+De rest van de vragen vragen van de toets heb ik ook niet bekeken, dat zou een uur gaan duren alleen al voor die vragen.
+
+## Kleine demo
+Deze heb ik niet bekeken. Zie HC WPFW 21 op BrightSpace (0:55:55 begint het ongeveer).
+
+## Preek
+Preek over hoe laag de aanwezigheid is bij de colleges en hoe belangrijk het is dat studenten feedback aan docenten geven.
+
+## Opdracht komende week
+Betreft een oud hoorcollege, dus niet relevant voor ons.
+
+# HC WPFW 22 (BrightSpace)
+## Incompleet
+Dit document ben ik nog aan het maken, het kan mogelijk de hele week duren voordat dit document af is.
+
+Momenteel is die van HC WPFW 21 zo compleet als ik deze ga maken. Ik heb geen zin om nog een uur te kijken naar toetsvragen die stuk voor stuk worden behandeld.
+
+HC WPFW 22 ga ik later nog terugkijken en aantekeningen van maken.

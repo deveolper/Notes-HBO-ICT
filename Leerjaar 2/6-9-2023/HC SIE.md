@@ -1,0 +1,93 @@
+# Privacy bij Webapplicaties
+
+We gaan aan de slag met "privacy by design" en wat daarbij komt kijken.
+
+Hoe ga je respectvol om met de persoonsgegevens die in de applicatie worden verzameld?
+
+## Wat betekent privacy?
+Privacy is de eerbiediging van de persoonlijke levensfeer.
+
+Er staan ook een paar definities in de dikke van Dale. Het gaat met name over het recht.
+
+Informationele privacy (afgekort: privacy)
+- Alleen noodzakelijk gegevens worden verzameld
+- De verzamelde gegevens zijn alleen beschikbaar voor wie het echt nodig heeft
+- De gebruiker moet weten welke gegevens verzameld worden en hoe daarmee wordt omgegaan
+- De gebruiker moet controle hebben over welke informatie op welke manier wordt verwerkt
+
+Het recht om vergeten te worden hebben we ook.
+
+## Privacy wetgeving
+ AVG: Algemene Verordening Gegevensbescherming
+UAVG: Uitvoeringswet AVG
+GDPR: General Data Protection Regulation
+
+## Sleepnetwet
+Mag de AIVD op grote schaal dingen mag aflezen?
+
+AVG cheatsheet:
+1. Verwerkt u gegevens? Nee, AVG is niet van toepassing
+2. Zijn de gegevens persoonsgegevens? Nee, AVG is niet van toepassing
+3. Is de gegevensverwerking geheel of gedeeltelijk geautomatiseerd? Ja, naar stap 5, nee, naar stap 4
+4. Zijn de handmatig ...
+...
+
+## Wat zijn persoonsgegevens?
+Alle gegevens die:
+1) Betrekking hebben op
+2) Een geïdentificeerde, of
+3) Identificeerbare
+4) Natuurlijke persoon
+
+## Welke gegevens zijn van mij persoonsgegevens?
+Mijn online accounts; vingerafdruk; DNA; etc.
+
+## Bijzondere persoonsgegevens (die je niet mag verwerken zonder expliciete toestemming)
+1) Gegevens waaruit ras of etnische afkomst blijkt
+2) Politeitke opvattingen
+3) Religieuze of levensbeschouwelijke overtuigingen
+4) Lidmaatschap van vakbond
+5) Genetische gegevens
+6) Biometrische gegevens
+7) Gegevens over gezondheid
+8) Gegevens over seksueel gedrag of -gerichtheid
+
+Verwerking van gegevens:
+- Verzamelen
+- Vastleggen
+- Opslaan
+- Wijzigen
+- Opvragen
+- Raadplegen
+- Etc. Ging te snel om te noteren
+
+Rechten:
+- Inzien wijze van verwerking
+- Inzage gegevens
+- Correctie van fouten
+- Recht vergeten te worden
+- Recht op beperking van de gegevens
+- Recht op verzet tegen gegevensverwerking
+- Recht op overdragt van gegevens
+- Recht om niet onderworpen te worden aan automatische besluitvorming
+
+## Privacy by design
+
+## Privacy by default
+Standaard zo min mogelijk verzamelen
+- Selecteer wat nodig is
+- Sluit gegevens uit die niet nodig zijn
+- Verwijder wat niet meer nodig is
+- Vernietig wat niet meer nodig is
+
+### Data scheiden
+- Sla niet alles op 1 plek op
+
+### Verberg gegevens
+- Versleutel het
+
+Informeer de gebruikers over de verwerking van de gegevens. Leg uit waarom de gegevens worden vewerkt en waarschuw de gebruikers wanneer er iets anders gebeurd dan de gebruiker wil.
+
+Geef controle: toestemming en keuzes.
+Dwing af: het moet niet mogelijk zijn om op andere manier de gegevens te verwerken dan de gebruiker toestemming voor heeft gegeven.
+Toon aan: het moet aantoonbaar zijn dat je op een privacy-vriendelijke manier werkt.

@@ -1,0 +1,55 @@
+Vandaag gaan we het hebben over onder andere hidden methods en variance.
+Het is belangrijk dat je visual studio goed werkend hebt zodat je kan oefenen met C# op je eigen laptop op je eigen tempo.
+
+Er komt een applicative toets (waar je op de computer de toets maakt).
+
+We moeten wel echt de pretpark-case onder de loep nemen, dat is blijkbaar een grote casus.
+Ook zal die casus hoogstwaarschijnlijk helpen met het begrijpen van alle stof, gelijk alles gebruiken waar dat maar mogelijk is, dan leer je de stof gelijk.
+
+IList<T>, invariant voor T
+IEnumerable<T>, covariant voor T
+
+C# heeft ook generics en generic constraints.
+
+Conventies:
+- method-namen: PascalCase
+- class-namen: PascalCase
+- field-namen: camelCase
+
+C# => Java
+class Rommel : Stuff {...} => class Rommel extends Stuff {...}
+base => super
+foreach => enhanced for
+properties => get/set
+
+var, het type wordt bepaald at compile-time (zoals auto in C++), in Java werkt var at run-time.
+initializer lists zijn ook beschikbaar (syntactic sugar, doe je onderzoek).
+
+nullable types kunnen met type?, of Nullable<type>
+Je hebt ook null-coalescing operator, a??b??c??d, geeft het eerste non-null item, of null als ze allemaal null zijn.
+null-conditional: ?. geen idee hoe die werkt
+En nog iets, te snel weggehaald.
+
+Encapsulatie is het verbergen van implementatie details, maak niet alles public, maar maak zoveel mogelijk private. Als dat niet kan dan is denk ik protected ook ondersteund voor C#.
+
+Stuct: Elke operatie maakt een copy tenzij ref gebruikt is.
+
+Ook operator-overloading is mogelijk in C#. Dat is ook goed om naar te kijken. 
+public static outputType operator + (MyClass left, MyClass right) {...}   // Overload de + operator voor MyClass. Je kan ook -, /, *, ==, >, <, >=, <=, etc.
+
+C# hiding moeten we kennen.
+Ook virtual en new moeten we kennen in de context van een methode-signatuur. Je kan ook een child-class type-casten naar de parent.
+
+Blijkbaar wisten de herkansers niks over hidden methods en variance, dus als je dat wel weet, dan ben je waarschijnlijk geen herkanser.
+
+sealed geeft aan dat de methode niet mag worden overloaded.
+
+Destructor is om te bepalen hoe een item uit het geheugen moet worden verwijderd. Hierin kan je bijvoorbeeld bestanden vrijgeven.
+De overloaded destructor wordt vóór de default destructor uitgevoerd.
+
+Variantie:
+  contravariant		Action<Derived> item = new Action<Base>();		// Counterintuitief
+  covariant		IEnumerable<Base> item = new IEnumerable<Derived>();	// Intuitief
+  invariant		Het type moet precies kloppen, het mag niet een derrived of parent zijn.
+
+Aan het einde volgde herhaling van het vorige hoorcollege.

@@ -1,0 +1,71 @@
+# REST API's
+Representational State Transfer, een architectural style, geen protocol, geen standaard.
+
+Seperation of cencerns between server and client.
+
+## API is RESTful als die aan de volgende eisen voldoet
+- Het verzoek moet alle nodige informatie bevatten om het request te vervullen
+- Geen sessiestaat op de server opgeslagen
+- Het gebruikt een header en een body.
+- Resource georienteerd (URI's, Universal Resource Identifier)
+
+### GET
+Request data.
+
+### PUT
+Change data.
+
+### POST
+Create data.
+
+### DELETE
+Get rid of data.
+
+### HATEOAS
+Hypermedia As The Engine Of Application State
+Kan mbv links alle resources ontdekken en ook de acties en overgangen zijn obv links aangegeven.
+
+## Universal Resource Identifier
+Identificeert een resource net als hoe een URL de locatie van een resource.
+
+# API Design Principes
+## API First
+### Begin met de API
+API is een interface tussen de frontend en de backend.
+### Scheiding van verantwoordelijkheden
+Dit scheidt de taken van de backend en frontend zodat de verschillende teams in parallel kunnen werken.
+### Toekomstbestendig
+Zorg dat het makkelijk kan worden geïntegreerd met verschillende systemen of makkelijk kan worden aangepast zodat dat makkelijk wordt.
+### Consistentie
+Zorg dat het hetzelfde werkt ongeacht wie het opvraagt.
+### Vroegtijdige validatie
+Zorg dat het zo snel mogelijk wordt getest zodat de wijzigingen zsm kunnen worden toegepast.
+
+## Sorteren/filteren/pagineren
+### Sorteren
+Met URI parameter ?sort=naam.
+### Filteren
+Met URI parameter ?naam=john
+### Pagineren
+Met URI parameter ?page=2
+
+GraphQL is een query language voor API's. **Het is GEEN databasetaal zoals SQL**
+
+# Authenticatie + Identity + Claims/roles
+## Identificatie
+Wie de fuck bent u?
+## Authenticatie
+Hoe de fuck kunt u bewijzen Bob te zijn?
+## Autorisatie
+Heeft u de fucking rechten om deze actie te ondernemen?
+### Role-based access control (RBAC)
+Rechten per rol.
+### Attribute-based access control (ABAC)
+Op basis van alles behalve de rol (evt een combinatie van attributen) wordt bepaald of je iets mag.
+**Het is mogelijk dat RBAC en ABAC samengaan, dat gebeurd zelfs vaak in de praktijk**
+
+# ASP.NET Core Identity
+Framework voor het bouwen van webtoepassingen, authenticatie, autorisatie en accountbeheer.
+
+## OpenAPI / Swagger
+Specificatie voor het bouwen van API's, definieert een standaard.

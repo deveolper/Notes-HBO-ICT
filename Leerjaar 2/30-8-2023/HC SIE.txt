@@ -1,0 +1,25 @@
+Week 1: Security by Design
+Week 2: Privacy by Design
+Week 3: Ethics by Design
+Week 4: Architecture and Design 1
+Week 5: Architecture and Design 2
+Week 6: SSD, testen, beheer en onderhoud
+
+Multiple choice toets gaat over de theorie, de hoorcolleges en instructiecolleges.
+
+Eigenlijk komt alles van Security Essentials terug.
+
+Onder andere dingen als een risico-analyse, het ontwerp etc. Ook op basis van de eisen.
+
+Een webbrowser verbindt de webserver mde "de frontend", de webserver zorgt dat de gebruiker een pagina te zien krijgt.
+
+De frontend webserver is verbonden met de backend webserver om bvb data op te halen. De backend server doet alles wat met de database moet gebeuren.
+
+De backend webserver wordt ook wel de application server genoemd. Soms is de frontend server dezelfde als de backend server.
+
+Ook white-hat, black-hat en gray-hat zijn aan bod gekomen.
+
+Ook Authenticatie en Authorisatie is aan bod gekomen.
+
+Audit log:
+- Zie Discord Audit log voor een voorbeeld, dit houd bij wat er gebeurd met betrekking tot beveiliging.

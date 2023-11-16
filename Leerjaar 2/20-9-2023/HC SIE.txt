@@ -1,0 +1,66 @@
+**Architecture and design**
+- Risicomanagement
+  Hoe bepaal je **wat** je gaat beveiligen en **hoe**?
+  Hiervoor is een **risicoanalyse** noodzakelijk
+  - Kwalitatief
+    Je "schat" het in
+  - Kwantitatief
+    Je kwantificeert de risico's. Hierbij heb je een lijstje
+- Beveiligingsmaatregelen
+
+**Objecten waarover risicoanalyse kan worden uitgevoerd**
+- Bedrijfsprocessen
+- Informatiesystemen
+
+In dit vak gaat het voornamelijk over de technische beveiliging
+
+Er zijn een hoop partijen betrokken
+
+**Kroonjuwelenanalyse**
+- Een vereenvoudigde kwantitatieve risicoanalyse
+- Snel
+- Gericht op de belangrijke onderdelen (de kroonjuwelen)
+- Niet altijd genoeg, je kan dingen over het hoofd zien
+
+**Preventieve maatregelen**
+Bedoeld om te voorkomen dat er iets mis gaat.
+- Cryptografie
+-- Encryptie
+Het onleesbaar maken van gegevens zodat die alleen voor de bestemde partij te lezen is.
+Integriteit: de informatie is origineel en niet aangepast
+Vertrouwelijkheid: een hacker kan het niet lezen
+Beschikbaarheid: de informatie moet bij de ontvanger aan
+--- Symmetrisch encryptie
+De sleutel die versleutelt, is ook de sleutel die ontsleutelt.
+Ceasar en enigma zijn als voorbeelden gegeven, waarschijnlijk hoef je die niet te weten.
+AES is een modern voorbeeld.
+--- Asymmetrisch encryptie
+Voor encryptie en decryptie worden twee verschillende sleutels gebruikt. Dit is handig om een symmetrische sleutel uit te wisselen of om digitale handtekeningen te zetten.
+Dit gebruikt public keys en private keys. De private key is top geheim, maar de public key is publiek.
+Voor een digitaal signatuur gebruik je gewoon de private key om te versleutelen zodat de public key kan decrypten. Je kan ook de hash van het bericht signeren en het bericht in plain-text
+zenden.
+-- Hashing
+Voornamelijk om de integriteit van berichten te waarborgen of om wachtwoorden te beveiligen. Het idee is dat je niet makkelijk van de hash naar het bericht kan, maar wel makkelijk van het
+bericht naar de hash. Een soort vingerafdruk van de gegevens. **MD5 is onveilig** niet collision resistent. Alle hashfuncties hebben collisions, maar bij MD5 zijn die al ontdekt.
+SHA2-256 en SHA2-512 zijn beter opties. SHA3 is niet door de docent behandeld, maar bestaat wel.
+--- Salt
+Extra waarde die je achter het wachtwoord plaatst om te zorgen dat verschillende gebruikers met hetzelfde wachtwoord, toch een andere hashwaarde krijgt.
+
+- Toegangsbeheer
+-- Specificeren van toegang (RBAC, DAC, ACL) **TOETSSTOF**
+- Verlenen van toegang
+-- Identificatie (bepalen van identiteit)
+-- Authenticatie (identiteit verifieren)
+-- Authorisatie (toekennen van rechten)
+- Bewaken van toegang
+-- Constant bijhouden van toegang (1st-soll-vergelijking)
+-- Monitoren, loggen en acteren op inbraken of privillege escalation
+- Netwerkbeveiliging
+- Applicatiebeveiliging
+- Testen van beveiligingsmaatregelen
+-- Doe tests of de beveiliging ook werkt in productie (white-hat-hacker)
+- Security Chaos Engineering
+Voer gesimuleerde aanvallen uit op verschillende onderdelen. Even een kabeltje lostrekken.
+
+**Detectie**
+Stel vast dat het misgaat. Zo simpel is het. Als de detectie heeft plaatsgevonden, dan kan je acties ondernemen om de gevolgen te mitigeren.
