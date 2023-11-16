@@ -1,0 +1,195 @@
+Preventieve maatregelen worden vandaag behandeld.
+
+Doelen:
+- Organisatorische en technische maatregelen
+- Beeld van preventieve maatregelen
+- Componenten van cryptografie uitleggen
+  Encryptie
+  Digitale handtekening
+  Key management
+
+ISMS = Information Security Management System
+
+Preventieve maatregelen
+Detectieve  maatregelen
+Repressieve maatregelen
+Correctieve maatregelen
+
+Voorbeeld: HHS
+  Slecht brandbare vloerbedekking ->
+    Preventieve maatregel (voorkomt brand)
+  Brandmelder ->
+    Detectieve maatregel (detecteerd brand)
+  Er staat een team klaar ->
+    Repressieve maatregel (blust de brand, beperkt schade)
+    Er is brand geweest dus er is schade
+  Klussers staan klaar om alles te repareren ->
+    Correctieve maatregel (hersteld de schade van de brand)
+
+Organisatorische maatregelen:
+  ITIL = Information Techonology Infrastructure Library.
+  ITIL is een best practice
+  ITIL bestaat al sinds de jaren 80 en is nu op versie 4
+  ITIL is *geen* methode
+
+ITIL is in de praktijk ontstaan en wordt voortdurend verder
+ontwikkeld.
+
+Doelen ITIL:
+- Verstrekken van goed bruikbare praktische richlijnen
+voor IT service management
+- Integratie van IT naar bedrijfsdienst
+- Maakt management wat makkelijker
+
+ITIL V3 lifecycle:
+- Bestaat uit stappen.
+
+Incident management ->
+  change management
+Herhalend incident ->
+  problem management (root cause analysis nodig) ->
+  knowledge management
+
+Change Management:
+  Wat?
+  - Gericht op het beheersen en beheren van wijzigingen
+  Waarom?
+  - Kan impact hebben op informatiebeveiliging
+  Hoe?
+  - Wijzigingen doorlopen voorgedefinieerde activiteiten
+
+RFC = Request for Change, bepalen van impact op informatie-
+beveiliging.
+Tabel 11.1 (waarschijnlijk in boek te vinden). Staan meer
+activiteiten.
+
+Configuration Management:
+  Wat?
+  - In kaart brengen van IT-infrastructuren en systemen en hun
+  status.
+  Waarom?
+  - Inzicht krijgen in de organisatie
+  Hoe?
+  - CI = configuration item
+  - CMDB = Configuration Management Database
+
+Release & Deployment Management
+  Wat?
+  - Versiebeheer van software en de distributie ervan
+  Waarom?
+  - Houd je software up-to-date, en implicatiebeheer
+  Hoe?
+  - Definive Software Library (DSL) voor beheren van
+  geautoriseerde software
+  - DSL voor broncode, depot, leverancier en installatiebestanden
+
+  Als er iemand anders in huis ook het apparaat van het bedrijf
+  gebruikt kan het zijn dat het bedrijf problemen krijgt bij
+  illegale software omdat het apparaat bij het bedrijf staat
+  ingeschreven.
+
+Service Level management
+  Wat?
+  - Vastleggen en nakomen van afspraken tussen klanten en
+  leveranciers in de vorm van een Service Level Agreement (SLA).
+  Waarom?
+  - Vaststellen beveiligingsbehoefte van de klant.
+  Hoe?
+  - Indentificeren, verifieren, onderhandelen en vastleggen van de
+  beveiligingsbehoefte tussen leverancier en klant.
+  - Bewaken van en rapporteren over geleverde diensten van
+  leverancier aan de klant in de vorm van Service Level Reports.
+
+  Het vaststellen van de beveiligingsbehoefte kan je opsplitsen in
+  BIV:
+  - Hoe beschrikbaar moet het systeem zijn?
+  - Hoe belangrijk is de integriteit van de data?
+  - Hoe geheim (vertrouwelijk) is de data?
+
+Availability Management
+  Wat?
+  - Waarborgen van de B van BIV (beschrikbaarheid).
+  Waarom?
+  - IT-componenten en diensten moeten volgens afspraak werken.
+  Hoe?
+  - Performance-meet tools
+
+Capacity Management
+  Wat?
+  - Optimaal inzetten van IT-middelen
+  Waarom?
+  - Hoge prestaties en lage kosten is beter dan andersom
+  Hoe?
+  - SLM vertalen naar de nodige middelen
+  - Monitoren van middelen
+  - Opschalen van middelen obv behoeften
+
+Patch Management
+  Wat?
+  - Up-to-date houden van software
+  Waarom?
+  - Lost beveiligingsproblemen op
+  - Voert verbeteringen door
+  Hoe?
+  - Vaak checken op updates
+  - Patches implementeren volgens Change Management
+
+Cryptografie
+Maakt een bericht onleesbaar.
+Encryptie: Het versleutelen/vercijferen van gegevens
+Decryptie: Het ontsleutelen/ontcijferen van gegevens
+Grieks voor "geheimschrift"
+Data kan ook in een afbeelding verborgen worden (steganografie)
+
+"Het alfabet, van a tot z zoals bij jullie hopelijk bekend"
+Het alfabet wordt verschoven bij de Caesar encryptie.
+Over encryptie heb ik aardig wat voorkennis, dus ik ben voor
+vragen beschikbaar.
+De Ceasar encryptie heeft maar 26 mogelijkheden. Zelfs met de hand
+is die snel te kraken.
+
+Security by obscurity:
+- Geheimhouding van het algoritme
+- Praktijk: onveilig
+  - Algoritme kan toch uitlekken
+  - Onvoldoende review
+  - Bevat mogelijk kwetsbaarheden
+
+Berichtencryptie / end-to-end-encryptie:
+- Volledige bericht wordt versleuteld
+Lijnencryptie:
+- Communicatiekanaal is versleuteld
+Encryptie door gebruik van software
+Encryptie door gebruik van hardware:
+- Hardware-encryptie is sneller
+
+Symmetic-key: Secret-key
+  1 sleutel wordt gebruikt voor versleutelen en voor ontsleutelen
+Asymmetric-key: Public-key en Private-key
+  Public-key kan je op social-media posten en de beveiliging is
+  niet om zeep geholpen. Je kan met de public-key alleen
+  versleutelen en handtekeningen checken
+  Met de private-key kan je alleen ontsleutelen en handtekeningen
+  zetten.
+
+Van asymmetric key cryptography weet ik zo veel dat
+ik mijn eigen implementatie heb gemaakt. Dus hier kan ik vrijwel
+alle vragen over beantwoorden.
+
+Symmetrische sleutels zijn korter dan asymmetrische encryptie
+
+Een hash-functie is een "versleutel"-methode die niet ontsleuteld
+kan worden (althans, niet makkelijk voor zover bekend).
+
+Q & A:
+Q: Wat is best practice precies?
+A: Iets wat in de praktijk is bewezen en wat voortdurend wordt
+verder ontwikkeld. In verschillende situaties in verschillende
+markten is het getest en blijkt te werken.
+Q: Is het dan echt dé beste manier?
+A: Ja
+Q: Is change management een functie? Of een taak?
+A: In een groot bedrijf is het een functie. Maar vaak is het een
+extra activiteit naast het normale werk.
+Q: Nieuwere versies kunnen toch instabiel zijn?
+A: Ja, gebruik dus geen beta versie

@@ -1,0 +1,69 @@
+Blended learning: verwerken en voorbereiden wordt afgewisseld met hoorcolleges.
+Spreekuur: Daar kan je vragen stellen (vangnet als je achter drijgt te lopen).
+Maatwerk: Voor extra les bij achterstand, extra opdrachten als het te makkelijk is, of iemand die er bij zit. Ook om boven jezelf uit te stijgen.
+  Plusklas: SL6.42, voor extra uitdaging
+  Pre-teaching: SL7.18, voor extra uitleg
+  Samen leren: SL8.17, in stilte samen leren
+Bij practica: Elke vraag kan je stellen en wordt beantwoord. Bijvoorbeeld oefenen met interviewen.
+Instructiecollege (hoorcollege): krijg je informatie die je bij de practica nodig hebt.
+
+Onder "Spreekuur" op BrightSpace. Dit gaat via Teams.
+
+***
+In BrightSpace staat een weekschema van REQS (incl. deadlines, PF = Peer Feedback).
+***
+
+Productvisie wordt nog uitgelegd in een later hoorcollege.
+De backlog is gebaseerd op de productvisie.
+De acceptatiecriteria is gebaseerd op de backlog.
+Het adviesrapport is gebaseerd op de acceptatiecriteria.
+
+Korte termijn geheugen: klein geheugen wat snel iets oppakt, maar is erg gelimiteerd. Soort CPU-cache.
+Lange termijn geheugen: de harde schijf, grote opslag maar erg traag.
+Het is handig om eerst de stof te begrijpen, daarna pas in het lange termijn geheugen te plaatsen.
+Chunking: kennis aan elkaar koppelen zodat er meer info in het korte termijn geheugen past.
+
+***
+WE MOETEN ZELF EEN OPDRACHTGEVER VINDEN!! EEN ECHTE OPDRACHTGEVER!! NIET VERZONNEN!!
+PRODUCT MOET JE ZELF HEBBEN GEMAAKT!!
+***
+
+Tips:
+- Gebruik de pomodoro-techniek (tijdje leren, tijdje pauze, tijdje leren, tijdje pauze, ...). Zoek een pomodoro-timer op!
+- Maak strategisch gebruik van diffused thinking (even iets anders doen zodat je er even niet aan denkt, levert nieuwe inzichten).
+- Focussed thinking daar loop je soms vast.
+- Check het voorbereidingsmatteriaal op BrightSpace!!
+- De verwerking is ook op BrightSpace beschreven!! Dit bevat wat er van je verwacht wordt.
+
+Mijn leertechniek (maak ik niet altijd gebruik van, maar is handig om wel te doen):
+- Opsommen wat ik moet weten (de raw data)
+- Zorgen dat ik het begrijp en sorteren (chunking)
+- Oefenen met pomodoro (naar de hardeschijf schrijven)
+
+Leerdoelen van interviewen:
+- Overzicht van manieren waarop je requirements kan achterhalen.
+- Je kan een interview afnemen als methode om deze requirements te achterhalen.
+
+Belangrijk:
+- Voorbereiding
+  - Halve werk
+  - Maar 1 kans voor een eerste indruk
+  - Professioneel en verzogd
+  - What is in it for me
+  - Bedenk wat je wil bereiken
+  - Bedenk back-up vragen
+- Structuur
+  - Opening
+    - Vragen stellen
+  - Kern
+  - Afsluiting
+    - Eigen conclusie, heb je het goed begrepen?
+    - Afscheid nemen
+- Actieve houding
+- Open vragen
+- Waaromvragen
+- Juiste invalshoek
+
+Q & A:
+Q: Wat is nu een "echte" opdrachtgever? Kan bijvoorbeeld mijn vader mij een opdracht geven die kan worden gebruikt bij LabWest?
+A: Ja

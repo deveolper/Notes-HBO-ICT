@@ -1,0 +1,118 @@
+Programming is uiteraard mijn specialiteit, dus hierin kan ik sws altijd helpen.
+
+We gaan het hebben over doubles (64 bit floating point numbers) en scope.
+
+De scope is het stuk code waarin een variabele bestaat.
+
+We gaan naar het volgende deel van de StepIK opdrachten.
+
+In java gebruik je altijd een punt om een double aan te geven.
+
+De format-string gingen we lekker snel doorheen.
+Om een format-string te printen gebruik je
+
+```java
+System.out.printf(format-string hiero, eerste getal, tweede getal, ...);
+```
+
+Ik vrees dat ^^^ dat ^^^ niet correct wordt getoont in Discord. Maar we zullen zien.
+
+De doubles zijn gewoon kommagetallen.
+
+Om doubles te vergelijken kan je het beste eerst
+de twee van elkaar aftrekken en het resultaat met 0.0 vergelijken.
+Dat komt doordat 2 doubles belachelijk dicht bij elkaar kunnen liggen.
+
+Opdracht:
+	Methode "kassabon":
+		Krijgt aantal pizza's mee
+		Aantal burgers
+		En aantal shakes
+	Methode "prijsPizza", "prijsBurger" en "prijsShake" geven de prijs per stuk.
+
+	Toon een kassabon met het aantal items van elk type
+	De prijs per stuk
+	Het subtotaal van alle items van het type
+	En het totaal
+
+Uitwerking:
+```java
+public class Main {
+	public static double prijsPizza() {
+		return 11.455;
+	}
+
+	public static double prijsBurger() {
+		return 5.567;
+	}
+
+	public static double prijsShake() {
+		return 3.65;
+	}
+
+	public static void toonProductregel(int aantal, String product, double prijs) {
+		System.out.printf("%2d %6s à € %5.2f    € %6.2f%n", aantal, product, prijs, aantal*prijs);
+	}
+
+	public static void toonKassabon(int aantalPizzas, int aantalBurgers, int aantalShakes) {
+		toonProductregel(aantalPizzas, "pizzas", prijsPizza());
+		toonProductregel(aantalBurgers, "burger", prijsBurger());
+		toonProductregel(aantalShakes, "shakes", prijsShake());
+		System.out.printf("%n%35s%n", "------");
+		double som = aantalPizzas * prijsPizza() +
+			     aantalBurgers * prijsBurger() +
+			     aantalShakes * prijsShake();
+		System.out.println("%-27s€ %6.2f", "Totaal", som);
+	}
+
+	public static int leesAantal(String product) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.printf("Voer het aantal %s in: ", product);
+		return scanner.nextInt();
+	}
+
+	public static void main(String[] args) {
+		int pizza = leesAantal("Pizza's");
+		int burger = leesAantal("Burgers");
+		int shake = leesAantal("Shakes");
+	}
+}
+```
+
+Cheat sheet voor format-strings (bron: https://alvinalexander.com/programming/printf-format-cheat-sheet/)
+%c	character
+%d	decimal (integer) number (base 10)
+%e	exponential floating-point number
+%f	floating-point number
+%i	integer (base 10)
+%o	octal number (base 8)
+%s	a string of characters
+%u	unsigned decimal (integer) number
+%x	number in hexadecimal (base 16)
+%%	print a percent sign
+\%	print a percent sign
+
+Wat is Math.abs?
+	Geeft de positieve waarde terug. Als de invoer positief is, veranderd er niks.
+	Als de invoer negatief is, wordt het min-teken verwijderd (keer -1).
+
+Voorbeeld-implementatie:
+```java
+public class Math {
+	public static int abs(int x) {
+		if (x < 0) {
+			return x * -1;
+		} else {
+			return x;
+		}
+	}
+
+	public static double abs(double x) {
+		if (x < 0.0) {
+			return x * -1.0;
+		} else {
+			return x;
+		}
+	}
+}
+```

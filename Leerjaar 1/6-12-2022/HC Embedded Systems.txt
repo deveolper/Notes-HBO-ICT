@@ -1,0 +1,99 @@
+De proeftoets op Brightspace bevat tentamenstof
+Brightspace bevat ook content voor de Challenge onder het deel van Embedded Systems.
+
+Bitmanipulatie: Bits setten en resetten in registers
+AND, OR en XOR moet je kennen op de toets
+
+AND kan je gebruiken voor het checken van een bit
+Het resetten van een bit kan je doen door het mask te inverten en dan AND te gebruiken
+Het setten van een bit doe je met OR
+Het togglen van een bit doe je met XOR
+
+Bitmask:
+  Een 1 op de plaats die je wil hebben, en een 0 op de andere plaatsen.
+  Vaak is er maar 1 bit met de waarde 1 in een mask.
+
+Byte inverteren:
+  ~X
+
+  Veranderd alle 1'en van X in 0'en en andersom.
+
+Bit setting:
+  X |= 1 << index
+
+Bit resetting:
+  X &= ~(1 << index)
+
+Left-shift: operand1 << operand2
+Right-shift: operand1 >> operand2
+
+Operand2 is het aantal posities
+Elke positie die je naar rechts shift deelt de waarde door 2 en rond af naar beneden.
+Elke positie die je naar links shift verdubbeld de waarde. Bits die aan de linker kant
+uitsteken vallen eraf.
+
+Functies microcontroller:
+  GPIO (General Purpose Input Output, zie les 1)
+    Voor het aansturen en uitlezen van pinnen op de microcontroller
+  UART (Universal Asynchronous Receiver Transmitter)
+    De seriele poort, zet bytes om in bitreeksen en andersom
+    Ondersteunde communicatie:
+    - Transmit (TX)
+    - Receive (RX)
+    Deze 2 kan het tegelijkertijd doen.
+  I^2C (i kwadraat c = inter-ic-bus, twi = two-wire interface)
+    Voor communicatie tussen master en slave, gebruikt 7 bit adres (geen tentamenstof)
+  SPI
+  PWM (Pulse Width Modulation)
+    Simuleert een analoge signaal door een digitaal signaal heel snel aan en uit te zetten
+
+    Als het signaal van 3.3V de helft van de tijd aan staat en de andere helft uit, dan is
+    het effect een signaal van 1.65V
+
+    Digitaal signaal: Discrete quantiteiten (0V of 3.3V)
+    Analoog signaal: Continuem aan waardes [0V - 3.3V]
+
+    PWM wordt o.a. gebruikt om een Servo Motor aan te sturen.
+
+PWM Duty Cycle:
+  De hoeveelheid tijd dat het aan staat.
+  Een duty-cycle van 10 % betekend dat het PWM signaal voor 10 % van de tijd aan staat en
+  de andere 90 % van de tijd uit staat. Dit levert dus 3.3 / 100 * 10 = 0.33V op.
+  En door de snelheid van PWM lijkt het op een 0.33V analoog signaal.
+
+PWM period:
+  De tijd voordat het herhaalt.
+  Voorbeeld:
+    10 seconden stroom, dan 90 seconden geen stroom
+    Resultaat:
+      Duty Cycle: 10 %
+      Period: 100 seconden
+  analogWritePin gebruikt een 10 bit unsigned integer [0-1023] als waarde.
+  analogSetPeriod veranderd de periode van het signaal (meestal niet nodig).
+
+  De Arduino kan slechts een 8 bit integer [0-255] aan met analogWrite
+  De duty-cycle is dus minder precies.
+
+  De periode is bij Arduino niet instelbaar.
+
+MakeCode:
+  Ondersteund alle Micro:bit functies, maar werkt lastig met externe hardware
+Arduino IDE:
+  Werkt alleen met C++, maar je kan er vrijwel alles mee.
+  Alleen bluetooth, microfoon en touch-sensor is lastiger hiermee.
+
+Vrijwel alle C-code is ook C++ code. De toets bevat Arduino-code, maar niet veel. Maak de
+proeftoets om een idee te krijgen over het tentamen.
+
+Arduino code zit tussen C en C++ in.
+
+Arduino Uno werkt intern met 5V, micro:bit, Raspberry PI, etc. werken met 3.3V.
+
+************************************************
+************************************************
+3.3V != 5V. Als je deze systemen mixt zonder hier rekening mee te houden gaan ze kappot!
+************************************************
+************************************************
+
+Q: Komt 2-complement op de toets?
+A: Nee

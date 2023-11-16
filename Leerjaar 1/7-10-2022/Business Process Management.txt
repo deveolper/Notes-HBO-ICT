@@ -1,0 +1,46 @@
+Een model is een vereenvoudigde weergave van de werkelijkheid.
+
+Voor elke doorgang van het proces moet hetzelfde BPMN gebruikt kunnen worden.
+
+Aantekeningen over een BPMN
+===========================
+diagrams.net > Naar more shapes
+	Dan krijg je een overzicht met alles.
+	Deselecteer alles. Ga naar business en selecteer BPMN 2.0
+	Van de gateways is alleen de eerste rij nodig. En de eerste van die rij is niet eens nodig.
+
+De sequence flow moet met doorgetrokken lijn met een gesloten, gevulde pijlpunt.
+
+Met een open pijlpunt betekend iets anders.
+Met een stippellijn of gestreepte lijn heeft andere betekenissen.
+
+Een gateway doet niks.
+
+De activiteit vóór de de gateway bepaald wat er moet gebeuren.
+
+Op de pijl die uit een gateway komt moet staan wat de precieze conditie is om dat pad te kiezen.
+
+Exclusive gateway
+-----------------
+Selecteerd precies 1 optie.
+Er zijn minstens 2 opties tenzij het paden samenvoegt.
+Geen samenvoeging nodig kan wel voor het overzicht.
+Mag ook zonder kruis genoteerd worden. Maar wordt niet aanbevolen op de toets.
+Ruit met een kruis erin.
+
+Inclusive gateway
+-----------------
+Selecteerd 1 of meerdere opties.
+Moet samengevoegd worden met een 2e inclusive gateway.
+Ruit met cirkel erin.
+
+Parallel gateway
+----------------
+Selecteerd ALLE opties. Ongeacht wat er vooraf gaat.
+Moet samengevoegd worden met een 2e parallel gateway.
+Hoeft niet voorafgegaan te worden door een activiteit.
+Ruit met plusje erin.
+
+TOETS
+=====
+Op de toets krijg je zo een tabel als we ook in de huiswerkopdracht hebben gekregen.

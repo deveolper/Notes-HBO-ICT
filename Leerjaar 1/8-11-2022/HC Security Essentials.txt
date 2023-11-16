@@ -1,0 +1,52 @@
+Eerst stelt de docent zich voor. Beetje rommelig.
+
+We hebben het al gehad over kwetsbaarheden en bedreigingen.
+Vanaf nu gaan we het hebben over maatregelen.
+
+Doel:
+	Wat zijn de verschillende maatregelen?
+		Wat is preventief, repressief etc?
+		Wat zijn technische, en organisatorische maatregelen?
+		Hoe komt informatiebeveiliging in een organisatie tot stand?
+
+Plan do check act (PDCA):
+	Maak een plan
+	Voer het uit
+	Controleer het
+	Acteer obv de resultaten
+
+	BIV = Beschikbaarheid, integriteit, vertrouwelijkheid
+		Ook dat weten we al.
+
+Intrusion detection system (IDS, detecteerd een aanval)
+Intrusion prevention system (IPS, voorkomt een aanval)
+
+CyberKillChain is vgm een afdwaling van de stof. Maar anders is het goed te
+googelen.
+
+Preventie: voorkomt een aanval
+	Intrusion Prevention System
+Detectie: Detecteert een aanval
+	VirusTotal.com
+	Rookdetectoren
+	Intrusion Detection System
+Repressie: Reduceert schade van aanval
+	Verwijderen of neutraliseren van malware
+	Datalek melden bij betrokkenen
+	Offline brengen van netwerksegment
+
+Voorbeelden zijn gegeven (maar niet genoteerd).
+
+Hierna zijn rollen in informatiebeveiliging opgesomt. Om heel eerlijk te zijn,
+ben ik een beetje in slaap gevallen.
+
+Maar er zaten rollen tussen die controleert of de maatregelen uitgevoerd zijn.
+En of er meer nodig is etc. Fysieke, logische en organisatorische maatregelen
+zijn uitgelegd. Deze zijn eigenlijk wat de naam impliceert.
+
+Q & A:
+Q: Wegens NAT zijn er meerdere mensen met hetzelfde IP, zou een IPS (intrusion
+preventions system) dan niet een Denial of Service attack makkelijker maken?
+Als je gewoon een veelgebruikt IP geblokkeerd kan krijgen?
+A: De uitdaging is dat voorkomen door zorgvuldige regels te maken. Hiervoor wordt
+machine learning tegenwoordig gebruikt.

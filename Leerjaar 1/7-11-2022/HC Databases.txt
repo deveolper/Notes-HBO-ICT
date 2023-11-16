@@ -1,0 +1,268 @@
+Ik heb al SQL gehad op het mbo, dus ik kan ook helpen hiermee.
+
+Een van de eeste dingen die we gaan leren is hoe we de data gaan
+modelleren. Op de slide staan meerdere methodes.
+
+Wij doen het met een klassendiagram.
+
+Databases hoort bij de differentiatie van Business & Data Management.
+De eerste weken hadden we het vooral over business, nu gaan we het vooral
+hebben over de data.
+
+CRM-systemen horen niet bij de stof, maar draagt wel bij.
+Custommer Relationship Management (CRM) bevat gegevens van klanten.
+ERP-systemen bevat gegevens over partners.
+
+In het BPMN is een data-store een voorbeeld van de data-management.
+
+Een data-store is eigenlijk gewoon een database (er zit nog meer nuance in).
+
+Database is niets meer dan een systeem waar tabellen met data in zitten.
+In een relationele database hebben de tabellen met elkaar te maken.
+
+Bij de business wordt ook in user-stories weergegeven (toont afbeelding
+van een use-case diagram, user-storie is eigenlijk iets anders, maar is 
+niet het onderwerp van dit HC, zie Q&A voor meer info).
+
+IMDb = Database waarin film-informatie wordt bijgehouden.
+Dit is een website: https://www.imdb.com/
+
+Als voorbeeld gebruiken we Lord of the Rings.
+Wat zit er allemaal in de database:
+- Titel
+- Auteurs
+- Vergelijkbare films
+- Etc
+
+Laten we een ander voorbeeld nemen (The Shawshark Redemption):
+Wat zit er in:
+- Duur van de film
+- Jaartal van de film
+
+Film:
+- Titel
+- Jaartal
+- Leeftijdscategorie
+- Speelduur
+
+Wat zien we nog meer:
+- Lijst van acteurs
+- Regiseur
+
+Wat zien we van de acteurs:
+- Naam
+- Geboortedatum
+- Geboorteplaats
+- Lijst van films waarin deze acteur heeft gespeeld
+- Etc
+
+Wat zien we van de regiseur:
+- Naam
+- Geboortedatum
+- Geboorteplaats
+- Lijst van films die deze regiseur heeft geregiseerd
+
+
+De tabellen:
+############
+Film:
+- Titel
+- Jaartal
+- Leeftijdscategorie
+- Speelduur
+
+Acteur:
+- Voornaam
+- Achternaam
+- Geboortedatum
+- Geboorteplaats
+- Geboorteland
+
+Regiseur:
+- Voornaam
+- Achternaam
+- Geboortedatum
+- Geboorteplaats
+- Geboorteland
+############
+
+Film heeft een relatie met acteur
+Regisseur heeft een relatie met film
+
+Regiseur heeft GEEN relatie met acteur, maar kan wel indirect gelinkt
+worden.
+
+Eigenlijk overal zijn databases.
+
+Les 1: Gegevensmodel (week 10)
+Les 2: Relationeel representatiemodel (week 11)
+Les 3: Relationeel implementatiemodel (week 12)
+
+Daarna kan er een database van gemaakt worden.
+
+De eerste toets gaat over de eerste 3 lessen (week 13).
+
+Les 4, 5 en 6 gaat over SQL (structured query language).
+Daarna komt in week 17 een toets over les 4, 5 en 6 (weken 14, 15 en 16).
+
+MySQL workbench moet worden geïnstalleerd. Ook voor The Challenge.
+
+Op BrightSpace staat hoe je MySQL workbench kunt installeren.
+BrightSpace > Databases > Algemeen > Onderwijs Databases
+	Hier is de handleiding.
+	Eventueel kan ik hierbij helpen (denk ik).
+	Download ook de 3 databases en importeer deze.
+BrightSpace > Databases > Lessen
+	Hier vindt je nog meer informatie over het hoorcollege.
+
+Hoe stel je een klassendiagram op? Aan de hand van een voorbeeld:
+	Stap 1: Welke gegevens wil ik hebben?
+		Merk: Cars Jeans
+		Maat: W32L36
+		Kleur: Stonewashed
+		Prijs: € 49,95
+	Als je deze waardes opsomt voor een aantal voorbeelditems dan vormt
+	eigenlijk automatisch een soort tabel.
+	De kopjes zijn de tabelkolommen:
+		Merknaam
+		Maat
+		Kleur
+		Prijs
+	Naam van de klasse is in ENKELVOUD, **heel belangrijk**
+	Naam van de klasse staat boven de attributen.
+	De eigenschappen noemen we attributen. **OOK ENKELVOUD**
+
+Voorbeeld:
+	Berry     | Pieters  | b.f.s.pieter@hhs.nl
+	Tim       | Goes     | t.w.goes@hhs.nl
+	Marjolijn | de Jager | m.m.dejager@hhs.nl
+
+	Klassenaam: Docent	**ENKELVOUD**
+	Attributen:
+		Voornaam	**ENKELVOUD**
+		Achternaam	**ENKELVOUD**
+		Email		**ENKELVOUD**
+
+Voorbeeld:
+	DR  | Data Retrieval               | 4
+	BID | Business Intelligence Design | 4
+
+	Klassenaam: Course
+	Attributen:
+		Code
+		Naam
+		Aantal studiepunten
+
+Deze voorbeelden gaan we nu combineren:
+	Er is een associatie tussen docent en course
+	"geeft les bij". Waarbij de linker tabel de "docent" tabel is
+	En de rechter tabel is "course".
+
+	Als docenten meerdere lessen geven, en de lessen door meerdere
+	docenten worden gegeven moeten de quantiteiten worden aangegeven.
+
+	Minimale aantal links is altijd 0 of 1.
+	Maximale aantal links is altijd 1 of "veel".
+		Hierbij is "veel" niet een gelimiteerde quantiteit.
+
+	Een docent kan bij 0 vakken lesgeven.
+	Een docent kan ook bij veel vakken lesgeven.
+
+	Als er een * boven de lijn staat, betekent dat dat er 0 of veel
+	vakken lesgeeft.
+
+	Als er een docent meerdere vakken kan geven, moet het sterretje aan
+	kant van de vak-tabel staan.
+
+	Bij elk vak hoort 1 of meerdere docenten.
+	Dit betekent dat er boven hetzelfde lijntje aan de kant van de
+	docent de tekst 1..* kan komen te staan.
+	Een course heeft ALTIJD minstens 1 docent.
+	Maar een docent HOEFT NIET les te geven.
+
+	Als er een relatie is waarvan maximaal 1 docent bij maximaal 1
+	course hoort. Maar elk vak MOET minstens 1 coördinator hebben.
+
+	Dan moet aan de kant van de docent een 1 staan. Omdat elk vak door
+	precies 1 docent wordt gecoördineert.
+
+	En aan de kant van de course moet 0..1 staan. Omdat elke docent
+	maximaal 1 course kan coördineren. Maar dat hoeft die niet te doen.
+
+	0..* is precies hetzelfde als * maar alleen een * is beter.
+	1..1 is precies hetzelfde als 1 maar alleen een 1 is beter.
+
+	Minimaal aantal links | Maximaal aantal links | Multipliciteit
+	0		      | 1		      | 0..1
+	0		      | veel		      | *
+	1		      | 1		      | 1
+	1		      | veel		      | 1..*
+
+We doen nog een voorbeeld:
+	Een presentator kan meerdere programma's presenteren.
+	Een programma kan door meerdere presentatoren worden gepresenteerd.
+
+	Dus elke presentator kan bij 1 of meer programma's presenteren.
+		Dus aan de programma kant moet 1..* staan.
+	Elk programma wordt door 1 of meerdere presentator(en)
+	gepresenteerd.
+		Dus moet er aan de presentator-kant 1..* staan.
+
+	BELANGRIJK: deze multipliciteiten zijn de ENIGE MOGELIJKHEDEN:
+		0..1
+		1
+		*
+		1..*
+
+	Op dit moment kreeg ik trek.. 't is 10:38...
+
+Nog een voorbeeld:
+	Voedbalclub en een stad moeten een relatie hebben.
+
+	Een club heeft 1 stad
+	Een stad heeft 0 of meer clubs
+
+	Dus aan de stad-kant staat 1
+	En aan de club kant staat *
+
+	Als je de items hebt gepaird dan:
+		Als alle nodes *links* precies 1 lijn hebben
+		Dan heeft de relatie aan de *rechter* kant een 1
+
+Associatieklasse: Als een klasse een relatie heeft met beide einden van
+een veel op veel relatie dan kan dat een associatieklasse worden gebruikt.
+De titel van de associatieklasse is de vervanging van de tekst die de
+relatie beschrijft.
+
+**HUISWERK**
+Staat sws in BrightSpace (week 10), week 10 databases: Klassendiagram.
+Er moet een klassendiagram gemaakt worden.
+
+Hoe bepaal je aan welke kant je welke multipliciteit moet zetten?
+
+	Als je een lijst voorbeelditems hebt, met de bijbehorende lijntjes
+	Dan zie je links bijvoorbeeld dat elk item in de linker lijst 
+	precies 1 lijn naar *rechts* heeft.
+	Dat betekent dat er *rechts* een 1 moet.
+
+	Als je een lijst voorbeelditems hebt en elk item in de linker lijst
+	heeft 0 of veel lijnen naar *rechts*, dan moet *rechts* een ster (*)
+
+	Als je een lijst voorbeelditems hebt en elk item in de rechter lijst
+	heeft 0 of veel lijnen naar *links*, dan moet *links* een ster (*)
+
+	Als je een lijst voorbeelditems hebt en elk item in de rechter lijst
+	heeft precies 1 lijn naar *links* heeft, dan moet er *links* een 1
+
+	Wat je ook kunt doen is als je consistent de multipliciteit verkeerd
+	plaatst is het gewoon omkeren. Maar dat is riskanter.
+
+Toets is weer op papier. Als ik geen betere tekentool-krijg doe ik het weer gewoon
+op papier vrees ik.
+
+Q & A:
+Q: Aan het begin liet u een usecase-diagram zien en zei u dat het een
+userstory was.
+A: De docent heeft mijn gelijk bevestigd.
+Q: Kan je een andere SQL-tool gebruiken?
+A: Ja, maar dat wordt sterk afgeraden.

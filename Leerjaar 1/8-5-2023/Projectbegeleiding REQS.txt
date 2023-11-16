@@ -1,0 +1,39 @@
+We gaan beginnen met de backlog refinement
+We gaan reflecteren op eigen inbreng
+We gebruiken fist of five
+
+Aan het einde van de sprint moeten we hebben:
+- GUI (ontwerp)
+- Inlogmogelijkheid
+- Registratiemogelijkheid
+
+Per userstory moeten we acceptatiecriteria hebben noteren. De grens tussen wat en hoe moet worden bewaakt.
+De scrummaster leid de planning poker.
+
+Alleen voor guidesign, login en registratie;
+Features -> Stories -> Criteria
+
+Features
+--------
+Gebruiker moet eigen account hebben en moet kunnen registreren en inloggen
+-> Als een gebruiker wil ik mijn eigen account hebben, zodat ik toegang kan krijgen tot gepersonaliseerde functies en informatie op de website.
+- Het moet mogelijk zijn voor iemand zonder account om een account aan te maken met een nog niet in gebruikgenomen gebruikersnaam beveiligd achter een zelfgekozen wachtwoord
+- Het moet mogelijk zijn voor iemand die een geldige gebruikersnaam/wachtwoordcombinatie heeft om in te loggen in het bijbehorende account
+
+Gebruiker moet in een chatbox een vraag kunnen stellen
+-> Als een gebruiker wil ik in een chatbox een vraag kunnen stellen, zodat ik direct antwoord kan krijgen op mijn specifieke vraag of probleem.
+- Er moet een veld zijn waar de gebruiker een vraag kan invullen
+- Er moet een verzendknop zijn die het bericht naar de chatgeschiedenis verplaatst
+
+Administrator moet een interface hebben met velden voor kleur, gebruikerbeheer en beveiligingsinstellingen
+- Er moeten knoppen zijn voor het aanpassen van de kleur, deze hoeven nog niet te werken
+- Er moet een menu zijn voor gebruikersbeheer, dit menu hoeft nog geen functionaliteiten te hebben
+
+Gebuiker moet een gespreksgeschiedenis kunnen inzien en meerdere tabbladen kunnen openen
+- Geschiedenis moet minstens 4 miljard tekens aankunnen
+- Het moet mogelijk zijn om de geschiedenis terug te lezen
+- Het moet mogelijk zijn om minstens 1024 chats te hebben met de assistent
+
+Gebruiker moet een interface hebben voor het aanpassen van diens inloggegevens
+- Het moet mogelijk zijn om de gebruikersnaam aan te passen naar een andere nog niet in gebruikgenomen gebruikersnaam
+- Het moet mogelijk zijn om het wachtwoord aan te passen
