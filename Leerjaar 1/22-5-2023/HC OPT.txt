@@ -1,0 +1,48 @@
+Aantekeningen van het hoorcollege OPT
+=====================================
+
+Open Closed
+-----------
+Je wil dat de main-applicatie geen kennis nodig heeft van andere classes als dit niet echt noodzakelijk is.
+
+Observer Pattern
+----------------
+Die is eerder al behandeld. Zie eerdere aantekeningen.
+
+Template Method Pattern
+-----------------------
+Deze was eerder al behandeld.
+
+Abstract Factory Method Pattern
+-------------------------------
+Een factory is een class die een instance van een andere class aan kan maken. De abstract factory is een abstract class die de parent is van alle factories.
+Dit maakt het mogelijk om een arbitraire factory te gebruiken waar in de code dan ook. De subclasses zijn factories voor specifieke classes.
+Dit Pattern maakt het makkelijker om Open Closed toe te passen.
+
+Liskov (substitution) priniciple
+--------------------------------
+Dat een class altijd kan worden vervangen voor een subclass zonder dat dat problemen veroorzaakt.
+"Voeg nooit ongelijkwaardige classes toe in een super- & subclass-hiërarchie"
+
+Code Smell: Dupplicate Code
+---------------------------
+Spreekt voor zich, dubbele code is meestal niet goed.
+Dit zorgt ervoor dat als je een aanpassing doorvoert dat dan het andere stukje code wat je vergeten bent aan te passen niet doet wat je wil.
+Dit verziekt de onderhoudbaarheid van de applicatie.
+Dubbelecode in 2 of meer subclasses kan je vaak verplaatsen naar de parent.
+Als er een stuk code bijna identiek is, dan is het waarschijnlijk ook mogelijk het te vereenvoudigen.
+Als er dubbele code staat in alle mogelijke branches van een if-else, dan kan je die dubbele code waarschijnlijk boven of onder de if plaatsen.
+
+Code Smell: Primitive Obsession
+-------------------------------
+Dat is als je gebruik maakt van primitieve datatypes om te voorkomen dat je objecten moet gaan gebruiken.
+
+Volgende week
+-------------
+Er komt nog een SOLID-principe bij.
+
+Daarna
+------
+Dinsdag 6 juni 2023 (12:15) komt Sigrid een gastcollege geven, **aanwezigheid is verplicht**
+Ook een gastcollege over testen binnen scrum wordt gegeven die dag.
+Maandag 19 juni 2023 om 12:15 wordt een gastcollege gegeven over het voorkomen en oplossen van conflicten in github.

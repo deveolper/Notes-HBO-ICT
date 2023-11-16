@@ -1,0 +1,70 @@
+A.
+Applicatie laag: http
+Transportlaag: TCP = 80
+Netwerklaag = ipv4
+Datalinklaag = Ethernet
+
+B
+Mac-adres: 00:0c:29:0c:1e:8d
+OUI: 00:0c:29
+Fabrikant + adres: VMware, Inc. 
+Palo Alto CA 94304
+UNITED STATES
+
+We weten de locatie van het bedrijf
+
+C
+Welke IP-versie wordt gebruikt: Ipv4
+Ken je meer versies van het IP-protocol: Ip, Ipv6
+Wat is het IP-adres van de bestemming: Destination Address: 164.138.24.109
+Wat is het afzender IP-adres: Source Address: 172.16.43.147
+Welke waarde heeft het TTL-veld: 128
+Wat kun je zeggen over de afzender van het pakket van de TTL waarde dat je zojuist
+gevonden hebt: het is windows
+Wat is de waarde van het protocolveld in de IP-header: TCP 6
+Wat is de functie van het protocolveld: laat de protocol en versie zien
+Wat is de waarde van de Header checksum in de IP-header: 0x64a4
+Wat is de functie van de Header checksum: Check of het nog correct is
+
+D
+Source Port
+Waarde: 49160
+Verklaring: het is een publieke port
+
+Destination port
+Waarde: 80
+Verklaring: een standaart port
+
+Seq: 1
+Ack: 1
+
+Wat is de functie van deze nummers:
+Het bevestigt dat het ontvangen is
+
+E
+Welke versie van HTTP wordt gebruikt: http 1.1
+
+F
+Applicatielaag: DNS
+Transportlaag: UDP
+Netwerklaag: Ipv4
+Datalinklaag: Ethernet
+
+Destination Address: 172.16.43.2
+Source Address: 172.16.43.147
+
+UDP 17
+
+Source Port: 55180
+enables two hosts to establish a connection and exchange streams of data
+Destination Port: 53
+used for domain name resolution
+
+UDP heeft geen nummering
+
+Nadeel:
+Je verliest packets
+Waarom:
+Het moet zo snel mogelijk aankomen
+
+Het vindt het ip address van wikipedia

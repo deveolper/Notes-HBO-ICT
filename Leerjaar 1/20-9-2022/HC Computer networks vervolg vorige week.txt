@@ -1,0 +1,109 @@
+Wederom Protocol View we gaan verder waar we de vorige keer waren
+geëindigd door brandalarm.
+
+Protocol View gaat over het maken van afspraken
+	I. Netwerken en afspraken
+		Communicatie tussen computers
+		Protocollen zijn gebruikt om deze communicatie goed te
+		laten verlopen.
+
+		Voorbeelden van afspraken:
+			Netwerkconnector moet passen.
+			Elektrische signalen moeten correct zijn.
+				Spanning, etc.
+			Hoe krijg je berichten bij de juiste computer?
+			Computer die meerdere apps open heeft, moet data
+				bij de juiste app af kunnen leveren.
+			Computer moet een communicatie-aanvraag kunnen doen
+				Inclusief format etc.
+			De standaarden.
+
+			Voorbeelden:
+				RFCxxxx (Request for Comments)
+					Afkomstig van IETF
+						Internet
+						Engineering
+						TaskForce
+				RFC2616 (HTTP)
+				RFC793 (TCP)
+				IEEE802.x (LAN-standaard)
+					Institute of
+					Electrical and
+					Electronics
+					Engineers
+				IEEE802.3 (Ethernet)
+				IEEE802.11 (WIFI)
+				ITU-T
+				ISO
+	II. Lagen en protocollen
+		Om de standaard goed werkend te maken wordt deze verdeeld
+		in lagen.
+
+		Voor de aankoop moeten de managers met elkaar communiceren.
+		Daarvoor communiceren de assistenten met elkaar.
+		Dat doen ze via de postkamers.
+		Die zenden de post.
+
+		De assistent vertaald de offerte.
+
+		Er zijn afspraken per laag. Als er een modernisering is,
+		zoals het gebruik van E-Mail, dan hoeft niet elke laag aangepast
+		te worden.
+
+		OSI Reference Model (niet online gebruikt, 7 laags model)
+		Intenet Protocol Stack (online, eenvoudiger dan OSI, 5 laags)
+
+		IPS is door DARPA ontwikkeld
+
+		De IPS lagen:
+			L1:
+			Pysical layer (Ethernet, wifi, adsl, utp)
+			L2:
+			(Data)Link layer (Ethernet, wifi, atm, ppp)
+			L3:
+			Network layer (IP, IPv6, ICMP)
+			L4:
+			Transport Layer (TCP, UDP)
+			L7 (Not typo, geërft van OSI):
+			Application Layer (HTTP, DNS, SMTP)
+
+			L1, heeft de hardware van de WIFI en Ethernet
+			L2, heeft de software van de WIFI en Ethernet
+
+		Protocol data unit (PDU):
+			Packet waarin data wordt verpakt.
+
+		L7:
+			Vormt interface voor applicaties naar transportafhankelijke
+			onderdelen.
+			Dit levert complete diensten, webstransport etc.
+		L4:
+			Zorgt voor end-to-end communicatie. Ongeacht wat er tussen zit.
+		L3:
+			Zorgt voor de route van het packet.
+		L2:
+			Zorgt voor point-to-point communicatie, dus de stappen tussen
+			startpunt en eindpunt.
+		L1:
+			Bevat de hardware die nodig is voor dit hele circus.
+
+		L7 maakt gebruik van L4 als een soort black-box.
+		L4 maakt gebruik van L3 als een soort black-box.
+		L3 maakt gebruik van L2 als een soort black-box.
+		L2 maakt gebruik van L1 als een soort black-box.
+
+		Netwerkdriver zit in L2.
+	III. Data in het netwerk
+		Datarepresentatie
+			Tekst: "aap noot mies"
+			Decimaal: 97 97 112 32 110 111 111 116 32 109 105
+					101 115 13 10
+			Hexadecimaal: 61 61 70 20 6e 6f 6f 74 20 6d 69 65 73
+			Binary: 01100001 01100001 01110000 00100000 01101110 01101111
+				01101111 01110100 00100000 01101101 01101001 01100101
+				01110011 00001101 00001010
+		Data wordt door elke laag ingepakt met een extra header met relevante
+		data.
+			Fysiek adres (MAC) kom je tegen.
+	IV. Meten aan netwerkverkeer in het practicum
+		Hiervoor gaan we wireshark gebruiken.

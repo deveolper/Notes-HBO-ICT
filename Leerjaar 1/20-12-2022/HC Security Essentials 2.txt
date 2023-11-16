@@ -1,0 +1,27 @@
+Doelen:
+- Student kan uitleggen wat preventieve, detectieve en responsieve
+maatregelen zijn en er voorbeelden van noemen
+- Student kan logging en monitoring uitleggen
+
+Vandaag meer technische maatregelen.
+
+Gegevens komen te laat of niet aan (B)
+Gegevens worden dubbel ontvangen (I)
+Gegevens worden onderweg verminkt (I)
+Gegevens worden afgetapt (V)
+
+We hebben ook wat netwerk-beveiliging behandeld.
+Waarschijnlijk moeten we hier veel over weten op het tentamen.
+
+Je moet voor het tentamen weten wat de applicatielaag is en wat de
+netwerkprotocollen zijn met de bijbehorende namen.
+
+Loggen: bijhouden van gebeurtenissen voor analyse bij incident (correctie)
+Monitoren: toezicht houden of het nog wel goed gaat (detectie & repressie)
+
+Hot redundant: alle infrastructuur en data is in 2voud aanwezig
+Cold redundant: niet alles is in 2voud aanwezig
+
+Toetsstof: (H11, H12, H13 en slides van week 14 t/m 16)
+
+Advies: maak de proeftoets

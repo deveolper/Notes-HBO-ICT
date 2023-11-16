@@ -1,0 +1,52 @@
+Risico management.
+
+De waaromvragen zijn belangrijk bij alle beveiligingskeuzes. Dat is ook om meer mensen
+binnen de organisatie echt te overtuigen dat het nodig.
+
+Doel van deze les:
+	Student kan uitleggen wat het doel is van risicomanagement en risicoanalyses.
+	Student kan uitleggen welke risicostrategieën er zijn.
+	Student kan uitleggen hoe risicos worden berekend (kans x impact)
+	Student begrijpt het verschil tussen kwalitatief en kwantitatieve risicoanalyses.
+	Student kan uitleggen wat een risk appetite is.
+	Student kan human-factor maatregelen uitleggen.
+		Student is op de hoogte van sociale psygologische maatregelen.
+
+We gaan de human-factor weer herhalen. En een paar sociaal psygologische maatregelen.
+
+risico = kans x impact
+
+Risico mijdend, vermijd risicos
+Risico dragend, draag de risicos
+Risico neutraal, deel van de risicos vermijden, deel dragen
+
+Hierna hebben we een schema behandeld wat we 18-10-2022 ook al hebben behandeld.
+Deze kun je uiteraard ook via SmartBot opvragen.
+
+Voor risk treatment zijn de volgend opties:
+- Reduction / Mitigeren
+	Risico reduceren
+- Retention
+	Negeren / Accepteren
+- Avoidance
+	Het plan aanpassen om het risico te vermijden
+- Transfer
+	De oplossing out-sourcen. Het risico is NIET out-sourced.
+
+Definitie risicoanalyse:
+Zie afbeelding
+
+Bij risicoanalyses zijn een hoop partijen betrokken.
+Bij een kwantitatieve risicoanalyse kwatifiseer je het risico.
+
+Risk appetite is welke risicos je wel en niet accepteert.
+
+Maatregelen voor de human factor hebben we het eerder ook al over gehad.
+
+Nog meer menselijke maatregelen:
+Gamification
+Phishing e-mail tests
+Mystery guests
+
+Toetsweek is week 13 (volgende week):
+Hoofdstuk 4, 6 8.3 t/m 8.6 en 10 t/m 10.3 van het boek.

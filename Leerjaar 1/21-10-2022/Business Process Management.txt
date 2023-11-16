@@ -1,0 +1,17 @@
+Data store:
+	Permanente opslag (blijft bewaart zelfs na het proces is beëindigd)
+	Database symbool
+Data object:
+	Tijdelijke opslag (verdwijnt bij het end-event)
+	Leeg papier met gevouwen hoek
+	Een document (geschreven of gedrukt bewijsstuk) wat bij het proces wordt gebruikt
+Data association:
+	Geeft aan dat data wordt opgeslagen
+	Stippellijn met open punt
+Sequence flow:
+	Gebruikt om de volgende task aan te geven
+	Doorgetrokken lijn met gesloten gevulde punt
+Message flow:
+	Gebruikt om communicatie tussen pools aan te geven
+	Rondje aan de ene kant, streepjeslijn met een gesloten, ONgevulde pijlpunt
+	Alleen data. Geen fysieke objecten.

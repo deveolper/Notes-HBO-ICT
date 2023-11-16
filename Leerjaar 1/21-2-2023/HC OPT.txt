@@ -1,0 +1,43 @@
+Alle assessments zijn deze week
+
+De week na de vakantie (woensdag) is er een toets van OPT1. Deze week komt een proeftoets beschikbaar.
+
+Unittesten met JUnit.
+INSTALLEER JUnit!!! Hiervoor is ook hulp beschikbaar donderdag.
+
+Bugs:
+- Functionele bugs
+- Logische bugs
+- Workflow bugs
+- System-level integration bugs
+- Out of bounds bug
+- Unit level bug (meest voorkomend)
+
+Unittesten: het testen van afgezonderde stukjes source code. Het is code die je zelf hebt geschreven. Geen unit-tests schrijven voor libs van derden.
+
+Eigenschappen van unit-tests:
+- Gericht op klein deel van de code
+- Klein en daardoor snel te begrijpen
+- Snel uit te voeren, heel veel per systeem
+- Onafhankelijke testcases
+- Zijn ook een vorm van documentatie
+
+@Test = annotatie
+// Arrange
+voorbereidingVoorTest();
+String expectedResult = "Kaas";
+
+// Act
+String actualResult = uitvoerenTest();
+
+// Assert
+assertEquals(expectedResult, actualResult);
+
+De naam van de test-class is de naam van de class die je test + "Test"
+
+3 eisen van een goede test:
+1. Bepaal de belangrijkste functionaliteit uit de code en wat de verwachtte uitvoer is
+2. Bepaal belangrijke componenten (classes, methods)
+3. Test randvoorwaarden
+
+Debugging: gebruik de debugger! Dat is met brakepoints, stepping etc.

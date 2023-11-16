@@ -1,0 +1,79 @@
+L1: Fysieke laag
+	De aansluiting op het medium
+		Koper
+		Glas
+		Draadloos
+	Parallel data (L2 frames) moeten bit voor bit over het
+	medium worden verstuurd (serialisatie).
+	Ontvanger moet de data deserialiseren.
+	Fysieke laag en data link laag hebben veel met elkaar
+		te maken.
+	Transmitter: Parallel -> Serial
+	Receiver: Serial -> Parallel
+
+	Instellingen:
+		Medium (glas, radio, koper)
+			Frequentieband (radio),
+			Golflengte (licht)
+			Spanning en stroom (koper)
+		Bit-respresentatie
+		Bitrate
+		Synchroon / Asynchroon
+		Frame-size
+L2: Data Link laag
+	Regelt communicatie tussen 2 direct aangesloten punten
+	Point-to-Point communicatie
+
+	Fouthandeling moet afgesproken worden.
+
+	End-to-end communicatie is de logische communicatie
+	die je probeert te creëeren. De Point-to-point 
+	communicatie wordt gebruikt om de end-to-end
+	communicatie te krijgen.
+
+	Data Link Laag werkt met point-to-point communicatie.
+
+L3: Network Laag: IP
+	Taken:
+		Het routen van data.
+		Koppelen van verschillende netwerken.
+	Header van IP packet
+		Version, IHL, ToS, Total Length, Identification
+		Flgs, Fragment offset, Time to Live, Protocol
+		Header checksum, Source address
+		Destination address, Options, Padding
+	Source address, en destination address: 32 bits
+	Version: IP-versie
+	Time to live: per hop telt deze af.
+		Bij 0 wordt het packet verwijderd.
+	Header blijft verder onveranderd per hop.
+	Eerste 3 bytes geven aan waar het ongeveer op aarde moet
+		worden geleverd.
+	Laatse bytes wijst de specifieke host aan in een LAN.
+	Laatste bytes = 0 -> netwerk masker
+			1 -> adres van router
+			255 -> alle eindsystemen in netwerk
+				Bijvoorbeeld als een apparaat
+				zijn nummer wil weten.
+
+L4: Transport Laag
+	Taken:
+		End-to-end communicatie.
+		Applicatie-adressering.
+		Segmentatie en reassmbly.
+		Foutdetectie/correctie (TCP)
+		Flow control (TCP), de snelheid.
+
+	UDP (User Datagram Protocol)
+		Geen vertraging bij fouten
+		Geen error-correctie of detectie
+		Kan ruis creëren.
+
+	Poortnummers (16 bit)
+		Adres bevat geen lokaal
+		Het poortnummer is zeg maar een lokaalnummer.
+		80 - HTTP
+		443 - HTTPS
+		Poortnummer notatie: 1.2.3.4:80
+			IP: 1.2.3.4
+			Poort: 80

@@ -1,0 +1,259 @@
+Wat is een compute netwerk:
+Een verzameling, onderling verbonden, autonome computer()
+
+Waarom computers in een netwerk:
+	- Delen van gegevens
+	- Delen van devices/hardware
+	- Delen van applicaties
+	- Communicatie
+
+Componentview(nuts en bolts):
+
+Media:
+	- lan/wan-verbinding
+	- glasvezel (wireless)
+
+Netwerkdevices:
+	- Router
+	Stuurt verkeer door, koppelt verschillende netwerken (bijv. ADSL aan WIFI)
+	- Switch
+	Stuurt ook verkeer door binnen een netwerk, vaak veel aansluitpunten, meerdere lan kabel ports
+	- Wireless Acces point
+	Zoals een switch maar dan wireless(WIFI), Vaak gecombineerd met een router voor ADSEL/Kabel,
+	Vaak ook wired netwerk (wireless en wired binnen hetzelfde netwerk)
+	- Firewall
+	Zoals een router maar dan met een filter, vaak ingebouwd in een router, kan onveilig verkeer blokkeren
+Eindsystemen:
+	- Client
+	Initiatiefnemer communicatie, vaak menselijke interactie. Voorbeeld: PC, laptop, smartphone,tablet,game console
+	- Servers
+	Biedt services aan client, luisterr 24/7 naar client verzoeken. Voorbeeld: Webserver,emailserver, printer
+
+Service view(wat kan je er mee doen)
+
+Een computernetwerk kun je zien als een blackbox die diensten levert
+Voorbeelden van diensten:
+	- Browsen op hjet internet
+	- Gamen met meerdere personen
+	- Samenwerken aan een document
+	- Video-conferencing
+
+terminal = scherm + toetsenbord
+
+Een paradigma is een samenhangend stelsel van modellen en theorieën waarbinnen de werkelijkheid beschreven wordt. Met andere woorden: het is de manier waarop wij de werkelijkheid ervaren. En iedereen ervaart dit op zijn eigen manier. Hoe iemand/mensen er naar kijkken.
+
+Een mainframe is een centrale computer. De gegevens werden oorspronkelijk in een mainframe ingevoerd met gegevensdragers als ponskaarten, ponsbanden en magneetbanden.
+
+IBM PC:
+	- Since 1980, Processing lokaal op de PC
+	- File uitwisseling via "Sneaker Net"
+Sneaker net: physiek overgebracht
+
+Fat Client:
+	- Systemen gekoppeld met een lan
+	- Somminge zakken ( communicatie, opslag, directory services ) op een server
+Thin Client:
+	- Alle processing op de server (voor alle gebruikers)
+	- De client heeft aleen software voor grafische ondersteuning en software om te verbinden met de server
+Cloud Computing
+	- Computing wordt aangeboden als dienst door een cloud provider
+	- De klant huurt de dienst en gebruikt die via het internet
+	- Er zijn public en private clouds
+
+Cloud computing: kenmerken
+▪ Eigenschappen (vertaald uit NIST 800-145)
+	1. De klant kan zelf regelen wat er “gehuurd” wordt van de provider (On demand self
+	service)
+	2. Diensten toegankelijk via het internet via bijv. de browser of een app (Broad network
+	access)
+	3. De cloud provider heeft meerdere klanten en organiseert de resources per klant
+	(Resource pooling)
+	4. Het aantal resources kan snel worden aangepast (Rapid Elasticity)
+	5. Klant betaald voor gebruik (Measured Service)
+	
+wat voor diensten:
+Steeds meer services worden aangeboden vanaf het internet. Je kunt ze
+opdelen in drie groepen
+	▪ IaaS: Infrastructure as a Service – een virtueel netwerk met servers (Bijvoorbeeld een
+	virtuele server). De hardware
+	▪ PaaS: Platform as a service – een platform dat ingericht kan worden voor een
+	bepaalde applicatie. De Database
+	▪ SaaS: Software as a Service – software die je gebruikt vanaf het internet
+	(bijvoorbeeld Microsoft Office 365)
+	
+
+
+Protocolview(formele afspraken om compontente te laten samenwerken)
+Protocollen tussen gebruiker en server
+	- De netwerkconnector moet passen
+	- Elektrische signalen moet correct zien(spanning, bandbreedte)
+	- Het netwerk moet berichten bij de juiste computer uitlezen
+
+protocol = vastgelegde afspraken tussen twee parijen uit dezelfde laag
+(bijvoorbeeld tussen een zender en een ontvanger)
+
+
+Puleike netwerken moeten open zijn aan de aansluitzijde van de gebruiker
+Computernetwerken zijn tegenwoordig te complex om volledig door een bedrijf te maken
+
+Een standaard is een afspraak die op papier staat zoals 
+	- Een goed vooreeld van een standaard is de 220Volt stekker in europa
+	
+Bekende standaarden RFC(Request for comments)
+	- Afkomstig van de IETF(de hardware)
+	- IEEE802.x(afkomstig van IEEE, IEEE902.11 (WIFI), IEEE802.3 (ETHERNET))
+	- ITU-T
+	- ISO
+
+Om met standaarden een computernetwerk echt “open” te maken, moet goed afgesproken worden wat er
+gestandaardiseerd wordt.
+	- Dit gaat door een verdeling in lagen.
+	- Om de voordelen van gelaagdheid te begrijpen, gaan weeerst kijken naar een analogon (=gelijksoortig of
+	overeenkomstig geval) buiten de computernetwerken.
+	- Analogon: Hoe communiceren 2 bedrijven met elkaar over eencomplexe aankoop?
+
+OSI Reference Model (OSI = Open Systenms Interconnection):
+	- Fundamenteel
+	- 7 Lagen
+	
+Internet Protocol Stack: 
+	- Ook bekend als “DOD Reference Model”, “TCP/IP stack” of InternetProtocol Suite”. (DOD=Department of Defence)
+	- Eenvoudiger dan OSI
+	- 5 Lagen
+Ontwikkeling Internet Protocol Stack:
+	- Ontwikkeld door DARPA van het Amerikaanse Department of Defense voor communicatie binnen de overheid (niet alleen het leger). Vrij snel werd dit ook toegepast bij universiteiten en andere instellingen.
+	- Bijna alles waar ICT in zit, is tegenwoordig uitgerust met dezeprotocolstack voor koppeling met het Internet.
+
+(Bits, symbols)Physical Layes (L1): Ethernet, Wifi,UTP:
+	- Bevat de koppeling van netwerkelementen aan een medium(connectoren, signalen, e.d.)
+	- Adresseert eenm fysieke machine (hardware) in een Lan bijv. 0x0A:00:05:3F:2E:78
+Richt zich op de fyschieke aansluiting op het medium:
+	- Medium(Glas, Radio, Koper)
+	- Frequentieband (radio), Golflengte(Licht), Spanning/Stroom(koper)
+	- Bit-representatie
+	- Bitrate
+	- Synchroon/Asynchroon
+	- Frame-size
+	
+Parallelle Data moeten bit voor bit over het medium gestuurd worden (Serialisatie)
+De ontvanger moet de parallelle data weer inlezen (de-serialisatie)
+
+
+
+(Data. Frame, PDU)Link layer(L2): Ethernet, WIFI, ATM, PPP:
+Regelt de communicatie tussen twee direct aangesloten punten
+	- Zorgt voor de communicatie tussen twee punten in een netwerk. (point-to-point communicatie)
+Foutafhandelingen:
+	- Bits kunnen fout aankomen
+     -    iets gedaan worden (weggooien complete frame en opnieuw latenuitzenden)
+Fysieke adressering:
+	- De juiste computer selecteren in een LAN (d.m.v. een adres)
+Optionele zaken zoals flow control (=snelheidsregeling), voorrangbotsingsdetecti
+Ethernet zorgt voor point-to-point verbindingen in een LAN
+	
+(Pakket, PDU)Network layer(L3): IP, IPv6, ICMP:
+	- Wordt ook wel de internet layer genoemd
+	- Zorgt door middel van routering dat berichten de juiste eindgebruiker bereiken. (routering)
+	- adresseert een computer in een netwerk bijv. 145.52.127.15
+	- Koppelen verschillende netwerken
+Time to Live (TTL) = tellertje dat aftelt per hop
+
+(Segment, PDU)Transport Layer(L4): TCP, UDP:
+	- Biedt transport aan van data tussen eindgebruikers in een netwerk,zo veel mogelijk onafhankelijk van het onderliggende netwerk. (end-to-end communicatie)
+	- adresseert de applicatie in een computer bijv. poort 80 voor HTTP
+Taken transportlaag:
+	- Passende End-to-End communicatie
+	- Applicatie-adressering (TCP, UDP)
+	- Segmentatie en reassmbly:
+	het in stukjes breken van een lang bericht(segments), zodat het bericht in stukjes verzonden kan worden. Bij de ontvanger worden de stukjes weer aan elkaar geplakt (reassembly)
+	
+	- Foutdetectie/correctie (TCP):
+	fouten worden gedetecteerd en leiden tot het automatisch herhalen van de betrokken segmenten
+	
+	- Flow control (TCP: Precies):
+	de zender zal niet meer data versturen dan dat de ontvangerkan verwerken(Snelheid)
+	
+
+
+(Data, PDU)Apllication Layer(L7): HTTP, DNS, SMTP:
+	- Vormt de interface voor applicaties naar transportafhankelijke onderdelen.
+	- Levert complete diensten als webtransport, file-transport, VoIP, etc
+
+Informatie wordt verpakt in speciale containers die PDU's genoemd worden (PDU = Protocol Data Unit)
+
+Data representatie:
+Er zijn verschillende manieren om data te representeren en te vervoeren
+	- ASCI
+	- Tekst
+	- Decimaal(Cijfers)
+	- Hexadecimaal(Cijfers en letters)
+	- Binair(01, Byte = 8 bit/01)
+Transport van een byte gaat bit voor bit (serieel).
+Op deze wijze kunnen vele bytes achter elkaar verzonden worden.
+Om het netwerk efficiënt te delen, wordt de data verdeeld in brokjes, ook wel PDU’s (PDU=Protocol Data Unit) genoemd.
+PDU = Protocol Data Unit = datastructuur die wordt uitgewisseld tussenentiteiten uit dezelfde laag.
+De eerste paar bytes van een PDU representeren niet de data maar vormen de header met protocolinformatie, zoals adressen.
+Daarna volgt de payload van de PDU, die de data bevat.
+encapsulation = het inpakken van een PDU uit laag N in een PDU van laag.
+UTP is unschielded Twisted pair
+een buffer slaat data tijdelijk op
+De opbouw en afbraak wordt ook wel handshaking genoemd
+
+
+Point-to-point communicatie is de communicatie tussen twee direct aan elkaaraangesloten systemen.
+End-to-end communicatie is de logische communicatie tussen 2 eindsystemen (uiteraard
+gedragen door 1 of meerdere point-to-point communicatieverbindingen)
+
+De datalinklaag (L2) heeft alleen betrekking op point-to-point communicatie
+
+Switch(ster-topologie):
+	- Een switch (ook wel L2-switch genoemd) verbindt ethernetcomputers aanelkaar.
+	- Frames worden selectief “geforward” naar de betreffende eindsystemen. (Mac- adress)
+
+IP-Adres:
+	- Omvang IPV4-adres = 32 bit (= 4 bytes)
+	- Dotted decimal notatie (elk byte loopt van 0 tot 255)
+	- Wereldwijd uniek
+Hiërarchisch georganiseerd = Bestaat uit een netwerkdeel en een hostdeel:
+	- laatste byte het hostdeel (wijst de host aan in een LAN)
+	- eerste drie bytes het netwerkdeel (wijst wereldwijd het netwerk aan)
+Default Gateway: 145.52.123.1 <- adres van de router
+Broadcastadres: om alle eindsystemen tegelijk te adressen
+
+
+verschil tussen switches en routers:
+Switch:
+	-  is op L2
+	- Werkt op de datalinklaag
+	- Kan hardware-addressen onderscheiding
+Router:
+	-  op L3
+	- Werkt op de netwerklaag
+
+User datagram Protocol (UDP)(Snelheid):
+	- Onbetrouwbaar transport '' Send & Pray"
+	- Geen segmentation, error control en flow control bij UDP
+	- Geen nummering/volgorde (RTP wel)
+
+Zowel TCP als UDP gebruiken poortnummers om een applicatie te
+adresseren
+
+Fysiek adres (bijv. MAC) -> wijst lokaal de “next hop“ aan (dat zal
+uiteindelijk de eindbestemming zijn)
+
+IP-adres -> wijst wereldwijd de host (het eindsysteem) aan
+Poortnummer -> wijst de applicatie aan binnen de host
+	- 16 bits - decimale notitie
+	- Well Known: gereserveerd voor bekende serverapplicaties zoals poort 80 voor httpen poort 443 voor https
+	- Ephemeral: kortstondig gebruikt door clients als tegenhanger van de well-known port in de communicatie, Meestal een (random) nummer groter dan 1023
+
+Flow/Stream:
+Vaak zijn er meerdere pakketjes nodig om data over te dragen. Bij vormen deze pakketjes een flow
+Elk pakketje binnen dezelfde flow heeft:
+▪ Hetzelfde protocol (meestal TCP of UDP)
+▪ Hetzelfde source IP-adres
+▪ Hetzelfde destination IP-adres
+▪ Hetzelfde source poortnummer
+▪ Hetzelfde destination poortnummer
+
+Bij elke flow hoort een retourflow waarvan in elk pakketje source en destination adres/poort omgewisseld zijn.

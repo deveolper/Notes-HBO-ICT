@@ -1,0 +1,16 @@
+Q: Wat doet stage.setX en stage.setY? Verplaatst dat het venster?
+A: Ja
+Q: Wat doet getSceneX en getSceneY? Vraagt dat op waar het venster zich bevind op het scherm?
+A: Ja
+Q: Klopt het dat de inlogggegevens worden goedgekeurd zo lang als deze niet leeg zijn?
+A: Ja
+Q: Klopt het dat de registratie lukt als alle 3 velden zijn ingevuld en de wachtwoordvelden hetzelfde zijn?
+A: Ja
+Q: Is de code niet kwetsbaar voor timing attacks?
+A: Boeie
+Q: Klopt het dat er momenteel geen hashing wordt toegepast op de wachtwoorden?
+A: Ja, out of scope
+Q: Moeten we de hardgecodeerde tekst uit de fxml bestanden niet vervangen voor variabelen om het makkelijker te maken de vertaling te implementeren?
+A: Ja
+Q: Wat zijn mijn taken voor de komende sprint?
+A: Consistent maken van de validatie van het login-systeem; dat de validatie wordt toegepast op het login-systeem; lokale nep-database (mapje met data, logische structuur)

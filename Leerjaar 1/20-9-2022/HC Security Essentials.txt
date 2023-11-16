@@ -1,0 +1,15 @@
+Kwetsbaarheden binnen de bedrijfsprocessen
+	Kwetsbaarheden en bedreigingen.
+	De bedreiging is het water.
+	De maatregel is de dijk.
+	De kwetsbaarheid is de scheur in de dijk.
+
+	Bedreiging (BIV)
+		Beschrikbaarheid
+		Integriteit
+		Vertrouwelijkheid
+Standardisatie informatiebeveiliging
+	Daarmee wordt niet zo zeer de encryptie bedoeld.
+	ISMS, CSF, NEN, BIO
+Juridische aspecten van informatiebeveiliging
+	AVG

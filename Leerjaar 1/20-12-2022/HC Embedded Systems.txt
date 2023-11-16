@@ -1,0 +1,51 @@
+Er staat op Brightspace voorbeeldcode voor de challenge
+De docent zegt ook dat we nu ongeveer klaar zouden moeten zijn
+
+Fixed point: representatie van breuken
+Dit is anders dan float en double
+Dit is om standaard werkwijzen te omzijlen
+
+FPU = Floating Point Unit
+	Speciale processor die werkt met floating points
+
+Van een real-number mbv scaling_factor gaan we een integer krijgen.
+
+Floating point numbers zijn traag, daarom worden deze in hardware
+geimplementeerd tegenwoordig dmv van een FPU
+
+Micro:bit heeft een FPU!
+
+Fixed point math kan worden gebruikt om de nauwkeurigheid te
+vergroten.
+
+HEEL BELANGRIJK VOOR DE TOETS:
+<m,n> is de notatie voor fixed-points
+n = aantal bits achter de punt
+m = aantal bits voor de punt OF totaal aantal bits
+	Bij deze cursus: m = TOTAAL aantal bits
+Is n te klein? Gebrekkige precisie
+Is n te groot? Grote kans op overflow
+Ook moet je weten hoe je met fixed-points werkt!
+
+Truc voor unsigned fixed point:
+	x / 2^n = true value
+
+	Hierbij is x de waarde van het getal geinterpreteerd als
+	unsigned integer
+
+Ook boolean- en bitwise operators moeten we nog steeds kennen.
+Sws is het altijd aan te bevelen om de stof van de voorgaande
+toetsen te kennen
+
+Q & A:
+Q: Moet je deze notatie kennen? (epsilon R etc)
+A: Nee
+Q: Heeft een i7 processor een FPU?
+A: Ja, eigenlijk alle processoren in computers en laptops hebben
+er tegenwoordig eentje.
+Q: Mogen we op de toets een rekenmachine gebruiken?
+A: Nee
+Q: Krijgen we op de toets overflow?
+A: We moeten overflow herkennen iig.
+Q: Is de toets MC?
+A: Ja, 20 vragen multiple choice, 60 minuten (excl. extra tijd).

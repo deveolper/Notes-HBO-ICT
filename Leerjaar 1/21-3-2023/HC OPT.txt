@@ -1,0 +1,1 @@
+Polymorfisme is dat objecten verschillende verschijningsvormen kunnen hebben obv de context.
