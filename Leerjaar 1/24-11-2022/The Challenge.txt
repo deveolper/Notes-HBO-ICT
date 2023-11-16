@@ -1,0 +1,218 @@
+ISM onderzoek.
+
+In week 14 kan je ff kijken op andere locaties.
+
+Week 15 en 16 zijn adviesgesprekken. Jelle geeft advies, maar dat is **niet** bindend.
+JE KIEST ZELF!
+
+Week 17 schrijf je je in voor je differentiatie.
+13 januari kan het niet meer worden veranderd.
+
+Aanstaande zondag app met GUI en databaseconnectie is een pre, maar niet een verplicting.
+Als dat niet lukt, geef dat door aan Jelle.
+
+In fase 4 is de bouwfase.
+
+Waarmee connecten we de microbit?
+	Met de app?	<= Dit was ons plan toch?
+	Met de database?
+	Met beide?
+
+Gebruiken we de microbit alleen als input? Of ook als output?
+	Alleen als input toch?
+
+NSE
+Advanced Switching
+	Wat houd het in?
+		Netwerk-switches op geavanceerde manieren gebruiken
+	Welk semester?
+		2e
+	Relatie andere vakken?
+		Geen idee
+	Waarom belangrijk?
+		Zonder switches heb je niet een heel goed netwerk
+IT Systems & IT Service Management
+	Wat houd het in?
+		Automatisering van beheerprocessen
+	Welk semester?
+		2e
+	Relatie andere vakken?
+		Geen idee
+	Waarom belangrijk?
+		Er is een werknemerstekort in Nederland, dus alles wat geautomatiseerd
+		kan worden is mooi meegenomen.
+Image Processing & Computer Vision
+	Wat houd het in?
+		Beeldbewerking en analyse
+	Welk semester?
+		2e
+	Relatie andere vakken?
+		Geen idee
+	Waarom belangrijk?
+		Automatisering
+Network Engineering
+	Wat houd het in?
+		Ontwikkelen van computernetwerken
+	Welk semester?
+		2e
+	Relatie andere vakken?
+		Geen idee
+	Waarom belangrijk?
+		Je moet toch een computernetwerk hebben
+Object Oriented Programming
+	Wat houd het in?
+		Object Oriented Programming zegt het eigenlijk al. In plaats van
+		procedures, maak je gebruik van objecten, classes en methods.
+		Ook C++ komt hierin terug.
+	Welk semester?
+		2e
+	Relatie andere vakken?
+		Geen idee
+	Waarom belangrijk?
+		OOP is leesbaarder dan procedureel in meeste gevallen. Leesbaare code is
+		vaak makkelijker te onderhouden en heeft meestal minder bugs.
+Project Network Engineering
+	Wat houd het in?
+		Het ontwerpen van een computernetwerk.
+	Welk semester?
+		2e
+	Relatie andere vakken?
+		Geen idee
+	Waarom belangrijk?
+		Zie "Network Engineering"
+Project Systems Engineering
+	Dit is een project met betrekkign tot het vak Systems Engineering.
+Project Technical Infrastructure & Research
+	Wat houd het in?
+		Ontwerpen, configureren en testen van IT-infrastructuur in projectgroep.
+	Welk semester?
+		2e
+	Relatie andere vakken?
+	Waarom belangrijk?
+Research on Networks & Systems
+	Wat houd het in?
+	Welk semester?
+	Relatie andere vakken?
+	Waarom belangrijk?
+Software Architacture & Design Patterns
+Systems Engineering
+
+ISM
+Business Resilience
+	Wat houd het in?
+		Probleemanalyse en mitigeren van risco's dmv maatregelen.
+		Incl. BIV
+	Welk semester?
+		2e
+	Relatie andere vakken?
+		Geen idee
+	Waarom belangrijk?
+		Geen idee
+Human Behavior
+	Wat houd het in?
+		Onderzoeken van menselijk gedrag en hoe deze te beïnvloeden is.
+	Welk semester?
+		2e
+	Relatie andere vakken?
+		Geen idee
+	Waarom belangrijk?
+		Geen idee
+IT Systems & IT Service Management
+	Wat houd het in?
+		Automatisering van IT-beheerprocessen.
+	Welk semester?
+		2e
+	Relatie andere vakken?
+		Geen idee
+	Waarom belangrijk?
+		Er is een werknemerstekort.
+Introduction to Sport Management
+	Wat houd het in?
+		Sport, denk ik. De beschrijving ontbreekt in OSIRIS.
+	Welk semester?
+		1e
+	Relatie andere vakken?
+		Geen idee.
+	Waarom belangrijk?
+		Sporten is gezond.
+Professional Practice 1
+	Wat houd het in?
+		Beroepsgerichte challenges in de praktijk.
+	Welk semester?
+		1e en 2e
+	Relatie andere vakken?
+		Professional Practice 1
+		Professional Practice 2
+		Professional Practice 2
+		Professional Practice 3
+		Professional Practice 3
+	Waarom belangrijk?
+		Je leert de praktijk kennen.
+Processional Practice 1
+	Wat houd het in?
+		Beroepsgerichte challenges in de praktijk.
+	Welk semester?
+		1e en 2e
+	Relatie andere vakken?
+		Professional Practice 1
+		Professional Practice 2
+		Professional Practice 2
+		Professional Practice 3
+		Professional Practice 3
+	Waarom belangrijk?
+		Je leert de praktijk kennen.
+Professional Practice 2
+	Wat houd het in?
+		Beroepsgerichte challenges in de praktijk.
+	Welk semester?
+		1e en 2e
+	Relatie andere vakken?
+		Professional Practice 1
+		Professional Practice 1
+		Professional Practice 2
+		Professional Practice 3
+		Professional Practice 3
+	Waarom belangrijk?
+		Je leert de praktijk kennen.
+Professional Practice 2
+	Wat houd het in?
+		Beroepsgerichte challenges in de praktijk.
+	Welk semester?
+		1e en 2e
+	Relatie andere vakken?
+		Professional Practice 1
+		Professional Practice 1
+		Professional Practice 2
+		Professional Practice 3
+		Professional Practice 3
+	Waarom belangrijk?
+		Je leert de praktijk kennen.
+Professional Practice 3
+	Wat houd het in?
+		Beroepsgerichte challenges in de praktijk.
+	Welk semester?
+		1e en 2e
+	Relatie andere vakken?
+		Professional Practice 1
+		Professional Practice 1
+		Professional Practice 2
+		Professional Practice 2
+		Professional Practice 3
+	Waarom belangrijk?
+		Je leert de praktijk kennen.
+Professional Practice 3
+	Wat houd het in?
+		Beroepsgerichte challenges in de praktijk.
+	Welk semester?
+		1e en 2e
+	Relatie andere vakken?
+		Professional Practice 1
+		Professional Practice 1
+		Professional Practice 2
+		Professional Practice 2
+		Professional Practice 3
+	Waarom belangrijk?
+		Je leert de praktijk kennen.
+
+Voor ID is het project leidend en de vakken ondersteunend. Bij andere differentiaties is
+dat precies andersom.

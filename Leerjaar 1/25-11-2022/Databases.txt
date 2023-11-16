@@ -1,0 +1,17 @@
+Relationeel implementatiemodel is gewoon SQL
+
+Wat we vandaag leren is alleen voor de Challenge, niet voor het tentamen nodig.
+
+Voor het tentamen (niet het aanstaande tentamen) is het niet erg als SQL-keywords kleine
+letters zijn.
+
+Tabel maken:
+	create table
+Tabel vullen:
+	insert into
+Database maken:
+	create database
+Data ophalen uit tabel:
+	select
+Data deleten:
+	delete from

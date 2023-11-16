@@ -1,0 +1,50 @@
+Maak een quantum-spel
+
+Deutsch-Jozsa algoritme is het eerste bewijs dat een quantumcomputer sommige problemen sneller kan dan een klassieke computer.
+
+Voor een zoekalgoritme gebruiken we een oracle.
+
+Een quantum-operatie veranderd de invoer-qubits. Het geeft niet nieuwe qubit en het vernietigd ook geen qubits. Alle operaties moeten omkeerbaar zijn.
+
+In Quantum circuits:
+
+Dubbele lijn: klassieke waarde
+Enkele lijn: qubit waarde.
+
+Hadamard:
+|0> wordt |0> + |1> wordt |0>
+|1> wordt |0> - |1> wordt |1>
+
+Deutsch-Jozosa algoritme:
+- Stel er is een functie die n bits naar 1 bit reduceert (zoals een XOR)
+- De functie is gebalanceerd (even vaak 0 als 1) of altijd constant (altijd 0 of altijd 1)
+- Is de functie gebalanceerd of constant?
+
+Op een klassieke computer: O(2^n), op quantum: O(1)
+
+Met SHOR kan je RSA breken:
+
+RSA recap:
+- Alice genereert 2 willekeurige priemgetallen. Deze 2 priemgetallen zijn de private key. Het product van deze 2 priemgetallen is de public key.
+- Alice stuurt een waarde voor m zodat de grootste gemene deler van (p-1) * (q-1) en m gelijk is aan 1.
+- Wat je zend tot de macht m modulo het product wat Alice heeft gedeeld.
+
+Ook hebben we het gehad over P vs NP
+
+In SHOR's algoritme (en de meeste andere algorimes) doe je eerst iets op een klassieke computer, dan iets op een quantum computer, en daarna doe je de rest op een normale computer.
+
+Shor:
+- Kies een getal a kleiner dan n
+- Vind r zodat a tot de macht r modulo n gelijk is aan 1
+- Als r oneven is, kies een andere waarde voor a
+- a ^ (r/2) - 1 is een (non-trivial) factor
+- a ^ (r/2) + 1 is ook een (non-trivial) factor
+- Om de kans op het meten van de juiste periode moet je een fourier transform uitvoeren.
+
+Quantum errorcorrectie:
+- Er is veel noise in de berekeningen.
+
+Logische qubits: Die gebruik je in de berekening
+Fysieke qubits: Dat is inclusief de error-correctie
+
+Een [n, k] code slaat k bits op in n bits.
