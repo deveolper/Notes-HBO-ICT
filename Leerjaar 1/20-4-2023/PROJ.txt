@@ -1,0 +1,57 @@
+Sprint 0 begint volgende week, daarna 3 sprints van 2 weken.
+
+De opdracht is op BrightSpace te vinden.
+
+OER: Onderwijs en Examen Regelement
+  Daar staan onze rechten en plichten in.
+
+Onze opdracht:
+1. Student stelt een vraag
+2. Vraag gaat naar ons (nog niet bestaand) systeem
+3. Deze tool stelt de vraag aan de database en krijgt kleine stukjes terug
+4. De vraag en de stukjes data in de database wordt aan ChatGPT gevoerd
+5. Het antwoord hiervan gaat terug naar de student
+
+Ons systeem moet dus data uit het OER halen, en deze samen met de vraag aan ChatGPT geven en de response terug geven aan de gebruiker.
+Het moet mogelijk in te loggen zodat ze zicht kunnen houden op het gebruik.
+We moeten tijdelijk zonder de AI van 42 werken, dus die moeten we tijdelijk mocken.
+
+We moeten zelfstandiger werken dan in project 1. We moeten in rouleren in de rollen, iedereen moet minstens 2 rollen hebben gehad.
+
+We moeten aan het eind van elke sprint een PSP (potentially shippable product) hebben. We moeten ook een retrospective doen en een standup etc.
+
+Sprint 0 = 16 uur per persoon
+Sprint 1 = 32 uur per persoon
+Sprint 2 = 32 uur per persoon
+Sprint 3 = 44 uur per persoon
+
+** LET OP !!! **
+Ieder teamlid moet aan elk onderdeel gewerkt hebben! (ontwerpen, programmeren, tesen en documentatie). Iedereen moet aan elk deel van het beoordelingsformulier aan hebben bijgedragen.
+
+Taal moet aanpasbaar zijn.
+
+Het UI moet aanpasbaar zijn.
+
+Q: In welke taal moet het geschreven worden?
+A: 42 is een Java-bedrijf, dus bij voorkeur in Java geschreven. Frontend mag ook een web-frontend zijn. Maar dit moet de beoordelende docent goedkeuren.
+Q: We moeten rekeninghouden met verschillende chatonderwerpen en chatgeschiedenis. Moeten we daar rekening mee houden? En er was ook iets over offline werking?
+A: Het moet mogelijk zijn om een light-weight versie van de AI te gebruiken offline. 
+Q: Hoe willen jullie het interface en jullie AI koppelen?
+A: Met een lokale server of HTTP. Maar deze HTTP-requests hoeven jullie niet te implementeren.
+Q: Is de doelgroep alleen studenten of juist breeder?
+A: Het is voor developers, en andere bedrijven. Het is dus juist niet voor studenten.
+Q: We moeten een interface maken en een manier om vragen te verwerken?
+A: We willen ook een manier om de vraag te beantwoorden, maar dat mag basic zijn en hoeft niet 100% relevante info te zijn.
+Q: Zitten er nog eisen aan hoe het UI eruit ziet?
+A: Tekst moet leesbaar zijn, dit is dus inclusief contrast tussen tekst en achtergrond. Er moet een duidelijke scheiding zijn tussen verschillende onderdelen. Kleurgebruik mag je zelf
+kiezen. Het moet wel mogelijk zijn om lightmode en darkmode te kiezen. Je kan naar chat.openai.com gaan om te zien hoe het er ongeveer uit kan zien.
+Q: Is het de bedoeling dat we een eigen database maken die we later vervangen voor de database van 42?
+A: Ja, dat zouden we graag zien.
+Q: Wat is de waarde van de applicatie?
+A: Het bespaart een hoop tijd.
+Q: Welke talen moeten ondersteund zijn?
+A: Nederlands en Engels is voldoende.
+Q: Moet het ook meerdere chats open kunnen hebben? (meerdere conversaties)
+A: Ja, en het moet per gebruiker gescheiden zijn. En conversaties moeten verwijderbaar zijn.
+Q: Hoe zit het met API-keys? In de instellingen moeten API-keys staan.
+A: Hoeft nog niet, maar dat willen we later pas toevoegen. Die API hoeft dus nu nog niet.

@@ -1,0 +1,8 @@
+Backlog Refinement is geen onderdeel van Scrum, er is geen vaste dag voor. Het is wel slim er een vaste dag voor aan te wijzen.
+
+We gebruiken nu Trello, later Scrumwise en nog later Gira (of hoe je dat ook moet spellen).
+
+Start this sprint pas als je alle andere stuff hebt ingevuld.
+
+Q: Moet je Scrumwise gebruiken voor het project?
+A: Nee, Trello wordt aangeraden. Volgend project worden we toegevoegd aan een licentie die school levert zodat we Scrumwise kunnen gebruiken.

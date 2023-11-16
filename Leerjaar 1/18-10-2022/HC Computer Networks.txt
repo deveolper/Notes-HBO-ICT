@@ -1,0 +1,126 @@
+Verdieping netwerklaag (IP)
+- Routing
+
+Over 2 weken toets.
+
+Router maakt forward-beslisseningen op laag 3 en gebruikt IP-adressen
+Er zijn veel implementaties van routers maar sturen allemaal door op L3
+Router kan packets routen.
+
+Hoe "weet" de router wat het beste pad is?
+Beste pad voor een router => beste "next hop" (volgende router)
+
+De router gebruikt een tabel om de beste "next hop" te vinden.
+Dat creëert een tabel met 1 of meer routes
+
+Elke route bevat:
+	Bestemmingsnetwerk met masker
+	Next hop
+Eventueel bevat een route ook:
+	Metric: De "kosten" van een route
+		De kosten is meestal de tijd
+	Routing source: Wijze waarop de route geleerd is
+
+Hoe komt de router aan de routetabel?
+1. Direct aangesloten netwerken
+	Zitten direct vast aan de router
+2. Static routes
+	Door de beheerder ingevoerde routes
+3. Automatisch geleerde routes
+	Routes die de routers van elkaar hebben geleerd met speciale
+	routing protocollen.
+
+De routes die je router opslaat is niet meer dan 1 kilobyte
+
+I = IGRP derived
+R = RIP derived
+O = OSPF derived
+C = Connected
+S = Static
+E = EGP derived
+B = BGP derived
+* = Default route
+IA = OSPF inter area route
+E1 = OSPF external type 1 route
+E2 = OSPF external type 2 route
+
+Tabel bevat:
+Een code (derive code)
+Een target IP
+Een beste next hop
+Een mask
+
+Default routes:
+Bij een groot netwerk spaart dit op de grootte van de route tabel.
+"Als het netwerk niet in de route tabel staat, doe dan maar de de
+default route".
+Netwerk = 0.0.0.0 /0 => <next-hop>
+
+0.0.0.0 /0 => 66.0.0.5
+Betekend dat alle netwerken die niet in de routestabel staan worden
+doorgestuurd naar 66.0.0.5 in de hoop dat die het wel weet.
+
+NAT = Network Address Translation
+- Er is een tekort aan IPv4-adressen
+Dit tekort komt door de opkomst van IoT (Internet of Things)
+- Lange termijnoplossing: IPv6 (maar invoering duurt lang)
+Invoering duurt lang omdat IPv4 en IPv6 niet compatibel zijn.
+NAT vereist NAT-routers, die heeft een private adres (wat dubbel
+gebruikt mag worden, mag niet op internet gebruikt worden)
+De NAT-router vervangt het private adres voor het public adres.
+De NAT-router vertaalt het ook terug.
+NAT-router houdt bij welke IP-adressen het heeft verwisselt.
+Je verbind met de NAT-router op verschillende poorten.
+
+IPv6 = 128 bit
+IPv4 =  32 bit
+IPv6 heeft dus 2 ^ 96 keer zoveel grotere adresruimte dan IPv4.
+
+We hebben meer IPv6 adressen dan zandkorrels op aarde.
+
+IPv4 en IPv6 zijn niet compatibel.
+
+Opgaven:
+134.56.0.0 /24
+Elk subnet heeft 1 default gateway
+
+1. Wat is het subnetmask van een subnet?
+	255.255.255.0
+2. Hoeveel subnetten kunnen gemaakt worden?
+	256
+3. Hoeveel eindsystemen kunnen in 1 subnet?
+	256 - 3 (netwerkadres, broadcastadres, default gateway) = 254
+4. Wat is het netwerkadres van 134.56.10.17?
+	134.56.10.0
+5. Wat is het broadcastadres van subnet 134.56.10.17?
+	134.56.10.255
+
+Geen tentamenstof:
+Providers gebruiken ook NAT omdat ze niet genoeg IPv4 adressen hebben.
+Range gereserveerd door providers: 100.64.0.0 /10
+
+Q & A:
+Q: Heeft elke router dezelfde next-hop tabel?
+A: Nee, lokale routers hebben meer lokale kennis
+Q: /30?
+A: Geen toetsstof
+Q: /31?
+A: Kan niet, /30 is het kleinste netwerk. /31 kan wel voor
+point-to-point netwerken blijkbaar.
+Q: /31 betekend dat er maar 1 bit beschikbaar is voor apparaten
+en dus zijn er maar 2 opties. 1 daarvan is de router en 1 is het
+broadcast adres. Dan blijven er geen adressen over voor de
+appraten. En dat is dan dus de reden dat /31 niet kan toch?
+A: Klopt
+Q: Is er ook IPv5?
+A: Nee
+Q: Wordt er altijd NAT gebruikt?
+A: Tegenwoordig meestal wel. Maar bvb de HHS heeft dat niet nodig
+want die heeft genoeg publieke adressen.
+Q: NAT type strict, moderate of open? Wat houd dat in?
+A: Geen idee
+Q: Waarom zijn er 256 adressen als 255 het hoogste is?
+A: Omdat we tellen vanaf 0
+Q: Waar komt die .10 vandaan bij de subnetten van de oefening?
+A: Met /24 zijn de eerste 3 bytes het netwerkadres. De 10 is een
+arbitrair getal in de opdracht.

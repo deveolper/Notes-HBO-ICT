@@ -1,0 +1,132 @@
+Security kan met de organisatie of met de techniek te maken hebben.
+Er is een security event.
+
+GDPR = Europese wet, vertaald naar de AVG in Nederland.
+
+Risico = kans x impact
+
+Het vakgebied "cyber security" zit op de applicatie/data/info laag en op de
+infrastructuur laag.
+
+Voor goede beveiliging over de hele organisatie moet je een overzicht hebben.
+
+Security management omvangt de organisatiestructuur en de wet- en regelgeving.
+
+ISM is breed.
+
+#################################################################
+# Context establishment						#
+# Risico assesment						#
+#	Risicoanalyse						#
+#		Risico identificatie				#
+#		Risico schatting				#
+#	Risico evaluatie					#
+# Blij? Ja, ga verder. Anders terug naar context establishment	#
+# Risk treatment -> Monitor, review, communicatie		#
+# Goed? Ja, risico accepteren, nee, terug naar het begin	#
+# Stappenplan in screenshot					#
+#################################################################
+
+Levert op:
+	Bedrijf van onbewust risicolopen naar bewust risicolopen gaan.
+	Ondernemen is immers het nemen van risico's.
+
+Als je voor ISM kiest:
+	BCM = Business Continuity Management
+		- De continuïteit van business is in het geding bij
+		een calamiteit
+		- Herstel van een voorval
+		- Voorbereiden voor snel herstel
+		- Calamiteit - plan - impact terug naar acceptabel niveau
+	Crisismanagement
+		- Wat is een cisis voor de organisatie?
+		- Hoe kan een organisatie een cisis beheren?
+		- Hoe moet een organisatie in een crisis communiceren?
+
+Pentest:
+	Intake -> Reconnaissance -> Attack preparation ->
+	Attack / Verification -> Reporting -> Reconnaissance
+
+Blackhat = voor eigen gains
+Whitehat = voor het goede doel
+Grayhat = Ergens er tussenin
+
+Security operations: De "status" van security.
+Security Operations Center = SOC
+
+Human behaviour:
+De mens is meestal de zwakste schakel in de beveiliging.
+	Kennis, houding en gedrag
+Social engineering: manipuleren van psygologie van de mens.
+
+Compliance: externe regelgeving
+Auditing: onderzoek naar object om uitspraak van kwaliteit hiervan te doen
+
+Wat is de manier om een systeem te maken.
+Fouten komen door complexiteit en door snelheid (time to market).
+Bij elke fase van de ontwikkelingscyclus kunnen kwetsbaarheden worden geïntroduceert.
+
+Voor hackers is het een sport om deze fouten te vinden. Daarom is het belangrijk om bij
+het ontwerpen van een systeem al rekening te houden met security (security by design).
+
+Security Requirements
+Assets -> maatregelen
+	1. Assets inventariseren
+	2. Assets plotten op arganisatiearchitectuur
+	3. Afhankelijkheden van assets in kaart brengen
+	4. Kwetsbaarheden en dreigingen in kaart brengen tav assets
+	5. Nadenken over de betrouwbaarheidseisen
+	6. Betrouwbaarheidseisen omzetten naar security requirements
+	7. Maatregelen opstellen obv security requirements
+
+Requirements hebben gedetaileerde omschrijving van de betrouwbaarheidseisen.
+Eisen en wensen moeten worden gesteld aan de maatregelen.
+
+Q & A:
+Q: Ik heb afgelopen vrijdag een mail ontvangen dat mijn cijfer van sec. ess.
+begin volgende week (dat is dus deze week) bekend zou worden
+gemaakt. Woensdag noem ik midden in de week. Betekent dat dat het cijfer
+vandaag in OSIRIS komt te staan?
+A: Mail naar Wicky, die heeft daar vast meer info over.
+Q: Hebben andere landen ook eigen vertalingen van de GDPR?
+A: Ja, alle EU-landen hebben een eigen vertaling.
+Q: Leer je ook over beveiligen van fysieke locaties?
+A: Voorbeelden, ja, maar geen detail.
+Q: Geïnteresserd in cybersecurity. Met elke differentiatie kan je cyber
+security doen. Wat is het handigst om te kiezen?
+A: Programmeren is wel handig.
+Q: Kan ik ook cyber security doen met de differentiatie SE?
+A: Ja, security is ook deel van SE. Want code moet ook veilig zijn.
+Q: Had van iemand gehoord dat ism vooral consultancy is
+en weinig programmeren
+A: Je hebt zelf keuzes waar je je op wil richten.
+Q: CTF in jaar 2 van ISM?
+A: Ja
+Q: Binnen SE leer je de structuur van de programma's kennen
+A: Klopt, daar leer je naast programmeren ook over secure programming.
+Q: Is de haagse hogeschool aansprakelijk voor leerlingen die misbruik maken van de
+geleerde stof op de HHS?
+A: Nee (wegens de disclaimer van de haagse hogeschool)
+Q: Gaat human behavior ook in op waarom bepaalde keuzes gemaakt worden?
+A: Ja, eigenlijk de hele ISM opleiding.
+Q: Dus veel psygologie?
+A: Niet de hele tijd, maar zit er wel in.
+Q: Dit vak is dus heel specifiek lezen en precies weten waar je naar opzoek bent?
+A: Ja
+Q: En aan de hand van wat je gelezen hebt een advies geven?
+A: Ja, maar je moet niet je eigen vlees keuren.
+Q: Verschil tussen kwantitatieve en kwalitatieve risicoanalyses?
+A: *Docent heeft de vraag geparkeerd*
+	Hier is hij niet op teruggekomen vgm, maar dit is ongeveer wat het verschil is:
+		Kwantiteit is de hoeveelheid, en kwaliteit is hoe goed is het is.
+		Dus je kan heel veel slechte riscoanalyses doen (hoge kwantiteit, lage
+			kwaliteit)
+		Of een paar goede riscoanalyses (hoge kwaliteit, lage kwantiteit)
+Q: Minor in Tokyo?
+A: Dat kan!
+Q: ISM in zoetermeer toch?
+A: Jep
+Q: Waar CST?
+A: Delft
+Q: Waar staat CST ook alweer voor?
+A: Cyber Security Technology

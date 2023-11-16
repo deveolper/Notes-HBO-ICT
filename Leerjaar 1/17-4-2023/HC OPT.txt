@@ -1,0 +1,17 @@
+We gaan leren aan de hand van testen en ontwerpen de kwaliteit van de code, de tests en de ontwerpen te verbeteren.
+We gaan dus niet verder leren programmeren.
+
+We hebben het nu over GitHub, donderdag hebben we het practicum. Dan hebben we ook de opstart van PROJ2.
+
+PUSH maakt een remote branch aan als die niet bestaat. Dan wordt de lokale branch gekopiëerd naar de remote banch.
+
+In een featurebranch werk je aan een nieuwe feature die later kan worden gemerged met de develop branch zodat je collegas geen
+last hebben van de wijzigingen die je doorvoert.
+
+Als je een commit maakt dan worden de wijzigingen in je lokale feature branch meegenomen.
+
+Een pull-request is altijd remote. Deze gebruik je om de wijziging in een feature-branch op te nemen in de developbranch.
+
+git clone gebruik je om de remote repo te clonen.
+
+OTAP: Ontwikkelomgeving, Testomgeving, Acceptatieomgeving, Productieomgeving

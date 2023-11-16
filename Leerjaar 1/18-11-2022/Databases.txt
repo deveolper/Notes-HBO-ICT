@@ -1,0 +1,29 @@
+Vandaag het relationeel representatiemodel.
+Primaire sleutel not null, unique, mag samengesteld zijn.
+Foreign key moet op de toets puntjes onder.
+
+De associatieklasse wordt alleen maar toegevoegd als die ook minstens 1 attribuut heeft.
+Anders dan toon je die niet in het relationeel representatiemodel.
+
+Annulering(id, tijdstip, reden)
+id is primaire sleutel
+id is vreemde sleutel verwijst naar id in bestelling, null is toegestaan
+
+Bestelling(id, email, datum, tijdstip, betaalwijze, spoed)
+id is primaire sleutel
+email is vreemde sleutel verwijst naar emailadres in klant, null is niet toegestaan
+
+Gerecht(naam, beschrijving, prijs)
+naam is primaire sleutel
+
+Klant(naam, adres, woonplaats, telefoonnummer, emailadres)
+emailadres is primaire sleutel
+
+Bestelregel(gerecht, bestelling, aantal)
+(gerecht, bestelling) is primaire sleutel
+gerecht is vreemde sleutel, verwijst naar naam in gerecht, null is niet toegestaan
+bestelling is vreemde sleutel, verwijst id in bestelling, null is niet toegestaan
+
+Volgende week het relationeel implementatiemodel.
+
+Daarna de database.

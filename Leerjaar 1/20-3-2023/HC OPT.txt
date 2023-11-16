@@ -1,0 +1,34 @@
+Interfaces, inheritance en planning gaan we vandaag doen.
+
+Planning:
+- OPT studie
+- Project 1
+  Zoveel mogelijk aanwezig zijn tijdens de les
+- Individueel portofolio 2
+  Doe zoveel mogelijk thuis, maar werk er ook aan op school
+
+Maak elke week een planning.
+
+Interface
+- Alle methodes moeten geïmplementeerd worden in de class die het implementeerd. Je kan deze niet in de interface implementeren.
+- Je kan een onbeperkt aantal interfaces implementeren (ik denk zelf dat het gelimiteerd is tot het 32 bit integer limiet of het 64 bit integer limiet, maar dat is 
+geen tentamenstof).
+Inheritance
+- De child-class krijgt public, protected en default attributes en methodes van de parent en voegt evt iets toe.
+- De child krijgt de implementatie van de parent
+- Java ondersteunt het *niet* om van meerdere super-classes te erven.
+Abstract class
+- Bevat geen implementatie van de methodes, alleen de signatuur.
+- Kan je alleen instantiëren als je ook gelijk de methodes implementeerd.
+
+Doorzetten is echt noodzakelijk.
+Maak gebruik van ChatGPT voor extra uitleg, en stel uiteraard vragen aan Laurens :)
+Maak de StepIK opdrachten! Vanmiddag komen er weer opdrachten beschikbaar. Ik ben uiteraard beschikbaar voor vragen!
+
+"Het is moeilijk, maar het is zeker mogelijk!"
+- Marcel van der Ploeg
+
+Een superclass is vaak abstract.
+
+Een abstracte klasse kan je alleen instantiëren als je ook gelijk de methodes implementeerd. Dit wist de docent niet, hij dacht dat het helemaal niet kon. Dus dat is denk ik genoeg om 
+te weten voor het tentamen.

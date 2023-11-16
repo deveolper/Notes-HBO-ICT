@@ -1,0 +1,12 @@
+Als allereerste vind ik het erg ongezellig dat niet iedereen er is. Ik ben diep, diep teleurgesteld! Diegene waaraan dit bedoeld is weet dat! Er missen meerdere studenten...
+
+We gaan user-stories bekijken en omzetten naar een ontwerp.
+
+Less is more, een eenvoudig ontwerp is vaak beter dan een ingewikkeld ontwerp.
+
+We hebben een zelfstandignaamwoordanalyse (is dit 1 woord?) gedaan.
+  Bij de beschrijving van de opdracht is een zelfstandignaamwoord vaak een class en een werkwoord is vaak een methode, soms is het wel een class.
+  Je moet wel de zn's groeperen zodat je geen dubbele krijgt. En van zn's waar je geen data van registreert hoef je ook geen class van te maken.
+
+Veel info van het HC wist ik al, en ik werdt ook afgeleid door verschillende dingen. Dus ik heb niet alles genoteerd. Voor de gedetaileerde uitleg is het bijwonen van het hoorcollege
+cruciaal.

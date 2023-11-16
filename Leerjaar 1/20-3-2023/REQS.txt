@@ -1,0 +1,59 @@
+We hebben een roosterwijziging-suggestie doorgegeven voor het iets later laten starten van de les.
+
+DoD en DoR gaan we ook leren opgestellen:
+- Definition of Done
+  Wanneer is de user-story goed genoeg geïmplementeerd
+- Definition of Ready
+  Wanneer is de user-story goed genoeg gespecificeert is om in de sprint mee te nemen
+
+
+Definition of Ready (DoR)
+De Definition of Ready is een set criteria waaraan een product backlog item (PBI) moet voldoen voordat het door het team kan worden opgepakt en in productie kan worden genomen.
+Enkele criteria die je kunt gebruiken om te bepalen of een PBI gereed is, zijn:
+
+Duidelijke beschrijving: de beschrijving van het PBI is duidelijk en begrijpelijk voor alle teamleden.
+Acceptatiecriteria: er zijn duidelijke acceptatiecriteria opgesteld voor het PBI en deze zijn bekend bij alle betrokkenen.
+Schatting: het PBI is voldoende geschat en past binnen de capaciteit van het team.
+Afhankelijkheden: alle afhankelijkheden van het PBI zijn geïdentificeerd en zijn bekend bij alle betrokkenen.
+Prioriteit: het PBI heeft de juiste prioriteit ten opzichte van andere items in de product backlog.
+SMART: het PBI is SMART geformuleerd (Specifiek, Meetbaar, Acceptabel, Realistisch en Tijdsgebonden).
+Enkele SMART-criteria voor de Definition of Ready zijn:
+
+Specifiek: het PBI is specifiek geformuleerd en laat geen ruimte voor interpretatie.
+Meetbaar: het PBI heeft meetbare acceptatiecriteria en kan worden getest.
+Acceptabel: het PBI is acceptabel voor alle stakeholders en past binnen de doelstellingen van het project.
+Realistisch: het PBI is realistisch en haalbaar binnen de beschikbare tijd en middelen.
+Tijdsgebonden: het PBI heeft een duidelijke deadline en past binnen de geplande sprints.
+Definition of Done (DoD)
+De Definition of Done is een set criteria waaraan een PBI moet voldoen voordat het als 'af' kan worden beschouwd.
+Dit betekent dat het PBI klaar is om te worden vrijgegeven en in productie kan worden genomen. Enkele criteria die je kunt gebruiken om te bepalen of een PBI gereed is, zijn:
+
+Functionele eisen: het PBI voldoet aan alle functionele eisen en specificaties.
+Technische eisen: het PBI voldoet aan alle technische eisen en specificaties.
+Testen: het PBI is grondig getest en heeft alle acceptatietesten doorstaan.
+Gebruikersacceptatie: het PBI is goedgekeurd door de gebruikers en voldoet aan hun verwachtingen.
+Documentatie: alle documentatie is bijgewerkt en is beschikbaar voor alle betrokkenen.
+SMART: het PBI is SMART geformuleerd (Specifiek, Meetbaar, Acceptabel, Realistisch en Tijdsgebonden).
+Enkele SMART-criteria voor de Definition of Done zijn:
+
+Specifiek: alle specificaties en vereisten zijn specifiek geformuleerd en duidelijk voor alle betrokkenen.
+Meetbaar: het PBI is meetbaar op basis van de opgestelde acceptatiecriteria.
+Acceptabel: het PBI is acceptabel voor alle betrokkenen en past
+
+We gaan vandaag met de daily standup en de retrospective werken.
+
+Stand-up:
+- Wat heb je sinds de vorige standup gedaan?
+- Wat ga je vandaag doen?
+- Welke problemen ervaar je?
+
+Retrospective:
+- Setting the stage
+  Beschrijf in 1 woord hoe je de vorige sprint ervaren hebt
+- Gather data
+  Liked: Github tutorial
+  Learned: Git
+  Lacked: Tasks
+- Generate insights
+- Decide what to do
+- Close the retrospective

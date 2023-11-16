@@ -1,0 +1,2 @@
+We gaan weer aan de gang met arrays:
+1. Schrijf een methode die alle getallen van een array optelt en teruggeeft

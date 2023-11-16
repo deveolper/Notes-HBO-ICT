@@ -1,0 +1,22 @@
+Tips voor GIT MERGE komen dit hoorcollege, en uiteraard ga ik zoveel mogelijk noteren:
+
+Wat is een merge conflict?
+- Er zijn 2 wijzigingen in dezelfde code, deze kunnen niet worden samengevoegd.
+
+Branching strategieën:
+- Geen strategie: je pusht je local Main naar de remote Main.
+- Feature branch: je brancht naar een feature branch, en dan push je naar Main or creeer je een pull request.
+- Merge conflicten voorkomen: Je doet een pull van Main naar Development en een pull van development naar feature. Je pusht feature naar development, development push je naar main.
+De Main branch is de huidige nieuwste versie die al is uitgerolt. De Development branch is voor de volgende versie. Feature branches commit je naartoe.
+
+Voorkomen van conflicten:
+- Vaak pullen: Tussen branch en push gewoon regelmatig pull uitvoeren om zeker te weten dat alles up-to-date is.
+Alle commits die je al hebt gepullt kunnen geen conflicten veroorzaken met de nieuwe stuff die je na het pullen toevoegt
+- Kleine pushes: Vaak pullen en vaak pushen terug naar de development branch. Extra voordeel is dat als er een conflict is, dat die vaak klein is.
+- Cherry pick commit: Alleen een specifieke commit meenemen in je feature branch.
+- Communicatie: Spreek af wie waaraan werkt op welk moment, soms is even wachten een beter idee.
+- Vaak syncen, kleine commits: als het nodig is tegelijkertijd te werken met dezelfde branch, commit dan vaak, pull vaak.
+- Gebruik des noods een if om code die nog niet af is, niet te gebruiken maar wel in de main branch te kunnen zetten.
+- Zorg dat als je in hetzelfde bestand werkt, je in een ander deel van het bestand werkt.
+- Geen veranderingen maken die niet nodig zijn.
+- Spreek code-style af, zodat daar geen conflicten door worden veroorzaakt.

@@ -1,0 +1,166 @@
+Business Process Management
+===========================
+Stof voor de eerste toets (volgende week).
+
+Het BMC van vorige week is belangrijk.
+De Organisatiekunde is ook belangrijk.
+
+Vooral over processen en bedrijfsprocessen.
+Dit is ook belangrijk.
+
+Alles wat binnen een organisatie gebreurt zijn
+bedrijfsprocessen.
+
+Voorbeeld van een process:
+	Opstaan en naar school gaan.
+		Je wordt wakker
+		Je checkt berichten
+		Je wast
+		Je ontbijt
+		Je reist naar school
+		Etc.
+
+Samenvatting van filmpje:
+	Dingen die we voorelkaar krijgen doen we
+	in samenwerking. We splitsen het op en voeren uit
+	waar we goed in zijn. We voegen waarde toe bij
+	elke stap. Waarde als in waarde propositie.
+	Branch = Gateways
+
+	Sneller, goedkoper, beter = beter voor
+				    het bedrijf
+
+	Business process = reeks stappen die waarde
+				toevoegen.
+
+Bestuderende processen
+	Activiteiten die nodig zijn om op hoger niveau
+	het bedrijf te bestuden.
+
+	Voorbeeld:
+		College van bestuur controleerd hoe het
+		gaat met alle faculteiten van HHS.
+
+	Financieen; openen nieuwe filliaal;
+	bepaling welke producten verkocht worden.
+Verbeter processen
+	Niet noodzakelijk op de toets.
+Primaire processen
+	Horen vlak bij het product. De basis.
+	Ligt dicht bij het leveren van product of dienst.
+
+	Definitie:
+		De samenhangende activiteiten om het
+		product of dientst te realiseren voor de
+		klant.
+
+	Inkoop, verkoop, verwerking, bezorgen, etc.
+
+Ondersteunende processen
+	Definitie:
+		Processen die niet direct nodig
+ 		zijn voor de levering van producten.
+		Maar wel om middelen te krijgen die
+		nodig zijn om het primaire proces
+		goed te laten lopen.
+
+	Bijvoorbeeld:
+		Personeel aannemen.
+		Kinderopvang, om ouders te laten kopen.
+		Schoonmaken van winkel.
+		Restaurant.
+		Website beheer.
+
+Verschillende niveus
+	Hoofdniveau:
+		Inkoop
+		Opslag
+		Verkoop
+	Subniveau (Inkoop):
+		Initiatief tot inkoop
+		Beslissing inkoop
+		Uitvoering inkoop
+		Afwikkeling inkoop
+	Detailniveau (Initiatief tot inkoop):
+		Opvragen verkoopgegevens
+		Opvragen voorraadgegevens
+		Bepalen inkoopbehoefte
+
+Driedeling processen:
+	Richten
+		Sturen van de organisatie.
+		Managementondersteunende systemen (MSS)
+			Management
+			Supporting
+			System
+	Inrichten
+		Faciliteren van het proces.
+		Management Informatie Systemen (MIS)
+			Management
+			Information
+			System
+	Verrichten
+		Uitvoeren activiteiten.
+		Transactieverwerkenden systemen (TPS)
+			Transaction
+			Processing
+			System
+
+Processen werken met informatie
+	General:
+		Data -> process -> nieuwe data
+	Voorbeeld:
+		Adres, productkeuze, betaling ->
+		    inpakken ->
+			factuur, verzendsticker, melding.
+
+Begrippen:
+- Gegevens
+- Metadata
+- Content
+- Informatie
+	Informatie = data + context
+
+	Gestructureerd:
+		Tabellen
+		In velden
+	Ongestrucureerd:
+		Documenten
+		Webpagina's
+		Mapjes
+		Papier
+		Digitaal
+	
+- Kennis
+	Kennis = informatie + ervaring
+	Kennis = informatie + vaardigheid
+	Kennis = informatie + attitude
+
+	Implicite (tacit) kennis (hoofden van mensen)
+	Explicite kennis (vastgelegd).
+
+	Explicite is 5 %
+		Documenten, bestanden etc.
+	Implicite is 95 %
+		Alles wat in ons hoofd zit.
+
+- Data
+	Kale gegevens
+	Let op: Data is meervoud
+	however: Data is singular
+
+	Gegevens zonder context.
+
+	Data + context = informatie
+- Documenten
+
+Voorbeeld: IKEA
+	Database met productnaam, omschrijving en prijs.
+
+Q & A
+=====
+Vraag: Is JSON dan dus ongestructuurde data omdat het niet in een tabel zit?
+Antwoord: niet zozeer want je hebt ook json schemas
+
+Vraag: Gaan de hoorcolleges morgen door?
+Antwoord: Ja

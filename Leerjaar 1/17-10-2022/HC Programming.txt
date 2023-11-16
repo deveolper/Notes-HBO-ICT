@@ -1,0 +1,74 @@
+Deze les:
+Hoe geef je informatie terug uit een methode?
+
+Als je het niet begrijpt:
+- Kijk filmpjtes ter voorbereiding van het hoorcollege
+- Maak Wooclap opnieuw
+- Werk samen met medestudenten
+- Stel vragen in Discord van haagse HBO-ICT (of aan Laurens)
+	Als u het niet begrijpt, valt u mij daarmee lastig!
+- Ga naar SL7.33 om vragen te stellen aan student-assistenten hele week
+- Maak Stepik-opdrachten
+- Neem vragen mee naar het practicum
+- Verdiep je in extra leteratuur 'Algemene Informatie' > 'Literatuur'
+	Op de pagina van Programming 1
+	Hier zit ook info voor boeken voor de differentiatie SE
+
+Week 9:
+	Open vragen toets
+
+Brightspace > Lessen > Lesweek 8 - Methodes die iets teruggeven
+Stepik > 7. Methoden 2 (11 opgaves en 3 challenges)
+Wooclap: Formatieve toets
+
+Toetsing:
+	Open vragen
+	Proeftoetsen tijdens HC
+	Voldoende: 60 % van punten
+
+Vragen en antwoorden:
+	06 61682825
+	Op locatie
+	E-mail (ongespecificeerd adres)
+
+Daarna wooclap vragen.
+
+Belangrijk in java:
+	Types van parameters moeten correct zijn.
+	Types van return-waardes moeten correct zijn.
+	Zorg dat het einde van een niet-void functie niet bereikt kan worden.
+		Voeg altijd een return toe in dat geval.
+
+Opdracht:
+- Naam en basissalaris inlezen van de medewerker
+- Gemiddeld: 156 uur per maand
+- Overuren 50 % meer salaris
+- Tonen basissalaris, betaling overuren en totaalbedrag
+- Tonen integers
+
+Voer de naam van een medewerker in: Pieter
+Voer het basissalaris van deze medewerker in: 3500
+Hoeveel overuren heeft deze medewerker gemaakt deze maand? 10
+
+Basissalaris:	    € basissalaris
+Betaling overuren:  € basissalaris / 156.0 * overuren * 1.5
+		    -----
+Totaal:		    € basissalaris + betaling overuren
+
+Uitleg berekeningen:
+	Het basissalaris is gegeven.
+
+	Betaling overuren = basissalaris / uren * overuren * 1.5
+		basissalaris / uren = salaris per uur
+		salaris per uur * overuren = totale betaling overuren
+		MAAR JE REKENT 50 % MEER VOOR DE OVERUREN.
+		Dus we doen het keer 1.5
+
+	Totaal = basissalaris + betaling overuren
+		Want de betaling van de overuren is niet inbegrepen in het
+		basissalaris.
+
+	Docent gebruikte (100 + 50) / 100
+		Dat is 150 / 100 = 1.5 (de factor die ik gebruik)
+ 		De docent vereenvoudigde het naar salaris + salaris / 2
+		Daarna vereenvoudigde de docent het naar salaris += salaris / 2

@@ -1,0 +1,90 @@
+We gaan verder met BPMN = Business Process Modeling Notation
+
+Volgende week vakantie, week daarna toets
+
+Week 6 (basisset 1):
+	Event (start/end)
+	Activity (task)
+	Gateway (excl./incl./parallel)
+	Sequence flow
+
+Week 7 (basisset 2):
+	Swimlanes (pool/lane)
+		Volledig gemodelleerde pool: white box
+		Niet-gemodelleerde pool: black box
+	Message flow
+		Streepjeslijn (niet stippellijn)
+
+Week 8 (basisset 3):
+	Data object
+	Data store
+	Data assosciation (nog een pijl)
+
+Data Object
+	Papier met rechterbovenhoek gevouwen
+
+	Bevat informatie
+	Wordt meestal tijdens een proces gebruikt
+
+	Mailtje of notitie bijvoorbeeld
+
+	Wordt niet echt opgeslagen zoals bij een database
+
+	Data object wordt dmv een data association
+
+	DataObject ...> task
+		Task gebruikt data van DataObject
+	task ...> DataObject
+		Data wordt opgeslagen in DataObject
+Data Store
+	Database-icon: Cillinder met 2 extra schijven er
+	bovenop
+Data Association
+	Stippellijn (niet streepjeslijn) en een open punt.
+
+Uitwerking oefening pizzeria (week 7) uitgebreid met:
+	Data Objects en Data Associations
+	Uitgewerkt in afbeelding
+
+Data Store: informatie kan langer bewaard blijven dan de duur
+van het proces
+Bij een Data Store wordt vaak een Database gebruikt.
+
+Data Object: informatie alleen voor huidige proces gebruikt
+
+Een proces MOET PRECIES 1 start-event hebben.
+Een proces MAG MEERDERE end-events hebben.
+
+Database is intern gestructureerd.
+E-mail is intern ongestructureerd.
+CBS is extern gestructureerd.
+Webpagina's zijn extern ongestructureerd.
+
+Huiswerk:
+	Bestuderen sheets
+	Les terugkijken
+	Opdrachten in brightspace
+		Data objecten
+		Data stores
+		Data association
+	Plaats de uitwerking in de reviewruimte
+	Maak eerste opdracht, tweede wordt in de les gedaan.
+
+Voorbereiding toets:
+	Bestudeer stof van week 6, 7 en 8
+	Bekijk de opdrachten opnieuw
+	Toets is schriftelijk, duidelijk tekenen en schrijven
+	Maak proeftoets (zie "toetsing" op brightspace)
+
+Q & A:
+Q: Dus een data object blijft bestaan tot een end-event en
+een data store blijft daarna ook nog bestaan?
+A: Jep
+
+Q: Ik heb voorzieningen om toetsen op laptop te maken.
+Hoe teken ik die modellen precies uit?
+---><+>--->[doen]
+     |
+     V
+  [doen]
+A: Moet ik aan mijn docent vragen.

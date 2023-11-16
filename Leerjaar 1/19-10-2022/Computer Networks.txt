@@ -1,0 +1,8 @@
+Het MASK wordt gebruikt om het netwerkdeel te onderscheiden van het hostdeel.
+
+Het netwerkdeel wordt gebruikt om een packet bij het juiste netwerk af te leveren.
+Het hostdeel wordt gebruikt om in het netwerk het packet bij de juiste host af te leveren.
+
+Een /8 mask is een mask met 8 bits als netwerkdeel en 24 bits als hostdeel
+Een /16 mask is een mask met 16 bits als netwerkdeel en 16 bits als hostdeel
+Een /24 mask is een mask met 24 bits als netwerkdeel en 8 bits als hostdeel
