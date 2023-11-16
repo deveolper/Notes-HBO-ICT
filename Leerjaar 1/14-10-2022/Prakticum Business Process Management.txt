@@ -1,0 +1,4 @@
+Message-flow is voor communicatie tussen pools.
+
+Als niet alle pools even lang zijn kan dat foutgerekend worden op
+het tentame.

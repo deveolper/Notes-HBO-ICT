@@ -1,0 +1,91 @@
+Van Flexigo en Drive Consulting geven een Workshop over Skilled Scrum
+
+Casus KLM van 5 teams:
+- We gaan niet bouwen, maar plannen
+- Oudste luchtvaartmaatschapij die niet van naam is gewijzigd, bestaat sinds 1919
+- Alles moet zo makkelijk en soepel mogelijk
+- 163 bestemmingen, 92 in europa, 71 intercontinentaal
+- Meer statistiek die hopelijk niet belangrijk is
+- Ze hebben meer concurrentie, wachtrijen op Schiphol, minder vluchten, duurzaamheidswetgeving, geluidsoverlast, etc.
+
+De opdrachten:
+- 1 jaar proberen ze strategische doelstellingen te behalen:
+  - Klanttevredenheid van 7,6 naar 8+
+  - Terugkerende klanten omhoog met 12 %
+  - En nog iets
+- We werken aan de features die nog worden geleverd.
+- Teams:  website, app, zakelijk, betalingsverkeer en backend.
+- Scrummasters gaan bij elkaar zitten voor de afhankelijkheden.
+- Uitleggen welke features doen we niet en waarom.
+
+Tips en richtlijnen:
+- Op basis van prio en business waarde bepaal je welke features eerder worden gedaan
+- Features in meerdere spints, story in 1 sprint
+- Feature heeft stories van meerdere teams
+- Stories hebben afhankelijkheden, die staan vermeld
+- Je hoeft niet alles te realiseren, maar onderbouw wat er niet gerealiseerd is
+- Je plant op basis van huidige kennis
+- We plannen ook op basis van capaciteit
+- 3 spints per kwartaal, 1 maand per sprint
+
+We sluiten af in de Aula waarin we ervaren hoe het is in een groter team software te ontwikkelen. We moeten uiteraard ook testen. Ook moet het beheerbaar en updatebaar zijn.
+
+Drive
+-----
+Skilled Scrum = Safe
+Drive is een consulting bureau, consulting bureaus werken in naam van een klant.
+Drive werkt ook mee met de klant, dat doen niet veel consulting bureaus.
+Drive heeft grote opdrachtgevers, allemaal met minimaal 100 medewerkers in de IT. Meer dan 30 klanten (KLM, ABN, AMRO etc.)
+
+Flexigo
+-------
+Netwerkorganisatie
+Vooral voor de freelancers
+Projectmanagement
+Agile
+Softwaretesten
+Business Consultancy
+Leuk en eerlijk samenwerken
+25 consultants, 19 klanten, 8 partners
+
+Memorable
+---------
+"De rollen zijn als het goed is al verdeeld, daarbij kijk ik even naar Karel"
+*Karel verlaat de ruimte*
+
+Hulpmiddelen:
+- Er is al vastgesteld dat er 3 sprints van een maand zijn
+- We moeten plannen welke features we maken en welke risico's we hebben
+
+Q & A
+-----
+Q: Jullie gaan van Epics naar features naar user stories, wij hebben geleerd gelijk naar user te gaan vanuit epics. Hoe zit dat?
+A: Een epic is vaak zo groot dat het een te grote stap is om van epics gelijk naar userstories te gaan. De features die stop je er tussen (iets anders dan essentiele features).
+Lekker verwarrend.
+Q: Hoe wordt er rekening gehouden met de afhankelijkheden tussen de teams?
+A: Tijdens de kwartaalplanning.
+Q: Uit hoeveel mensen bestaat zo een soort team?
+A: 3 tot 10, *wow, ik zit in een groep van 2.*
+Q: Hoeveel mensen zijn bij een kwartaalplanning aanwezig?
+A: Al snel ongeveer 100
+Q: Hoe verdelen jullie een Epic in features?
+A: Hoe maak ik het zo klein mogelijk dat het wel al iets oplevert voor de klant?
+Q: Hoe voorkom ik dat het te klein wordt?
+A: Het is gewoon fijn als het klein is, dat is overzichtelijk en fijn. Ook voor de klant, die heeft namelijk al snel features waar die wat aan heeft.
+Q: Waarom vinden jullie het werk nu zo leuk?
+A: Bij Drive houden we van dingen verbeteren, we willen een mooi resultaat behalen, we staan voor meetbaarheid en we houden van problemen oplossen. We vinden het fijn om iets bij te
+dragen. Ook als we lekker kunnen switchen blijft het werk leuk. De variatie in werk is groot door de variatie in opdrachtgevers.
+Q: Overtuig de student dat testen een mooi onderdeel is.
+A: Dat is moeilijk, de klant vraagt zich ook af wat het nut is. Tot dat je besluit het niet te doen, dan merk je dat bij de oplevering.
+Q: Waarom zou je je eigen bedrijf beginnen?
+A: Leuk, zelf gecreëerd.
+Q: Hoeveel verdient dit?
+A: Bij Drive zijn de salarissen transparant. Je kan makkelijk achterhalen wie hoeveel verdient. Zonder ervaring 2500 tussen 2800 + 900 mobiliteit per maand. Met 15 jaar ervaring: 6000
+bruto per maand + 1200 mobiliteit per maand.
+Q: En bij Flexigo?
+A: Je werkt dan als freelancer, je verdient je uurtarief. Je bepaald zelf wat de factuur is. Tussen 80 en 120 per uur.
+Q: Wat zijn dingen die je bij Scrum ziet die misgaan? En hoe zorg je dat het goed gaat?
+A: Veel verschillende dingen, zoals teams die in sillos worden ingedeeld (frontend en backend). Of eilandjes binnen het team. Teveel inplannen. Heel veel dingen.
+Q: Tips voor beginnende ondernemers?
+A: Gewoon doen. Niet teveel plannen, vezamel mensen die je helpen. Doe wat je wil. Houd rekening met tegenvallers dmv buffers. Blijf volhouden en doorzetten. Gebruik hulp van mede-
+ondernemers.

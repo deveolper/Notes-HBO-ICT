@@ -1,0 +1,14 @@
+Deze week 1 hoorcollege en 1 practicum
+
+Open/close principe:
+  Je kan iets toevoegen aan de applicatie zonder dat de rest van je applicatie breekt.
+
+Code smell: (primitive obsession) constanten aan de class toevoegen om het gedrag van een methode aan te passen in plaats van een nieuwe class aan te maken.
+Code smell: Switch-statement, er is een conditie die er alleen maar is omdat je geen nieuwe class hebt gemaakt. Los het op ahv polymorphism.
+
+Template method pattern:
+  Je hebt een methode die een aantal stappen uitvoert. Deze stappen zijn losse methodes, mogelijk methodes uit subclasses.
+
+Daarna is er code geschreven, gewoon op basis van een boolean kiezen welke methode moet worden uitgevoerd en dan de boolean veranderen in de andere waarde.
+De methodes die aangeroepen werden moesten abstract zijn zodat die in de subclasses konden worden geïmplementeerd.
+Als je hierover nog vragen hebt, aarzel niet om aan Laurens te vragen naar hulp.

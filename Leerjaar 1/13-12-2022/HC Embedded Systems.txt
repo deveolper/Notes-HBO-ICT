@@ -1,0 +1,63 @@
+Combinatorische circuits:
+- Geen geheugen
+- Alleen inputs en outputs
+
+Boolean-algebra
+
+Stappenplan implementatie:
+1. Tekst (requirements)
+2. Waarheidstabel
+3. Logische functie
+4. Circuit
+5. Circuit-eigenschappen
+6. Minimaliseren
+
+Als casus: prime checker
+Ontwerp een circuit wat test of een 4 bit getal een priemgetal is.
+
+8a + 4b + 2c + d = n
+p = 1 als n een priemgetal is, anders 0
+
+ a | b | c | d | decimal | p
+---+---+---+---+---------+--
+ 0   0   0   0      0      0
+ 0   0   0   1      1      0
+ 0   0   1   0      2      1
+ 0   0   1   1      3      1
+ 0   1   0   0      4      0
+ 0   1   0   1      5      1
+ 0   1   1   0      6      0
+ 0   1   1   1      7      1
+ 1   0   0   0      8      0
+ 1   0   0   1      9      0
+ 1   0   1   0     10      0
+ 1   0   1   1     11      1
+ 1   1   0   0     12      0
+ 1   1   0   1     13      1
+ 1   1   1   0     14      0
+ 1   1   1   1     15      0
+
+Je moet de circuits naar een waarheidstabel kunnen omzetten op de toets.
+Je moet ook met de functies kunnen werken.
+
+Tricks:
+- Voor elke 1 in de waarheidstabel gebruik je 1 and-gate in je circuit.
+
+Indicaties voor vereenvoudiging:
+- Twee opeenvolgende 1'en in de output
+- Twee 1'en waarvan de input maar 1 bit verschilt
+
+\sum m(0,4,8) = Q
+Betekent dat als de invoer decimaal 0, 4 of 8 is, dat de output dan 1 is.
+(bovenstaande expressie is een LaTeX-expressie).
+
+Complexiteit van een circuit:
+- Aantal gates
+- Aantal inputs
+
+Q & A:
+Q: Is de toets MC?
+A: Ja
+Q: Kunnen we hierover extra matteriaal krijgen?
+A: studielink.nl/uitschrijven
+A: Op brightspace staat een dictaat met info

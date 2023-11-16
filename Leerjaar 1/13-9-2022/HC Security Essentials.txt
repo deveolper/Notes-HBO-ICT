@@ -1,0 +1,25 @@
+Het gaat deze keer om de Human Factor.
+Dat betreft de beveiligingsrisico's die komen door
+de mensen.
+
+youtube.com/watch?v=BEHl2lAuWCk
+
+youtube.com/watch?v=VnFC-s2nOtI
+
+Je hebt bewust en onbewust gedrag.
+
+Gedrag = Persoon + omgeving
+Omgeving = Sociale omgeving + fysieke omgeving
+
+Menselijk gedrag = kennis + houding + gedrag
+
+Latente fout is het hele process
+van de fout tot het incident.
+
+Rule-based:
+	Je mag geen phishing mail openen, maar doet het
+	toch.
+Knowledge-based:
+	Net nieuw in het bedrijf, iemand vraagt je
+	hem binnen te laten, en je gaat er dus vanuit
+	dat hij erin zou moeten mogen. Dus je laat m in.

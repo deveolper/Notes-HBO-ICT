@@ -1,0 +1,93 @@
+Vandaag privacy.
+
+Privacy en security liggen heel dicht bij elkaar.
+
+Je personelijke gegevens wil je beschikbaar hebben.
+Deze gegevens moeten ook integer zijn.
+En deze zijn vertrouwelijk.
+
+Voorbeeld, medische gegevens
+Als je bij het ziekenhuis binnenkomt, dan is het fijn als het
+ziekenhuis weet wat je medische staat is.
+Ook is het wel fijn als deze informatie klopt.
+En het is ook wel fijn als deze niet zo maar op straat land.
+
+Doel:
+- Kent de wet- en regelgeving van informatiebeveiliging
+- Kan de AVG uitleggen
+- Kennisneming van bekende privacy-problemen
+
+Privacy Impact Assessment (PIA)
+
+Privacy = reden dat we gordijnen dicht doen
+Security = reden dat we de voordeur op slot doen
+
+Grontwet:
+- Artikel 10 - 13
+
+Persoonlijke levenssfeer:
+- Informatieve privacy
+- Fysieke- /lichamelijke privacy (OnGuard lost dit gedeeltelijk op)
+- Relationele privacy
+- Ruimtelijke privacy
+
+Definities kan je online vinden:
+Persoonlijke levenssfeer
+Recht met rust gelaten te worden	Niet ISM
+Persoonlijke vrijheid			Niet ISM
+Informationele privacy			ISM
+
+Samenvatting noodzaak privacy:
+- Mensen hebben behoefte aan privacy
+- Individuen hebben drang zichzelf te beschermen
+- Mijden gevaar of ongunstige omstandigheden (oerinstinct)
+- Wetgeving
+
+Slechts 41 % maakt zich zorgen over online privacy ondanks media.
+39 %  zou in ruil voor geld een vreemde toegang geven tot data
+Slechts 25 % bedekt de webcam
+
+Artikel 10 van de grondwet:
+	Eerbiediging van de persoonlijke levenssfeer.
+Wet computercriminaliteit:
+	Misdrijven die met de computer gepleegd worden.
+Wet gegevensverwerking en meldplicht cybersecurity:
+	Datalek ben je verplicht te melden aan je klanten.
+Telecommunicatiewet:
+	Ongewenste mail / spam is niet toegestaan.
+AVG:
+	Is al eerder behandeld, en wordt dus niet in dit HC in
+	behandeling genomen.
+
+	Waaronder het recht vergeten te worden.
+
+De meldplicht omvangt dat je kan opvragen wat er is gelekt.
+Hoe naukeurig dit is is afhankelijk van hoe naukeurig het bedrijf
+het weet.
+
+Volgens de AVG kan de data nog wel met toestemming, in noodgevallen
+of met een rechtelijk bevel worden opgevraagd.
+
+Volgens de AVG moet er een functionaris aangesteld zijn die
+verantwoordelijk is voor de gegevens.
+
+De AVG verplicht ook:
+- Register met alle verwerkingen
+- Gegevensbeschermingsbeleid
+- (Digitale)beveiliging
+
+AP (Authoriteit persoonsgegevens) is ook belangrijk.
+Eerlijk gezegd is mijn concentratie een beetje weggezakt.
+
+Daarna hebben we het over PIA = Privacy Impact Assessment
+Welke gegevens verzamelen we?
+Welke partijen hebben toegang?
+Is het goed beveiligd?
+Etc.
+
+Data wordt aan elkaar gerelateerd.
+
+Systemen zijn interoperabel (kunnen met elkaar communiceren in real
+time)
+
+Verzamelde data wordt geanalyseerd (datamining, big data).

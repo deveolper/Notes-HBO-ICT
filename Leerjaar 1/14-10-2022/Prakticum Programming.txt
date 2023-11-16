@@ -1,0 +1,16 @@
+Opdrachten van het werkcollege werden behandeld.
+
+Extra uitleg over parameters en methodes is gegeven.
+Uiteraard ben ik beschikbaar voor alle programmeervragen.
+
+Extra opdrachten behandeld:
+- Rente berekening
+	Stukje code wat een startbedrag in euro's en een
+	rente percentage pakt.
+	En berekend na hoeveel jaar er een bepaald bedrag is bereikt
+	op de rekening.
+
+	Dit kan met integers (grote afrondingsfout)
+	En met doubles (kleine afrondingsfout)
+
+double = kommagetal.

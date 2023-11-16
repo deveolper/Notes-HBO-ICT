@@ -1,0 +1,110 @@
+Complex hoorcollege.
+
+We hebben het over representatie van getallen op een computer.
+
+Bits
+	Instructie
+	Data
+		getal
+			geheel (vandaag)
+				unsigned
+				signed
+			kommagetal
+				niet op tijd genoteerd
+		tekst
+		foto
+		...
+
+2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0
+128  64  32  16   8   4   2   1
+
+Als je 00010110 hebt dan kun je dat onder de vorige data zetten.
+
+2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0
+128  64  32  16   8   4   2   1
+  0   0   0   1   0   1   1   0
+-------------------------------
+  0   0   0  16   0   4   2   0
+
+  0 + 0 + 0 +16 + 0 + 4 + 2 + 0 = 22
+
+Belangrijke integer-systemen tabel heb ik een screenshot van
+gemaakt.
+
+
+Bij unsigned zien de gewichten er zo uit:
+------------------------------------------------
+128, 64, 32, 16, 8, 4, 2, 1
+
+Bij een signed magnitude zien die er zo uit:
+------------------------------------------------
+S, 64, 32, 16, 8, 4, 2, 1
+
+Als S = 0, getal is positief of nul
+Als S = 1, getal is negatief of nul
+
+Bij ones complement zien de gewichten er zo uit:
+------------------------------------------------
+-127, 64, 32, 16, 8, 4, 2, 1
+
+Als je een getal keer -1 wil doen, kan je alle
+bits flippen.
+
+Bij twos complement zijn de gewichten zo:
+------------------------------------------------
+-128, 64, 32, 16, 8, 4, 2, 1
+
+Hier is -128 gebruikt ipv -127.
+Dit zorgt dat er maar 1 representatie van 0 is.
+Bij ones complement zijn er 2 representaties van 0.
+
+Biased optellen
+------------------------------------------------
+Maak het getal positief door er een bias bij op
+te tellen.
+
+Geef in binaire notatie dmv subscript aan welk soort
+getal wordt gerepresenteerd.
+
+De toets is MC
+
+Toen kwamen er een aantal voorbeelden.
+
+ones     complement gebruikt subscript "1c"
+twos     complement gebruikt subscript "2c"
+bias                gebruikt subscript "bias"
+signed   magnitude  gebruikt geen subscript
+unsigned            gebruikt subscript "2"
+
+twos complement wordt het meeste gebruikt.
+
+De gemiddelde computergebruiker vertrouwd blindelings op de
+antwoorden van de machine. NSE-ers en SE-ers kunnen hier niet
+vanuit gaan.
+
+Vervolgens hebben we het gehad over binary addition.
+
+unsigned int:
+
+1 0 0 1 0 1 1 0
+1 0 1 0 0 0 0 0 +
+-----------------
+0 0 1 1 0 1 1 0
+
+Het is gewoon long-addition. Alleen wanneer je antwoord 2 is,
+dan maak je er een 0 van en onthoud je 1.
+
+Als het resultaat 3 is (in het geval van onthouden bij de vorige),
+Dan maak je er een 1 van en onthoud je 1.
+
+Als de waarde niet in het aantal bits past, dan pak je de laatste
+n-bits. Waarbij n het aantal bits is wat je wel hebt.
+
+In Embedded Systems is de code vaak in C of C++ geschreven.
+
+Bij 2c kan je binair rekenen alsof het een unsigned integer is.
+Dat is waarom 2c zo populair is.
+
+Op de toets is zelfs een telraam niet toegestaan. Wel kladpapier.
+
+2 linialen zijn wel toegestaan. Zelfs met als doel te rekenen.

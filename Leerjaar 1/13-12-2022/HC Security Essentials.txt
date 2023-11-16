@@ -1,0 +1,74 @@
+Begrijpen van:
+- Werking van PKI (public key infrastructure)
+- Authenticatie, identificatie, authorisatie
+- Fysieke beveiligingsmaatregelen verboand informatiebeveiliging
+
+De MITM-attack (man in the middle attack) is een aanval-vorm waarbij alle
+communicatie tussen Alice and Bob wordt afgeluisterd.
+
+Public keys kan je veilig verspreiden. Maar de ontvanger moet wel zeker zijn dat
+deze JOUW public key heeft ontvangen.
+
+Certificaat bevat o.a:
+	Identiteithouder
+	Public key van de houder
+	Identiteit van de Certificaat authoriteit
+	Eind datum van het certificaat
+
+Digitale handtekening is versleutelen met de private key.
+Deze kan je ontsleutelen met de public key. Dit is om de handtekening te checken.
+
+Mijn kennis van public key cryptography:
+- Encryptie met de public key
+- Decryptie met de private key
+- Digitale handtekening genereren
+- Digitale handtekening checken
+
+Certificaat = Digitaal document ondertekend door een vertrouwde derde partij.
+
+CA's worden gecontroleerd door de root-CA's
+
+Certification Authority
+
+Toegangsbeheersing:
+Verlenen van toegang:
+- Identificatie
+	Wie ben jij?
+- Authenticatie
+	Ben jij wie je zegt te zijn?
+	- Iets wat je weet
+		- Wachtwoord
+		- Pin
+	- Iets wat je hebt
+		- Token
+		- Smartcard
+	- Iets wat je bent
+		- Vingerafdruk
+		- Irisscan
+- Authorisatie
+	- Discretionary Access Control (DAC)
+	- Role Based Access Control (RBAC)
+
+Password kraken:
+- Dictionary attack
+- Password sniffing
+- Brute force
+
+Bewaken van toegang:
+- Uitdiensttreding
+- Detecteren inbreuken op toegangsregels
+
+Lees H11 van IB onder controle
+
+Q & A:
+Q: Voorbeeld symetric key en asymetric key?
+A: Jij hebt een RAR bestand, dat versleutel je met een wachtwoord. Dat is een
+vorm van symmetrische encryptie
+Q: Kan je op basis van de public key de private key vinden?
+A: Ja, maar het duurt EXTREEM LANG, denk aan duizenden of miljoenen jaren
+Q: Nasa computer staat nog in mijn garage vgm, dus moet lukken
+A: Nee, zelfs daarmee gaat het niet lukken
+Q: Wat is het verschil tussen hashing en encryptie?
+A: Hashing is een subset van encryptie die niet omkeerbaar is
+Q: Wat moet je weten voor de toets?
+A: Staat op BrightSpace

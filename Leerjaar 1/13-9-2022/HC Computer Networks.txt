@@ -1,0 +1,42 @@
+Ook de eindsystemen horen bij een computer-netwerk.
+
+Component-view zijn de eindsystemen.
+Services-view zijn de services die worden geleverd.
+Protocol-view zijn de afspraken.
+
+1. Netwerken en afspraken
+	- Je hebt de applicatie: Browser
+	- Communicatie via een medium: hardware
+	- Client en server communiceren.
+		- Voor deze communicatie zijn protocollen
+		nodig.
+
+	Voorbeelden afspraken:
+		- De netwerkconnector moet passen in de
+		poort.
+		- Elektrische signalen moeten correct
+		zijn (spanning, bandbreedte etc)
+		- Het netwerk moet de berichten bij de
+		juiste persoon aankomen.
+		- Een computer moet met meerdere
+		applicaties kunnen werken als deze
+		tegelijkertijd worden uitgevoerd.
+		- Computer moet communicatie-aanvraag
+		snappen.
+
+	Open standaarden:
+		- Open-source zeg maar.
+	Standaarden II:
+		- RFCxxxx (Request for Comments)
+		- IEEE802.x (Ethernet, wifi, LAN)
+
+2. Lagen en protocollen
+	Gelaagdheid
+		- Verdeling in lagen.
+		- Met onderbouwing van handigheid.
+		- Elke laag heeft zijn eigen afspraken
+		en protocolen.
+	Gelaagde computernetwerken
+
+*Les abrupt beëindigd door brandalarm*
+Bleek oefening te zijn.

@@ -1,0 +1,3 @@
+https://icon-icons.com/icon/wikipedia-official-logo/170789
+
+/opt/bitnami/mediawiki/logo.jpg

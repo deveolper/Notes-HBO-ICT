@@ -1,0 +1,78 @@
+while (you.doesn't_understand()) {	// SyntaxError && GrammerError
+	you.ask(questions);
+}
+
+Deze week gaan we for-loops en bijbehorende algoritmen leren.
+
+Als je weet hoe vaak je door de loop heen moet, gebruik je een for-loop.
+
+Ook een beetje herhaling van de while-loop.
+
+De volgende code:
+
+for (int i = 10; i <= 50; i = i + 10) {
+  System.out.println(i);
+}
+
+Doet hetzelfde als deze code:
+
+int i = 10;	// Deze regel zagen we ook in de for-loop
+while (i <= 50) {	// De conditie tussen de haken ook
+  System.out.println(i);
+  i = i + 10;	// De increment ook
+}
+
+*** MAAR DEZE 2 zijn NIET exact hetzelfde ***
+Bij de while-loop is "i" nog steeds gedefinieerd ná de loop.
+Bij de for-loop is "i" na de loop verwijderd.
+Dit is dus een verschil in de scope van de variabele.
+
+for (initialisatie; test; update) {
+  actie
+}
+
+Eerst wordt de initialisatie gedaan, dan de test, dan de actie, vervolgens de
+update. Daarna springt die terug naar de test-fase.
+
+Let bij de test goed op het verschil tussen "<" en "<=" en het verschil tussen
+">" en ">=". Anders heb ik kans op een "off-by-one" error.
+
+Opdracht:
+Schrijf een methode die de tafel van x toont op scherm.
+Maak een afgewogen keuze voor for- of whileloop
+Schrijf het hoofdprogramma die deze methode gebruikt om de tafels van 1 t/m 10
+toont.
+
+
+import java.util.Scanner;
+
+public class Main {
+  public static void toonTafel(int getal) {
+    for (int i = 1; i <= 10; i++) {
+      System.out.printf("%2d x %2d = %3d %n", i, getal, i*getal);
+    }
+
+    System.out.println();  // Voegt een lege regel toe tussen de tafels.
+  }
+
+  public static void main(String[] args) {
+    for (int i = 1; i <= 10; i++) {	// Deze i is een andere dan in toonTafel
+      toonTafel(i);
+    }
+  }
+}
+
+Niet klakkeloos de bovenstaande code overnemen. Controlleer of u het begrijpt.
+Als u het niet begrijpt, val mij dan alstublieft lastig.
+Zelfs in het weekend ben ik bereikbaar!
+
+Wat je voor de toets moet weten:
+- Overeenkomsten tussen while en for
+- Weten wanneer for beter is en wanneer while
+- Je kunt problemen oplossen met for
+	- je weet hoe vaak een loop wordt doorlopen
+
+En meer (zie slides, ik was niet op tijd met het overnemen).
+
+Je kunt een for-loop ALTIJD herschrijven als een while-loop. Maar het is bijna
+nooit een goed idee.

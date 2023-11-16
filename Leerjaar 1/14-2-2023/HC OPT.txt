@@ -1,0 +1,28 @@
+Woensdag portofolio (23:59) is de deadline voor het inleveren van je portofolio
+Maak StepIK, blijf komen
+Vanaf woensdag assessments
+Geen StepIK = geen assessment
+Maatwerk, zie brightspace > algemeen > maatwerk
+  Plusklas (SL6.42). Daar doe ik aan mee, en dat is voor extra uitdaging
+  Pre-teaching (SL7.18). Daar krijg je bijles
+  Samen leren (SL8.17). Dan zit er iemand bij
+Zorg dat je niet achter gaat lopen
+We gaan het nu hebben over inheritance
+
+Associatie: een object heeft een referentie naar een andere class.
+  Te herkennen aan:
+    "Heeft een ..."
+    "Is onderdeel van ..."
+    "Hoort bij ..."
+
+Inheritance: een object van een subclass erft variabelen en methoden van een superclass.
+  Te herkennen aan:
+    "Is een ..."
+    "Is een soort ..."
+
+Sub-/childclass is een class die methodes en/of attributen erft van een andere class (de parent-/superclass)
+
+Generalisatie:
+  De superclass is algemener dan de subclass.
+Specialisatie:
+  De superclass is specifieker dan de subclass.

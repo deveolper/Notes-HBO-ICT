@@ -1,0 +1,25 @@
+Aanstaande maandag geen practicum REQS.
+
+Volgende week begint OPT3.
+
+Na de vakantie krijgen we 2 HC's en 2 practica.
+
+Wat was de productvisie ook al weer?
+  Beschrijf je wat de opdrachtgever wil. Dat is voordat je begint aan Scrum. Dit is de stip op de horizon.
+
+De productvisie voorkomt dat je het verkeerde oplevert.
+
+Product backlog:
+  Maak je op basis van de productvisie. Deze wordt constant verbeterd.
+  De productowner is ook de eigenaar van de backlog. Het dient als interface tussen de ontwikkelaars en de stakeholders
+
+Sprint backlog:
+  Beschrijft wat er deze sprint gebeurt. Dat zijn items van de product backlog.
+
+Productvisie: we denken na over epics
+Backlog refinement: we denken na over user-stories (storypoints worden toegekend)
+Sprint planning: we denken na over taken (uren worden toegekend)
+
+Zie ook de slides (ik heb er foto's van gemaakt)
+
+Requirements-model is nieuwe stof. Zie de foto.
