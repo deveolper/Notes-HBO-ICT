@@ -1,0 +1,183 @@
+# Databases
+Het uitvoeren van een query wordt vandaag behandeld
+
+Dit is het "bevragen" van de database, het ophalen
+van data uit de database.
+
+De 2e toets van databases gaat over les 4, 5 en 6
+in weken 14, 15 en 16 (week 14 is deze week).
+
+## Tentamenweek
+Week 17 is weer een tentamenweek.
+Het tentamen van week 17 gaat over SQL.
+
+MySQL workbench heeft iedereen als het goed is al
+geïnstalleerd. Anders moet dat snel gebeuren.
+
+FF een korte recap over:
+- Gegevensmodel
+- Relationeel representatiemodel
+- Relationeel implementatiemodel
+
+Het relationeel implementatiemodel is ook hoe je
+de database aanmaakt.
+
+Vandaag: Database
+Een leeg veld in MySQL workbench wordt met NULL
+aangegeven (met grijze achtergrond).
+
+Op het tentamen krijg je de tabellen en moet je
+de queries bedenken.
+
+Data is het nieuwe goud.
+
+Met veel data kan je veel visualisaties maken.
+
+SQL = DDL + DML
+Structured Query Language
+Data Definition Language
+Data Manipulation Language
+
+Queries op 1 tabel:
+  "Lijkt heel veel, maar is goed te doen"
+  Dit is ongeveer wat ik in 3 jaar op mbo heb
+  gehad, in 1 uur gepropt.
+
+  Server > Data Import > Import from Disk > import from self-contained file
+    Voor het importeren van een database.
+    Kies het sql-file.
+
+    - Select from
+      Vraagt informatie op uit de database.
+      SELECT (<kolomnaam>...)
+      FROM (<tabelnaam>...)
+      [ORDER BY (<kolomnaam>...) [(ASC|DESC)]]
+
+    - Order by
+      Sorteerd de resultaten.
+      Optionele toevoeging op een SELECT-statement.
+      Gebruikt kolomnaam om op te sorteren.
+      Als je meerdere kolomnamen invoert, dan sorteerd het op de eerste kolom
+      en als dat dubbele bevat, dan sorteerd het op 2e kolom etc.
+
+      Standaard ASCENDING (ASC), maar kan optioneel ook DESCENDING (DESC) zijn.
+
+      SELECT title, leeftijdscategoire, jaartal, speelduur
+      FROM film
+      ORDER BY leeftijdscategorie, jaartal DESC, title
+
+    - Distinct
+      Filtert de resultaten dat er geen dubbelen in zitten.
+      SELECT DISTINCT geboorteland FROM acteur
+      Dit is zeg maar SELECT geboorteland FROM acteur
+      Behalve dat er geen dubbelen in de output zitten.
+
+      SELECT DISTINCT speelduur, leeftijdscategorie
+      FROM film
+      ORDER BY leeftijdscategorie, speelduur DESC
+
+    - Where
+      WHERE stelt een voorwaarde aan welke records worden getoond.
+
+      String-waarde (werkt ook voor integer, maar is niet netjes)
+      SELECT (<kolom>...)
+      FROM (<tabel>...)
+      WHERE <kolomnaam>='<waarde>'
+
+      Integer-waarde of double
+      SELECT (<kolom>...)
+      FROM (<tabel>...)
+      WHERE <kolomnaam>=<waarde>
+
+      De kolomnaam in de WHERE hoeft niet in de SELECT te zitten.
+
+      SELECT DISTINCT jaartal
+      FROM film
+      WHERE leeftijdscategorie = 12
+
+    - > < <> !=
+      A > B, A moet (strict) groter zijn dan B
+      A >= B, A moet groter dan of gelijk zijn aan B, het =-teken moet **na** het >-teken
+      A < B, A moet (strict) kleiner zijn dan B
+      A <= B, A moet kleiner dan of gelijk zijn aan B, het =-teken moet **na** het <-teken
+      A <> B, A moet *niet* gelijk zijn aan B
+      A != B, A moet *niet* gelijk zijn aan B
+
+    - AND OR IN
+      SELECT (<kolom>...)
+      FROM (<tabel>...)
+      WHERE (<conditie> AND <other-conditie>)
+	Alleen de records die aan conditie EN aan other-conditie voldoen krijg je terug.
+
+      SELECT (<kolom>...)
+      FROM (<tabel>...)
+      WHERE (<conditie> OR <other-conditie>)
+	Alleen de records die aan condite of aan other-conditie of aan beide voldoen krijg
+	je terug.
+
+      SELECT titel
+      FROM film
+      WHERE jaartal > 2010
+      OR speelduur < 120
+
+      SELECT achternaam
+      FROM acteur
+      WHERE geboorteland in ('USA', 'Wales', 'Ierland')
+
+      Geeft de achternamen van de acteurs die in 1 van de 3 landen geboren zijn.
+
+    - Like
+      I like it.
+
+      SELECT titel
+      FROM film
+      WHERE titel LIKE '%Star Wars%'
+
+      % betekend welk aantal tekens je ook wil mag hier worden toegevoegd.
+      Dus eerst 0 of veel tekens, dan "Star Wars" dan 0 of veel tekens.
+
+      SELECT achternaam
+      FROM acteur
+      WHERE achternaam LIKE 'F%'
+
+      Geeft alle achternamen van acteurs die met een F beginnen.
+
+    - NULL
+      NULL geeft aan dat een veld leeg is.
+
+      SELECT titel, beschrijving
+      FROM review
+      WHERE cijfer IS NULL
+
+      **LET OP!** vergelijken met NULL doe je met "IS" niet met "=".
+      Of met IS NOT NULL als je wil dat het niet null is.
+
+    De databases die op BrightSpace staan moeten we importeren in MySQL workbench
+
+    SELECT title, leeftijdscategorie, jaartal, speelduur FROM films
+
+    SELECT achternaam
+    FROM acteur
+    WHERE gebooterland LIKE '%land'
+    AND geboorteplaats IS NOT NULL
+
+    De SQL keywords in HOOFDLETTERS.
+    Al hebben we dat in andere HC's (en dit HC) niet gedaan
+
+HUISWERKOPDRACHT!
+Haagfit en tandarts moet je importeren in workbench, die HMDB heb je als het
+goed is al.
+De databases zijn nodig voor het practicum.
+** OP BRIGHTSPACE STAAT DE HUISWERKOPDRACHT **
+
+ADVIES: Maak de huiswerkopdracht en controlleer deze met Workbench.
+
+# Q & A
+## Dus het tentamen van week 17 gaat *alleen* over SQL?
+Correct
+## Er is dus geen verschil tussen != en <>?
+Klopt
+## Is het tentamen MC?
+Vragen zijn in dezelfde vorm als in het HC
+## Kan je ook NOT LIKE gebruiken?
+Ja, maar het is geen toetsstof en het wordt bijna nooit gebruikt.

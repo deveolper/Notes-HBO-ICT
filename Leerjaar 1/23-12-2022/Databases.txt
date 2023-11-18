@@ -1,7 +1,0 @@
-INNER JOIN geeft alleen records die in alle betrokken tabellen zijn meegenomen
-De andere joins hoeven we niet te kennen
-
-SELECT kolommen
-FROM tabel1
-JOIN tabel2
-ON tabel1.kolomnaam = tabel2.nogeenkolom
