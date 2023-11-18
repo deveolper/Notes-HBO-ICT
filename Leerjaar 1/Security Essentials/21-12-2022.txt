@@ -1,0 +1,10 @@
+Doelen:
+- Student kan uitleggen wat detectieve en responsieve maatregelen zijn en kan deze
+toepassen
+- Pas kennis van de afgelopen weken toe
+
+We moesten presenteren, behalve dat dat niet ging wegens de aanwezigheid.
+Dus we gingen alleen de presentatie voorbereiden.
+
+Hot redundant: Alle dingen dubbel
+Cold redundant: Belangrijkste dingen dubbel
