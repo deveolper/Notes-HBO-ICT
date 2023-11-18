@@ -9,3 +9,6 @@ De aantekeningen die op deze repo te vinden zijn die zijn niet altijd de meest a
 
 # Credits
 Alle credits naar Laurens Frensen (22106189) tenzij er is vermeld dat de credits naar iemand anders kunnen gaan.
+
+# Aanpassingen in progressie
+Ik doe mijn best om de aantekeningen op vak te sorteren in plaats van op datum, dit loopt nog niet heel snel, en is momenteel maar gedeeltelijk gedaan. Excuses voor het ongemak.
