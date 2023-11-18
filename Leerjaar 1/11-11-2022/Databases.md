@@ -1,8 +1,0 @@
-# Klassendiagrammen en SQL
-
-## Vandaag het gegevensmodel
-
-### Cardinaliteit
-Voor de relaties tussen tabellen (1, 2, \*, 1..\*, etc.)
-
-Associatieclasses kunnen worden gebruikt bij een veel-op-veel relatie.

@@ -1,0 +1,11 @@
+Checken of een veld leeg is doe je met:
+is null
+is not null
+
+De functies die je moet kennen:
++-*/
+count
+sum
+min
+max
+avg
