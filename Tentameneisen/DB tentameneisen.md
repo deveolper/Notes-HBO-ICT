@@ -61,7 +61,7 @@ CREATE TABLE weereentabel (
 
 - `NO ACTION`
 
-    Je krijgt een `error` als deze constaint faalt.
+    Je krijgt een `error` als dit niet meer zou kloppen na een wijziging.
 
 - `CASCADE`
 
@@ -87,7 +87,7 @@ Een procedure die in gang wordt gezet bij een aanpassing in de database. Er zijn
 ```sql
 CREATE TRIGGER triggernaam
 ON tabelnaam
-BEFORE UPDATE
+BEFORE UPDATE   -- Blijkbaar is de BEFORE trigger niet MSSQL beschikbaar, wel de INSTEAD OF, die kan je wel een soort van gebruiken als een BEFORE trigger.
 FOR EACH ROW
 BEGIN
     -- Code die voor een update wordt uitvoerd
@@ -106,7 +106,7 @@ END;
 ```sql
 CREATE TRIGGER triggernaam
 ON tabelnaam
-BEFORE INSERT
+BEFORE INSERT   -- Blijkbaar is de BEFORE trigger niet MSSQL beschikbaar, wel de INSTEAD OF, die kan je wel een soort van gebruiken als een BEFORE trigger.
 FOR EACH ROW
 BEGIN
     SELECT * FROM inserted;
@@ -127,7 +127,7 @@ END;
 ```sql
 CREATE TRIGGER triggernaam
 ON tabelnaam
-BEFORE DELETE
+BEFORE DELETE   -- Blijkbaar is de BEFORE trigger niet MSSQL beschikbaar, wel de INSTEAD OF, die kan je wel een soort van gebruiken als een BEFORE trigger.
 FOR EACH ROW
 BEGIN
     SELECT * FROM deleted;
@@ -149,7 +149,7 @@ END;
 ```sql
 CREATE TRIGGER triggernaam
 ON tabelnaam
-BEFORE INSERT, UPDATE, DELETE
+BEFORE INSERT, UPDATE, DELETE   -- Blijkbaar is de BEFORE trigger niet MSSQL beschikbaar, wel de INSTEAD OF, die kan je wel een soort van gebruiken als een BEFORE trigger.
 FOR EACH ROW
 BEGIN
     -- Code die voor een insert, update of delete wordt uitvoerd
