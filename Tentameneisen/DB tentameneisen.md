@@ -1,4 +1,4 @@
-**Documentversie: 20-nov-2023 13:59**
+**Documentversie: 20-nov-2023 15:01**
 
 **Author: Laurens Frensen (22106189)**
 
@@ -303,6 +303,8 @@ Order_Artikel(<ins>*ordernr*, *artikelnr*</ins>, aantal)
 
 Artikel (<ins>artikelnr</ins>, omschrijving, prijs)
 
+LET OP: in sommige gevallen wil je graag de prijs opsplitsen in inkoopprijs en verkoopprijs, maar dit is afhankelijk van de casus.
+
 # Student stelt tijdens een schriftelijke toets het rationele model van een database samen op basis van een UML class diagram (weging: 7,5 %)
 
 Niveau: 2, maar in de matrix staan 15 punten voor niveau 3.
@@ -365,7 +367,7 @@ Deze statements worden nu allemaal wel, of allemaal niet worden uitgevoerd. Als 
 - Maakt de transactie definitief.
 - Maakt de wijzigingen voor anderen zichtbaar.
 - Heft locks op.
-- Als van uno-redo logging gebruikt wordt gemaakt: start nog niet het schrijven naar de fysieke database (dat is pas na een checkpoint).
+- Als van undo-redo logging gebruikt wordt gemaakt: start nog niet het schrijven naar de fysieke database (dat is pas na een checkpoint).
 - Schrijft een commit-record naar de transaction log.
 - Schrijft de log naar de disk.
 
