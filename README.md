@@ -5,7 +5,7 @@ Voor aantekeningen van de lessen van HBO-ICT.
 Ik garandeer niks. Ik doe mijn best, maar ik ben ook maar een mens. Aantekeningen zijn mogelijk imperfect of incompleet.
 
 # Updatebeleid en limitaties
-De aantekeningen die op deze repo te vinden zijn die zijn niet altijd de meest actuele. Via SmartBot op Discord kan je de meest recente versie van de aantekeningen opvragen (en je kan ook zoeken door de aantekeningen dankzij de query-parameter). Om mijn bot te kunnen gebruiken kun je [mijn Discord Server](https://discord.gg/gJBemEsrQZ) joinen.
+Deze aantekeningen zijn ook op te vragen en door te zoeken via mijn Discord Bot. Deze kan je gebruiken op [mijn Discord Server](https://discord.gg/gJBemEsrQZ). In principe zijn de aantekeningen die je via mijn bot kan opvragen dezelfde als die je op de GitHub kan vinden.
 
 # Credits
 Alle credits naar Laurens Frensen (22106189) tenzij er is vermeld dat de credits naar iemand anders kunnen gaan.
