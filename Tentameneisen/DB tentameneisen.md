@@ -1,4 +1,4 @@
-**Documentversie: 20-nov-2023 13:59**
+**Documentversie: 20-nov-2023 14:36**
 
 **Author: Laurens Frensen (22106189)**
 
@@ -365,7 +365,7 @@ Deze statements worden nu allemaal wel, of allemaal niet worden uitgevoerd. Als 
 - Maakt de transactie definitief.
 - Maakt de wijzigingen voor anderen zichtbaar.
 - Heft locks op.
-- Als van uno-redo logging gebruikt wordt gemaakt: start nog niet het schrijven naar de fysieke database (dat is pas na een checkpoint).
+- Als van undo-redo logging gebruikt wordt gemaakt: start nog niet het schrijven naar de fysieke database (dat is pas na een checkpoint).
 - Schrijft een commit-record naar de transaction log.
 - Schrijft de log naar de disk.
 
