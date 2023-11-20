@@ -1,4 +1,4 @@
-**Documentversie: 20-nov-2023 14:36**
+**Documentversie: 20-nov-2023 15:01**
 
 **Author: Laurens Frensen (22106189)**
 
@@ -302,6 +302,8 @@ Order (<ins>ordernr</ins>, datum)
 Order_Artikel(<ins>*ordernr*, *artikelnr*</ins>, aantal)
 
 Artikel (<ins>artikelnr</ins>, omschrijving, prijs)
+
+LET OP: in sommige gevallen wil je graag de prijs opsplitsen in inkoopprijs en verkoopprijs, maar dit is afhankelijk van de casus.
 
 # Student stelt tijdens een schriftelijke toets het rationele model van een database samen op basis van een UML class diagram (weging: 7,5 %)
 
