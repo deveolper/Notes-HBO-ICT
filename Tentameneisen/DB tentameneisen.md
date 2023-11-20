@@ -289,7 +289,7 @@ Order_Artikel(<ins>*ordernr*, *artikelnr*</ins>, aantal)
 Artikel (<ins>artikelnr</ins>, omschrijving, prijs)
 
 ## Normalisatie tot 3NF
-1. Normalisser tot 2NF
+1. Normaliseer tot 2NF
 2. Verplaats alle attributen die volledig afhankelijk zijn van een niet-sleutel attribuut naar een eigen tabel (en maak een relatie tussen de tabellen)
 
 ### Voorbeeld
