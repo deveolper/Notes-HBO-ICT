@@ -280,7 +280,9 @@ Artikel (<ins>artikelnr</ins>, omschrijving, prijs, aantal)
     2. Pak iets waar een hoop functioneel afhankelijk van is als primaire sleutel en voeg alle data die daar functioneel afhankelijk van is in een aparte tabel.
 
 ### Voorbeeld
-Klant (<ins>klantnr, ordernr</ins>, klantnaam)
+Klant (<ins>klantnr</ins>, klantnaam)
+
+Klant_Order(<ins>klantnr, ordernr</ins>)
 
 Order (<ins>ordernr</ins>, datum)
 
@@ -302,6 +304,8 @@ Order (<ins>ordernr</ins>, datum)
 Order_Artikel(<ins>*ordernr*, *artikelnr*</ins>, aantal)
 
 Artikel (<ins>artikelnr</ins>, omschrijving, prijs)
+
+In dit geval is 3NF hetzelfde als 2NF. Dit is vaak het geval, **maar niet altijd**.
 
 LET OP: in sommige gevallen wil je graag de prijs opsplitsen in inkoopprijs en verkoopprijs, maar dit is afhankelijk van de casus.
 
