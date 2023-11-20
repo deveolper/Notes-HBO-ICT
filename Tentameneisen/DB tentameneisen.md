@@ -419,3 +419,24 @@ COMMIT;
 ```
 
 Contraint-violation afvangen: `TRIGGER`, niet met `@@error`. `@@error` checkt alleen systeem-errors, geen contraint-violations.
+
+### FLushing strategiëen
+- Steal policy
+
+    Bij een checkpoint worden alle transacties opgeslagen in de database (ook niet-gecommitte transacties).
+
+- No steal policy
+
+    Alleen gecommitte transacties kunnen worden weggeschreven naar de database.
+
+- No force
+
+    Wijzigingen worden niet geforceert naar de schijf. Hoeven we volgens Jelle niet te kennen.
+
+Bij een no-steal worden bij een checkpoint alleen gecommitte transacties weggeschreven. Bij een steal-beleid worden ook de niet gecommitte transacties weggeschreven.
+
+### Undo logging
+Maakt wijzigingen ongedaan in het geval van een abort of crash.
+
+### Redo logging
+Voer de wijzigingen van de succesvolle transacties opnieuw uit om de data weer bruikbaar te maken. Dit moet dus ook gedaan worden om een transactie die wel gecommit is, maar niet gecheckpoint toch in de database op te nemen.
