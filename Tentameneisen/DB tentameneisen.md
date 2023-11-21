@@ -1,4 +1,4 @@
-**Documentversie: 20-nov-2023 15:38**
+**Documentversie: 21-nov-2023 12:07**
 
 **Author: Laurens Frensen (22106189)**
 
@@ -234,6 +234,46 @@ Bron: Leerjaar 2 > 12-10-2023 > Databases
 >>machinist is vreemde sleutel naar personeel(pcode), not null
 >>
 >>Constraint pcode = machinist(mnr)
+
+## Indexen
+Performance optimalisatie. Kost wel meer opslag.
+
+### Clustered index
+Als je index is geoptimaliseerd voor zoeken op primaire sleutels.
+Deze veranderd de data door deze te sorteren.
+
+```sql
+CREATE CLUSTERED INDEX id
+ON tabelnaam(kolom1, kolom2);
+```
+
+Versnelt select op `kolom1` en `kolom2`.
+
+### Non-clustered index
+Als je index is geoptimaliseerd voor zoeken op een andere kolom.
+Deze veranderd niet de originele data.
+
+```sql
+CREATE NONCLUSTERED INDEX naam
+ON tabelnaam(kolom1, kolom2);
+```
+
+## Security
+### Authenticatie
+Wie de fuck bent u? *Anders dan de definitie van SIE, die luid 'hoe de fuck bewijst u henk te zijn?'*
+
+### Authorisatie
+Mag u deze fucking actie ondernemen?
+
+### Rechten toekennen
+```sql
+GRANT SELECT, INSERT, UPDATE, DELETE ON tabel TO Henk;
+```
+
+### Rechten ontnemen
+```sql
+REVOKE SELECT ON tabel FROM Henk;
+```
 
 # Student tekent tijdens een schriftelijke toets een UML class diagram (als ontwerp van een database) op basis van een scenario (weging: 12 %)
 
