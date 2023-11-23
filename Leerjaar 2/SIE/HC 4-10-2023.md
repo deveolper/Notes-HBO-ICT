@@ -1,0 +1,75 @@
+# Secure Software Development, Testen, Beheer en Onderhoud
+
+## Toetsing
+De toets is in Remindo (op de computer)
+
+### Wat moet je leren
+- Hoorcolleges
+- Instructiecolleges
+- Readerinformatie
+- Blauwe boekje van Hoepman
+- Informatiebeveiliging onder controle editie 4 (H2, H6, H9, H11, H12, H13)
+
+## Secure coding
+### Hoe maak je software veilig?
+Houd rekening met mogelijk misbruik, Dev-Ops dragen ook bij aan de veiligheid van software, OWASP top 10, organisatorische beveiliging adhv beleid.
+Dev-Ops (proces van development tot operationeel).
+Bekijk de OWASP top 10, de fouten die vaak worden gemaakt.
+### Bugs
+Fouten in code veroorzaken ook vaak kwetsbaarheden.
+### Flaws
+Fouten in de structuur or architectuur kan ook kwetsbaarheden veroorzaken.
+### Bugs + Flaws = Defect
+Meestal zijn security issues een combinatie van bugs en flaws.
+### OWASP top 10
+- 10 meest voorkomende kwetsbaarheden in webapplicaties
+- Vaak makkelijk te spotten fouten die ook snel gemaakt worden
+- Vaak user-input gerelateerd
+- User kan een persoon of systeem zijn in dit geval
+- Recentelijk een nieuwe versie gepubliceerd van OWASP (2021)
+**A01: 2021-Broken Access Control**
+Slechte access control is een van de meest voorkomende oorzaken van beveiligingsproblemen.
+Geen centrale controle op toegang van object.
+**A02: 2021-Sensitive Data Exposure**
+Lekken van gevoelige gegevens door slechte beveiliging.
+Door gevoelige data niet op elk punt te beveiligen door bijvoorbeeld HTTP te gebruiken ipv HTTPS.
+Zelfs bij HTTPS kan de data die in de URL staat nog steeds worden misbruikt.
+**A03: 2021-Injection**
+SQL-injectie of OS-niveau injectie. Meestal als de user-input gelijk wordt ingezet voor een query of commando.
+**A04: 2021-Insecure design**
+**A05: 2021-Security Misconfiguration**
+**A06: 2021-Vulnerable and Outdated Components**
+**A07: 2021-Identification and Authentication failures**
+**A08: 2021-Software and data integrity failures**
+**A09: 2021-Security logging and monitoring failures**
+**A10: 2021-Serverside request forgery SSRF**
+## Code review
+Zoeken naar fouten tijdens het reviewen van code.
+
+[Static code analysis](https://www.perforce.com/blog/sca/what-static-analysis#:~:text=Static%20analysis%20is%20a%20method,compliant%2C%20safe%2C%20and%20secure.)
+Dit ziet niet hoe stuff samenwerkt.
+
+[Dynamic code analysis](https://www.harness.io/blog/static-vs-dynamic-code-analysis#:~:text=Dynamic%20code%20analysis%20is%20the,that%20can%20cover%20this%20style.)
+Dit ziet wel hoe stuff samenwerkt.
+
+Als iedereen dezelfde codestyle gebruikt dan kan je sneller fouten vinden.
+
+## Pentesting
+Proberen de fouten te vinden met behulp van testen. Hiervoor wordt soms een derde partij ingehuurd.
+
+## Deployment
+### Secret management
+- Hoe bewaar je wachtwoorden?
+- Hoe sla je privé gegevens op?
+**SLA GEEN SECRETS OP IN CODE!!**
+Verwijder secrets zo snel als ze niet meer nodig zijn.
+
+## Maintenance
+Major versie-nummer verander je als de update niet compatible is met de oude versie.
+Minor versie-nummer verander je als je een nieuwe feature uitbrengt die wel compatible is met de oude versie.
+Patch versie-nummer verander je als je een bug fixt. Wordt ook soms bugfix versie-nummer genoemd.
+De conventie is om eem major versie van 0 te gebruiken voor beta-versies.
+
+# Q & A
+## Hoeveel vragen heeft de toets?
+60 vragen.

@@ -1,0 +1,285 @@
+# Databases
+Vandaag is deze les op verzoek van studenten via teams (online). Het is mogelijk dat ik niet alle vragen uit de chat opmerk en/of meeneem in mijn aantekeningen (al doe ik uiteraard mijn best om dit toch zoveel mogelijk voor elkaar te krijgen).
+
+## Transactiemanagement
+```sql
+START TRANSACTION;
+
+-- meer SQL hiero.
+
+COMMIT;
+```
+
+### Transactie
+```sql
+UPDATE Rekeninghouder
+SET saldo = saldo + 10000
+WHERE naam = "H. Bavinck";
+
+UPDATE Rekeninghouder
+SET saldo = saldo - 10000;
+WHERE naam = "H.G. Sol";
+```
+
+Stel, het systeem crasht tussen de tweede de twee queries. Dan komt er 10000 uit de droge lucht. Dit is waar transactions voor dienen.
+
+```sql
+BEGIN TRANSACTION; -- START TRANSACTION kan ook
+
+UPDATE Rekeninghouder
+SET saldo = saldo + 10000
+WHERE naam = "H. Bavinck";
+
+UPDATE Rekeninghouder
+SET saldo = saldo - 10000;
+WHERE naam = "H.G. Sol";
+
+COMMIT;
+```
+
+Deze statements worden nu allemaal wel, of allemaal niet worden uitgevoerd. Als het systeem nu crasht tussen de twee queries, dan wordt er niks gedaan.
+
+### Commit
+- Keyword wat het einde van de transactie aanduid.
+- Maakt de transactie definitief.
+- Maakt de wijzigingen voor anderen zichtbaar.
+- Heft locks op.
+- Als van uno-redo logging gebruikt wordt gemaakt: start nog niet het schrijven naar de fysieke database (dat is pas na een checkpoint).
+- Schrijft een commit-record naar de transaction log.
+- Schrijft de log naar de disk.
+
+### Rollback
+Maak de transactie ongedaan. Het kan zijn dat je tijdens de transactie erachter komt dat de data niet meer integer is, dan kan je rollback gebruiken om alle veranderingen ongedaan te maken.
+
+```sql
+ROLLBACK;
+```
+
+### Kwaliteitseisen (ACID)
+- Atomic
+
+Alles wordt uitgevoerd, of alles wordt niet uitgevoerd.
+
+- Consistent
+
+Na afloop voldoet de database weer aan alle integriteitsconstraints.
+
+- Isolated
+
+Andere transacties hebben er geen invloed op.
+
+- Durable
+
+Eenmaal uitgevoerd blijft het van kracht en wordt niet ongedaan gemaakt.
+
+### Auto Commit Transactie
+Na elke SQL-instructie wordt een commit uitgevoerd.
+
+### Implicit Transactie
+Na elke transactie ben je verplicht alle acties in een transactie te doen.
+
+### Explicit Transactie
+Maakt het mogelijk meerdere SQL-instrcuties met `BEGIN TRANSACTION`, `COMMIT` en `ROLLBACK` in 1 transactie te stoppen.
+
+Je kan deze soorten transacties aan en uit zetten, kijk de slides terug als je daar meer over wil weten (geen toetsstof).
+
+`@@error` (global variabele, dubbele @ is global, enkele @ is een local) is gelijk aan 0 als er *geen* error optreed.
+
+`RETURN` we stappen uit de transactie.
+
+Deze code checkt of er een error heeft plaatsgevonden, als dat zo is maakt die de transactie ongedaan.
+```sql
+IF @@error <> 0
+BEGIN
+    ROLLBACK;
+    RETURN;
+END
+COMMIT;
+```
+
+Contraint-violation afvangen: `TRIGGER`, niet met `@@error`. `@@error` checkt alleen systeem-errors, geen contraint-violations.
+
+## Normaliseren
+Zie andere aantekeningen (zoek op "Normaliseren").
+
+## Stored procedures
+- Functie die je kan herbruiken en die mogelijk parameters kan meenemen.
+- Transactie-management kan ook in een procedure.
+
+```sql
+EXEC procedure @argument=waarde @anderargument=nogeenwaarde;
+```
+
+## Recovery
+Hoe herstel je naar een integere database? Hiervoor hebben we het gehad over preventie, nu hebben we het over correctie.
+
+### Wanneer faalt een databasesysteem?
+- Transactiefalen: als een transactie een abort triggert. Op te lossen met de transactielog.
+- Systeemfalen: buffer pool.
+- Medium-falen: hardware in de database faalt.
+
+De onuitgevoerde `update` wordt aan de query executor doorgegeven. 
+
+Daarna gaat die naar de buffer pool. Er wordt eerst een nieuwe tabel gemaakt in de buffer pool waar de gegevens van de database in worden gekopiëerd. De `update` wordt uitgevoerd in de buffer pool. Het resultaat van de `update` blijft in de buffer pool. De uitgevoerde `update` wordt naar de transaction-log geschreven. De `commit` en `checkpoint` worden vanuit de buffer-pool opgeslagen in de logbestanden **alvorens** dat we de database opslaan. We zeggen dus **eerst** in de transactielog dat we iets gedaan hebben, **daarna** doen we het pas daadwerkelijk (het updaten van de database).
+
+De data daadwerkelijk opslaan is het `flushen`.
+
+De transactielog staat meestal op een andere fysieke schijf dan de database. Anders dan zou het falen van een enkele schijf ervoor kunnen zorgen dat je alle data kwijtraakt.
+
+### FLushing strategiëen
+- Steal policy
+
+Bij een checkpoint worden alle transacties opgeslagen in de database (ook niet-gecommitte transacties).
+
+- No steal policy
+
+Alleen gecommitte transacties kunnen worden weggeschreven naar de database.
+
+- No force
+
+Wijzigingen worden niet geforceert naar de schijf. Hoeven we volgens Jelle niet te kennen.
+
+Bij een no-steal worden bij een checkpoint alleen gecommitte transacties weggeschreven. Bij een steal-beleid worden ook de niet gecommitte transacties weggeschreven.
+
+### Undo logging
+Maakt wijzigingen ongedaan in het geval van een abort of crash.
+
+### Redo logging
+Voer de wijzigingen van de succesvolle transacties opnieuw uit om de data weer bruikbaar te maken. Dit moet dus ook gedaan worden om een transactie die wel gecommit is, maar niet gecheckpoint toch in de database op te nemen.
+
+# Big Data
+Veel updates, veel data, geen toetsstof (denk ik). Werdt alleen als antwoord op een vraag van een student behandeld.
+
+# Transactionlog
+LSN | TransactieID | Type   | Page/Attribuut | Before Image | After Image
+----|--------------|--------|----------------|--------------|------------
+1   | 1            | Update | A              | 100          | 150
+2   | 1            | Commit |                |              |
+3   | 2            | Update | B              | 150          | 170
+4   | 2            | Abort  |                |              |
+
+LSN: log sequence number. Uniek.
+
+TransactieID: unieke identifier per transactie, kan *wel* meerdere keren voorkomen (meerdere wijzigingen in 1 transactie).
+
+Type: UPDATE, COMMIT, CHECKPOINT, ABORT, etc.
+
+Page/Attribuut: welke kolom het betrekking tot heeft.
+
+Before Image: Oude waarde van de kolom.
+
+After Image: Nieuwe waarde van de kolom.
+
+Checkpoint: Alle commits worden definitief gemaakt. De database en het logbestand worden gesynchroniseerd door te flushen.
+
+Update: er wijzigd iets in de database.
+
+Commit: Einde van de transactie, commits worden ook definitief gemaakt (net zoals bij een checkpoint). Een checkpoint beindigd niet de transactie, een commit wel.
+
+Er zullen een aantal toetsvragen gaan over de logfiles.
+
+## Tips
+- Voor het visualiseren van een transactielog
+
+    - Voor elk checkpoint een verticale lijn.
+    - Voor elke transactie een rechthoekje.
+    - Voor elke abort en commit zijn rechthoejes.
+    - De x-as is je "tijd"-as.
+    - Elke transactie heeft een pijl naar de abort of commit.
+    - Boven het pijltje zet het `LSN` van de rijen van de transactielog.
+
+- Kijk vooral in slide 26 en slide 27 en kijk volgende week ook even of je het nogsteeds begrijpt.
+
+- Bij no-steal hoeft er nooit een undo-plaats te vinden.
+- Bij steal moet er soms wel iets ongedaan gemaakt worden (namelijk de transacties die nog niet gecommit zijn).
+- Doe nog een zelfstudie over steal en no-steal.
+
+# Concurrency
+Verschillende processen gebruiken tegelijkertijd precies dezelfde hulpbronnen.
+
+Bij databases: tegelijkertijd meerdere transacties uitvoeren. Bijvoorbeeld meerdere 
+
+## Lost Update Problem
+De update van een transactie wordt opgeheven door een update en een commit van een andere transactie die er gelijk na komt.
+
+Tijd | Klant 1                  | Klant 2
+-----|--------------------------|--------
+1    | Product beschrikbaar? Ja |
+2    |                          | Product beschikbaar? Ja
+3    | Product bestellen        | 
+4    |                          | Product bestellen
+5    | Bestelling is verloren   | Bestelling is wel goed
+
+## Dirty Read
+Je leest gegevens die door een andere transactie worden gewijzigd maar nog niet zijn gecommit. Deze transactie eindigd in een rollback.
+
+Dan lees je gegevens die fout zijn en daarna niet meer bestaan.
+
+Alleen van toepassing op een steal policy.
+
+## Non-repeatable Read
+Er vind een `update` plaats tussen 2 keer precies dezelfde `select`.
+
+## Phantom read
+Lijkt op een non-repeatable read. Maar dan dat je een rij krijgt die gewoon helemaal niet bestaat door een `insert` statement in plaats van een andere waarde als gevolg van een `update`.
+
+## Oplossingen
+Locks hebben betrekking op tabellen, niet op transacties.
+
+### Pessimistic concurrency control
+- Locks toepassen om te zorgen dat bepaalde data niet kan wijzigen terwijl je bezig bent.
+- Read Lock, verschillende partijen kunnen wel tegelijkertijd lezen, maar niet tegelijkertijd schrijven.
+- Write Lock, verschillende partijen kunnen niet tegelijkertijd dingen doen met deze data.
+### Optimistic concurrency control
+- Je gaat er vanuit dat het goed gaat en maakt het ongedaan als dat een onjuiste aanname blijkt te zijn.
+
+## Isolation level (gegenereerd door ChatGPT, verfijning komt na het weekend)
+### Read Uncommitted
+- **Isolation Level Characteristics:**
+    - Lowest level of isolation.
+    - Transactions can read data that has been modified but not yet committed by other transactions.
+    - No restrictions on dirty reads, non-repeatable reads, or phantom reads.
+- **Example Scenario:**
+    - Transaction A reads a row that Transaction B is in the process of updating. If Transaction B rolls back its changes, Transaction A may have read "dirty" data.
+### Read Committed
+- **Isolation Level Characteristics:**
+    - Each transaction sees only committed data from other transactions.
+    - Prevents dirty reads by ensuring that only committed data is visible.
+    - However, non-repeatable reads and phantom reads are still possible.
+- **Example Scenario:**
+    - Transaction A reads a row. If Transaction B updates or inserts data and commits, Transaction A can read the changed data in subsequent reads.
+
+### Repeatable Read
+- **Isolation Level Characteristics:**
+    - Ensures that, once a transaction reads a piece of data, it will see the same data in subsequent reads until it is committed.
+    - Prevents dirty reads and non-repeatable reads.
+    - Phantom reads are still possible.
+- **Example Scenario:**
+    - Transaction A reads a set of rows. Even if Transaction B updates or inserts data, Transaction A will see the original data until it completes.
+
+### Serializable
+- **Isolation Level Characteristics:**
+    - Highest level of isolation.
+    - Ensures that transactions are completely isolated from each other.
+    - Prevents dirty reads, non-repeatable reads, and phantom reads.
+    - Achieves this by placing locks on the data, which can impact performance.
+- **Example Scenario:**
+    - Transaction A locks a row for writing. During this time, Transaction B is prevented from reading or writing to the same row until Transaction A completes.
+
+In summary, the choice of isolation level depends on the specific requirements of the application. Higher isolation levels provide stronger consistency guarantees but may result in increased contention and potential performance implications due to locking. Lower isolation levels allow for more concurrency but introduce the risk of various anomalies.
+
+# Deadlocks
+Verschillende transacties staan op elkaars locks te wachten. Dat hebben we ook bij een ander vak gehad (volgens mij WPFW). Transactie A is aan het wachten op een lock die transactie B heeft, maar transactie B is aan het wachten op een lock die transactie A heeft. Er gebeurd dus niks.
+
+# Volgende week
+De les is weer zo laat als deze week, maar dan zal die echt niet hybride kunenn omdat het dan een tentamentraining is. Dat kan echt niet online.
+
+# Q & A
+## Klopt het dat tijdens een transactie de database niet aan de contraints van de database hoeven te voldoen?
+Klopt, zo lang het bij de commit maar weer voldoet aan de contraints.
+## Is het niet handiger om BNR te gebruiken in plaats van naam voor het geval dat er dubbele namen in de database zijn?
+Ja, eigenlijk wel.
+## Wat is het verschil tussen `BEGIN` en `BEGIN TRANSACTION`?
+Eigenlijk heel simpel, `BEGIN` zet je na een `IF`, `BEGIN TRANSACTION` zet je neer als je een transactie wil starten. `BEGIN` is zeg maar de open-accolade van een `IF`.
+## Vraag niet verstaan. Waarschijnlijk of je altijd `@@error` in een `IF` neerzet.
+Je kan ook andere dingen in een `IF` zetten.
