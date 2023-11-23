@@ -1,0 +1,6 @@
+Het is de bedoeling dat we ons voorbereiden voor de review.
+
+# Wat verwacht wordt bij de review
+- Vragen opstellen.
+
+Ik heb een deel van de les gemist in verband met een klachtengesprek met een docent.
