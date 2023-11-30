@@ -26,4 +26,8 @@ git pull origin master
 ```
 
 # Structuur van de applicatie
-## 
+## Program.cs
+Dit is het entry point van de backend. `Program::Main()` is het eerste wat gebeurd in de applicatie.
+
+## WeatherForecast.cs
+Voor de weersvoorspellingen. De API afhandeling vind hier plaats.
