@@ -24,3 +24,6 @@ git pull
 ```bash
 git pull origin master
 ```
+
+# Structuur van de applicatie
+## 
