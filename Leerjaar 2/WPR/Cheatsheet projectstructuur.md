@@ -33,6 +33,7 @@ git pull origin master
 ## Google auth package installeren
 ```bash
 npm install react-oauth/google
+npm install @react-oauth/google@latest
 ```
 
 # Structuur van de applicatie
