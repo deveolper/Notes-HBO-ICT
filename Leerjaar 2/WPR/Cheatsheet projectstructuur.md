@@ -29,6 +29,12 @@ git pull
 git pull origin master
 ```
 
+# Commands
+## Google auth package installeren
+```bash
+npm install react-oauth/google
+```
+
 # Structuur van de applicatie
 ## Program.cs
 Dit is het entry point van de backend. `Program::Main()` is het eerste wat gebeurd in de applicatie.
