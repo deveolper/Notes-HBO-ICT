@@ -1,4 +1,8 @@
 # Cheatsheet
+## Problemen
+### Het lukt niet om iets aan te passen
+Als de applicatie draait, dan weigert Visual Studio hier iets van aan te passen.
+
 ## Routes toevoegen
 React routes moet je niet vergeten om de controller importeren. Anders krijg je een error.
 
