@@ -34,6 +34,7 @@ git pull origin master
 ```bash
 npm install react-oauth/google
 npm install @react-oauth/google@latest
+npm install gapi-script react-google-login
 ```
 
 # Structuur van de applicatie
