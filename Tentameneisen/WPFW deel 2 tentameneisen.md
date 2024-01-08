@@ -125,6 +125,8 @@ Het tentamen-eis waar je naar verwijst, vraagt om begrip van verschillende archi
 
    - **Monoliths**: In tegenstelling tot microservices is een monolithische applicatie een enkele, grote codebase waarin alle functionaliteit is opgenomen. Het kan eenvoudiger zijn om te ontwikkelen, maar kan moeilijker te schalen en onderhouden zijn.
 
+      Monoliths bevatten alle functionaliteit in een enkele server en database. Om te schalen moet je een nieuwe server en een nieuwe database toevoegen. Dit is best een grote investering. Bij microservices kan je schalen door gewoon de services die overbelast worden te schalen, en niet de volledige applicatie.
+
    - **Clean Architecture**: Dit is een benadering voor het organiseren van code om de afhankelijkheden om te keren, zodat de kernlogica van de applicatie onafhankelijk is van de buitenwereld. Het bevordert een geïsoleerde, testbare code.
 
    - **Layers**: Dit is een patroon waarin de code wordt opgesplitst in verschillende lagen, zoals de presentatielaag, applicatielaag en datalaag. Elke laag heeft een specifieke rol en verantwoordelijkheid.
