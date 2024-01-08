@@ -131,6 +131,8 @@ Het tentamen-eis waar je naar verwijst, vraagt om begrip van verschillende archi
 
    - **Layers**: Dit is een patroon waarin de code wordt opgesplitst in verschillende lagen, zoals de presentatielaag, applicatielaag en datalaag. Elke laag heeft een specifieke rol en verantwoordelijkheid.
 
+     Voor de afhankelijkheden heb je eigenlijk gewoon een soort laag (laten we die voor het gemak even laag 0 noemen), die laag bevat alle modules (classes) die nergens van afhankelijk zijn. De volgende laag (laten we die laag 1 noemen) die is alleen afhankelijk van modules op laag 0. De modules van laag 2 zijn alleen afhankelijk van modules in laag 0 of laag 1, enz
+
 2. **Voor- en nadelen afwegen**:
 
    - Het begrijpen van de voordelen van elk patroon is belangrijk. Bijvoorbeeld, microservices kunnen schaalbaarheid bieden, terwijl monoliths eenvoudiger te implementeren kunnen zijn.
