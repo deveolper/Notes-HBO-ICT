@@ -178,5 +178,8 @@ Ja. Zelfs elke opdracht, maar dat moet wel iedereen prettig vinden.
 Ja.
 ## Waar kunnen we de opnamen vinden?
 Op BrightSpace. Wordt nog opengezet. Er is een tabblad "opnamen online kick-off".
+
+Update: [Hier](https://dehaagsehogeschool-my.sharepoint.com/:v:/g/personal/mvspoore_hhs_nl/EV3KBRKaEL9HlmQul1H_bKIBRYxIF4QbDBKrjv8B-aPfQg?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view.view) kan je de opnamen terugvinden.
+
 ## Wanneer worden de brightspace-courses open gezet?
 Maandagochtend.
