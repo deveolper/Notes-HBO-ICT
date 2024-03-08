@@ -149,3 +149,55 @@ Bij de bovenstaande tabel zijn er veel, veel-op-veel relaties.
 </table>
 
 Bij deze tabel zijn er veel 1-op-veel relaties.
+
+<table border="1">
+    <tr>
+        <td colspan="2" align="center">
+            KLANT
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="4">
+            RETAILER_CODE<br>
+            code
+        </td>
+        <td>
+            COUNTRY_CODE<br>
+            zone
+        </td>
+    </tr>
+    <tr>
+        <td>
+            CITY<br>
+            city
+        </td>
+    </tr>
+    <tr>
+        <td>
+            REGION<br>
+            name
+        </td>
+    </tr>
+    <tr>
+        <td>
+            POSTAL_ZONE<br>
+            name
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            ADDRESS<br>
+            address1, address2
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            KLANT<br>
+            <strong>
+                <u>
+                    retailer_site_code
+                </u>
+            </strong>, active_indicator
+        </td>
+    </tr>
+</table>
