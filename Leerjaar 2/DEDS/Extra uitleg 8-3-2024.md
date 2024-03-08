@@ -112,6 +112,10 @@ Onderaan staan alle attributen die gewoon bij een enkele rij horen van de tabel.
 
 Bij de bovenstaande tabel zijn er veel, veel-op-veel relaties.
 
+Afgeleide dimensiewaarde:
+
+`PRODUCT_SALE_PRICE` = `PRODUCTION_COST` * `MARGIN` + `PRODUCTION_COST`
+
 <table border="1">
     <tr>
         <td align="center">
@@ -141,7 +145,7 @@ Bij de bovenstaande tabel zijn er veel, veel-op-veel relaties.
             DATE<br>
             <strong>
                 <u>
-                    id
+                    date
                 </u>
             </strong>
         </td>
@@ -149,6 +153,16 @@ Bij de bovenstaande tabel zijn er veel, veel-op-veel relaties.
 </table>
 
 Bij deze tabel zijn er veel 1-op-veel relaties.
+
+Afgeleide dimensiewaarden:
+
+`YEAR` = `DATE.to_year()`
+
+`QUARTER` = `DATE.to_quarter()`
+
+`MONTH` = `DATE.to_month()`
+
+`DAY` = `DATE.to_day()`
 
 <table border="1">
     <tr>
