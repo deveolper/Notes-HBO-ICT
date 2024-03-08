@@ -56,7 +56,7 @@
     </tr>
 </table>
 
-Een `POSITION_NAME` (zoals verkoper) kan bij meerdere `SALES_TERRITORY` horen. ER zijn namelijk verkopers in meerdere territoria. Ook heeft een territorium werknemers op verschillende posities. Dus deze moeten naast elkaar komen te staan.
+Een `POSITION_NAME` (zoals verkoper) kan bij meerdere `SALES_TERRITORY` horen. Er zijn namelijk verkopers in meerdere territoria. Ook heeft een territorium werknemers op verschillende posities. Dus deze moeten naast elkaar komen te staan.
 
 In een `SALES_TERRITORY` zitten meerdere `COUNTRY`, maar een land valt maar onder 1 territorium. Dus moet `SALES_TERRITORY` moet boven `COUNTRY` staan.
 
@@ -166,18 +166,36 @@ Afgeleide dimensiewaarden:
 
 <table border="1">
     <tr>
-        <td colspan="2" align="center">
+        <td colspan="5" align="center">
             KLANT
         </td>
     </tr>
     <tr>
-        <td rowspan="4">
-            RETAILER_CODE<br>
-            code
+        <td>
+            RETAILER_TYPE_CODE, RETAILER_TYPE_EN<br>
+            type_code
         </td>
         <td>
             COUNTRY_CODE<br>
             zone
+        </td>
+        <td>
+            SEGMENT_CODE, SEGMENT_NAME, SEGMENT_DESCRIPTION<br>
+            segment
+        </td>
+        <td>
+            JOB_POSITION<br>
+            position
+        </td>
+        <td>
+            GENDER<br>
+            gender
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="4">
+            RETAILER_CODE, RETAILER_CODE_MR, COMPANY_NAME<br>
+            code
         </td>
     </tr>
     <tr>
@@ -205,13 +223,13 @@ Afgeleide dimensiewaarden:
         </td>
     </tr>
     <tr>
-        <td colspan="2">
+        <td colspan="5">
             KLANT<br>
             <strong>
                 <u>
                     retailer_site_code
                 </u>
-            </strong>, active_indicator
+            </strong>, retailer_contact_code, first_name, last_name, extension, fax, e_mail, active_indicator, language, retailer_name, phone
         </td>
     </tr>
 </table>
