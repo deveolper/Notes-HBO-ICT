@@ -172,16 +172,16 @@ Afgeleide dimensiewaarden:
     </tr>
     <tr>
         <td>
-            RETAILER_TYPE_CODE, RETAILER_TYPE_EN<br>
-            type_code
+            RETAILER_TYPE<br>
+            retailer_type_code, retailer_type_en
         </td>
         <td>
             COUNTRY_CODE<br>
             zone
         </td>
         <td>
-            SEGMENT_CODE, SEGMENT_NAME, SEGMENT_DESCRIPTION<br>
-            segment
+            SEGMENT<br>
+            segment_code, segment_name, segment_description
         </td>
         <td>
             JOB_POSITION<br>
@@ -194,8 +194,8 @@ Afgeleide dimensiewaarden:
     </tr>
     <tr>
         <td rowspan="4">
-            RETAILER_CODE, RETAILER_CODE_MR, COMPANY_NAME<br>
-            code
+            CODE<br>
+            retailer_code, retailer_code_mr, company_name
         </td>
     </tr>
     <tr>
@@ -217,19 +217,13 @@ Afgeleide dimensiewaarden:
         </td>
     </tr>
     <tr>
-        <td colspan="2">
-            ADDRESS<br>
-            address1, address2
-        </td>
-    </tr>
-    <tr>
         <td colspan="5">
             KLANT<br>
             <strong>
                 <u>
                     retailer_site_code
                 </u>
-            </strong>, retailer_contact_code, first_name, last_name, extension, fax, e_mail, active_indicator, language, retailer_name, phone
+            </strong>, retailer_contact_code, first_name, last_name, extension, fax, e_mail, active_indicator, language, retailer_name, phone, address1, address2
         </td>
     </tr>
 </table>
