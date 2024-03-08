@@ -64,6 +64,8 @@ Dezelfde logica geldt voor de andere kolommen die eronder staan. `address1` en `
 
 Onderaan staan alle attributen die gewoon bij een enkele rij horen van de tabel.
 
+`DIENST_DUUR` = `date.today()` - `DATE_HIRED`
+
 <table border="1">
     <tr>
         <td colspan="5" align="center">
@@ -116,6 +118,8 @@ Afgeleide dimensiewaarde:
 
 `PRODUCT_SALE_PRICE` = `PRODUCTION_COST` * `MARGIN` + `PRODUCTION_COST`
 
+`TIME_SINCE_INTRODUCTION` = `date.today()` - `INTRODUCTION_DATE`
+
 <table border="1">
     <tr>
         <td align="center">
@@ -156,11 +160,7 @@ Bij deze tabel zijn er veel 1-op-veel relaties.
 
 Afgeleide dimensiewaarden:
 
-`YEAR` = `DATE.to_year()`
-
 `QUARTER` = `DATE.to_quarter()`
-
-`MONTH` = `DATE.to_month()`
 
 `DAY` = `DATE.to_day()`
 
