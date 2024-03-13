@@ -8,23 +8,23 @@ Jaar 2:
 		Software engineering
 Jaar 3:
 	Semester 1:
-		20 weken stage (incl. verslag)
+		Minor
 	Semester 2:
-		Kies 1 van 8 afstudeerprogramma's
+		Stage
 Jaar 4:
 	Semester 1:
-		Minor kiezen
+		Afstuderen
 	Semester 2:
-		Afstuderen binnen je afstudeerprogramma
+		Afstudeerstage
 
 Semester 1: Basissemster
 Semester 2: Diffrentiatieprogramma
 Semester 3: Diffrentiatieprogramma
 Semester 4: Diffrentiatieprogramma
-Semester 5: Diffrentiatieprogramma
-Semester 6: Minor
-Semester 7: Afstudeerprogramma
-Semester 8: Afstuderen
+Semester 5: Minor
+Semester 6: Stage
+Semester 7: Afstuderen
+Semester 8: Afstudeerstage
 
 1 t/m 8
 Herfst vakantie
