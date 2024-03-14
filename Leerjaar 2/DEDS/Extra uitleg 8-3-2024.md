@@ -56,13 +56,17 @@
     </tr>
 </table>
 
-Een `POSITION_NAME` (zoals verkoper) kan bij meerdere `SALES_TERRITORY` horen. ER zijn namelijk verkopers in meerdere territoria. Ook heeft een territorium werknemers op verschillende posities. Dus deze moeten naast elkaar komen te staan.
+Een `POSITION_NAME` (zoals verkoper) kan bij meerdere `SALES_TERRITORY` horen. Er zijn namelijk verkopers in meerdere territoria. Ook heeft een territorium werknemers op verschillende posities. Dus deze moeten naast elkaar komen te staan.
 
 In een `SALES_TERRITORY` zitten meerdere `COUNTRY`, maar een land valt maar onder 1 territorium. Dus moet `SALES_TERRITORY` moet boven `COUNTRY` staan.
 
 Dezelfde logica geldt voor de andere kolommen die eronder staan. `address1` en `address2` staan in 1 vakje omdat die een 1-op-1 relatie hebben.
 
 Onderaan staan alle attributen die gewoon bij een enkele rij horen van de tabel.
+
+Afgeleide dimensiewaarde:
+
+`DIENST_DUUR` = `date.today() - DATE_HIRED`
 
 <table border="1">
     <tr>
@@ -112,9 +116,17 @@ Onderaan staan alle attributen die gewoon bij een enkele rij horen van de tabel.
 
 Bij de bovenstaande tabel zijn er veel, veel-op-veel relaties.
 
+Afgeleide meetwaarde:
+
+`PRODUCT_PROFIT` = `PRODUCTION_COST * MARGIN`
+
+`PRODUCT_SALE_PRICE` = `PRODUCT_PROFIT + PRODUCTION_COST`
+
+`DESCRIPTION_LENGTH` = `len(DESCRIPTION)`
+
 Afgeleide dimensiewaarde:
 
-`PRODUCT_SALE_PRICE` = `PRODUCTION_COST` * `MARGIN` + `PRODUCTION_COST`
+`TIME_SINCE_INTRODUCTION` = `date.today() - INTRODUCTION_DATE`
 
 <table border="1">
     <tr>
@@ -156,28 +168,46 @@ Bij deze tabel zijn er veel 1-op-veel relaties.
 
 Afgeleide dimensiewaarden:
 
-`YEAR` = `DATE.to_year()`
-
 `QUARTER` = `DATE.to_quarter()`
-
-`MONTH` = `DATE.to_month()`
 
 `DAY` = `DATE.to_day()`
 
+Afgeleide meetwaarden:
+
+`LEAPYEAR` = `DATE.year % 4 == 0 && (DATE.year % 100 != 0 || DATE.year % 400 == 0)`
+
 <table border="1">
     <tr>
-        <td colspan="2" align="center">
+        <td colspan="5" align="center">
             KLANT
         </td>
     </tr>
     <tr>
-        <td rowspan="4">
-            RETAILER_CODE<br>
-            code
+        <td>
+            RETAILER_TYPE<br>
+            retailer_type_code, retailer_type_en
         </td>
         <td>
             COUNTRY_CODE<br>
             zone
+        </td>
+        <td>
+            SEGMENT<br>
+            segment_code, segment_name, segment_description
+        </td>
+        <td>
+            JOB_POSITION<br>
+            position
+        </td>
+        <td>
+            GENDER<br>
+            gender
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="4">
+            CODE<br>
+            retailer_code, retailer_code_mr, company_name
         </td>
     </tr>
     <tr>
@@ -199,19 +229,21 @@ Afgeleide dimensiewaarden:
         </td>
     </tr>
     <tr>
-        <td colspan="2">
-            ADDRESS<br>
-            address1, address2
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
+        <td colspan="5">
             KLANT<br>
             <strong>
                 <u>
                     retailer_site_code
                 </u>
-            </strong>, active_indicator
+            </strong>, retailer_contact_code, first_name, last_name, extension, fax, e_mail, active_indicator, language, retailer_name, phone, address1, address2
         </td>
     </tr>
 </table>
+
+Afgeleide dimensiewaarden:
+
+`FULL_NAME` = `FIRST_NAME.concat(LAST_NAME)`
+
+Afgeleide meetwaarden:
+
+`CONTACT_OPTIONS` = `(fax ? 1 : 0) + (e_mail ? 1 : 0) + (phone ? 1 : 0)`
