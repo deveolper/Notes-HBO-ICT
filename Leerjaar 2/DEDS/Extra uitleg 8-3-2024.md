@@ -64,7 +64,9 @@ Dezelfde logica geldt voor de andere kolommen die eronder staan. `address1` en `
 
 Onderaan staan alle attributen die gewoon bij een enkele rij horen van de tabel.
 
-`DIENST_DUUR` = `date.today()` - `DATE_HIRED`
+Afgeleide dimensiewaarde:
+
+`DIENST_DUUR` = `date.today() - DATE_HIRED`
 
 <table border="1">
     <tr>
@@ -114,11 +116,17 @@ Onderaan staan alle attributen die gewoon bij een enkele rij horen van de tabel.
 
 Bij de bovenstaande tabel zijn er veel, veel-op-veel relaties.
 
+Afgeleide meetwaarde:
+
+`PRODUCT_PROFIT` = `PRODUCTION_COST * MARGIN`
+
+`PRODUCT_SALE_PRICE` = `PRODUCT_PROFIT + PRODUCTION_COST`
+
+`DESCRIPTION_LENGTH` = `len(DESCRIPTION)`
+
 Afgeleide dimensiewaarde:
 
-`PRODUCT_SALE_PRICE` = `PRODUCTION_COST` * `MARGIN` + `PRODUCTION_COST`
-
-`TIME_SINCE_INTRODUCTION` = `date.today()` - `INTRODUCTION_DATE`
+`TIME_SINCE_INTRODUCTION` = `date.today() - INTRODUCTION_DATE`
 
 <table border="1">
     <tr>
@@ -163,6 +171,10 @@ Afgeleide dimensiewaarden:
 `QUARTER` = `DATE.to_quarter()`
 
 `DAY` = `DATE.to_day()`
+
+Afgeleide meetwaarden:
+
+`LEAPYEAR` = `DATE.year % 4 == 0 && (DATE.year % 100 != 0 || DATE.year % 400 == 0)`
 
 <table border="1">
     <tr>
@@ -227,3 +239,11 @@ Afgeleide dimensiewaarden:
         </td>
     </tr>
 </table>
+
+Afgeleide dimensiewaarden:
+
+`FULL_NAME` = `FIRST_NAME.concat(LAST_NAME)`
+
+Afgeleide meetwaarden:
+
+`CONTACT_OPTIONS` = `(fax ? 1 : 0) + (e_mail ? 1 : 0) + (phone ? 1 : 0)`
