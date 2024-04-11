@@ -1,0 +1,36 @@
+CV:
+
+Persoonsgegevens: Naam, adres, geboortedatum en plaats, nummer en professionele e-mail + foto
+
+Opleidingen en cursussen: laagste eerst
+
+Werkervaring: Laatste eerst, rest chronologisch, vermeld functie en wat je hebt geleerd.
+Vergeet onbetaald (vrijwilligers)werk niet, benoem ook je verantwoordelijkheden
+
+Andere persoonlijke eigenschappen en vakinhoudelijke kennis, 
+ook bepaalde vaardigheden zoals programmeertalen waarvan je denkt dat die relevant zouden kunnen zijn
+
+Projectervaring als eigen kopje
+
+Eerst soort opleiding, dan naam opleiding, stad opleiding, nieuwe regel, dan uitleg over de opleiding
+
+Kort en zakelijk, geen hele zinnen, maar niet te kort. Maak het duidelijk, dus niet "kassa" maar "kassamedewerker" totaal 1 A4,
+enkelzijdig
+
+Zorg dat je CV in de bestandsnaam je naam staat "CV Laurens Frensen" en niet "CV"
+
+Leesbaar lettertype en lettergrootte, maximaal 3 fonts/lettertype, veel witregels, geen vakjargon gebruiken
+
+Gebruik een opvallend CV (mooi design, etc)
+
+Je kan gratis templates of betaalde templates gebruiken, je kan ze online vinden
+
+CV is volgens de docent niet voor elk bedrijf hetzelfde, veel bedrijven parsen het automatisch als first-pass-filter
+
+SEO-achtige technieken toepassen om de automatische filter in de hand te werken
+
+OPDRACHT: zoek een template, pak de vacature en brief erbij, stel een CV op
+
+We gaan werken in groepen van 4.
+
+Voorbereidende opdracht: cv afmaken, door 2 studenten laten reviewen, en ook de feedback die je zelf hebt gegeven toevoegen in je portfolio. Laat zien wat je er mee hebt gedaan.
