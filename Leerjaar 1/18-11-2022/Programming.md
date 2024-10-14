@@ -1,5 +1,6 @@
 Tafelprinterij:
 
+```java
 public class Main {
     public static void main(String[] args) {
         for (int tafel = 1; tafel <= 10; tafel++) {
@@ -10,9 +11,11 @@ public class Main {
         }
     }
 }
+```
 
 Tafeloverslaan:
 
+```java
 import java.util.Scanner;
 
 public class Main {
@@ -31,9 +34,11 @@ public class Main {
         }
     }
 }
+```
 
 Voorkeursuitwerking volgens de docent:
 
+```java
 import java.util.Scanner;
 
 public class Main {
@@ -51,9 +56,11 @@ public class Main {
         }
     }
 }
+```
 
 Tafel en regel overslaan:
 
+```java
 import java.util.Scanner;
 
 public class Main {
@@ -77,9 +84,11 @@ public class Main {
         }
     }
 }
+```
 
 Voorkeursuitwerking volgens de docent:
 
+```java
 import java.util.Scanner;
 
 public class Main {
@@ -101,3 +110,4 @@ public class Main {
         }
     }
 }
+```
